@@ -1,0 +1,11 @@
+.seafood{
+    &__item{
+        height: 15rem;
+    }
+}
+@media (min-width: $width-desktop) {
+    .seafood{
+        margin-bottom: 3.12rem;
+    }
+
+}

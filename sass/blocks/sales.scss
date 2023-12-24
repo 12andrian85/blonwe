@@ -1,0 +1,28 @@
+.sales {
+    margin-bottom: 3rem;
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        height: 1.5rem;
+        width: 1.5rem;
+        padding-left: 0.12rem;
+    }
+    .splide{
+        &__slide{
+            height: 25.93rem;
+        }
+        &__arrows{
+            display: none;
+        }
+    }
+}
+@media (min-width: $width-desktop) {
+    .sales{
+        margin-bottom: 3.6rem;
+        &__arrows{
+            display: block;
+        }
+    }
+}

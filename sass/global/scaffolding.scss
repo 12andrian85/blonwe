@@ -1,0 +1,9 @@
+ul, li,div, span, article, section, nav, form{
+    @include outline;
+    list-style: none;
+    padding: 0;
+
+}
+a{
+    text-decoration: none;  
+}

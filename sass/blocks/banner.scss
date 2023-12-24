@@ -1,0 +1,32 @@
+.banner {
+    margin-bottom: 1.87rem;
+    &__essentials {
+        min-height: 14.37rem;
+        display: block;
+    }
+
+    &__shopping {
+        min-height: 14.37rem;
+
+        display: block;
+    }
+
+    &__variety {
+        min-height: 14.37rem;
+        display: block;
+    }
+}
+
+@media (min-width: $width-desktop) {
+    .banner {
+        &__essentials {
+            min-height: 36.87rem;
+        }
+    }
+}
+
+
+
+@media (min-width: $width-desktop) {
+    .banner {}
+}

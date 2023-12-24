@@ -1,0 +1,50 @@
+.header {
+    .header-top {
+        background-color: #E5F3EFFF;
+        padding: 8px 0;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        padding-bottom: 30px;
+
+        &__information {
+            display: flex;
+            align-items: center;
+        }
+
+        &__time {
+            padding: 4px 8px;
+            background-color: #C9DEDAFF;
+        }
+
+        &__options {
+            .accordion {
+                width: min-content;
+
+                .accordion-button::after {
+                    background-position: center;
+                    background-size: 10px;
+                }
+
+                .accordion-button:focus {
+                    box-shadow: none;
+                }
+
+                .accordion-button {
+                    background-color: #E5F3EFFF;
+                    padding: 0;
+                }
+
+                .accordion-body {
+                    width: min-content;
+                    background-color: #E5F3EFFF;
+                    padding: 0;
+                }
+
+                .accordion-collapse {
+                    background-color: #E5F3EFFF;
+                }
+            }
+        }
+    }
+}

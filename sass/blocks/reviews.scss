@@ -1,0 +1,12 @@
+.reviews{
+    background-color: $gray-100;
+    .splide{
+        &__autor{
+            height: 65px;
+        }
+
+        &__arrow{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.services {
+    padding-bottom: 3.12rem;
+
+    &__item {
+        height: 3.75rem;
+        margin-bottom: 1.25rem;
+    }
+
+
+}
+@media (min-width: $width-tablet) {
+    .services {
+    
+        &__item {
+            margin-bottom: 0;
+        }
+    
+    
+    }
+}

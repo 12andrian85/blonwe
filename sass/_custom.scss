@@ -1,0 +1,21 @@
+// @import "./variables";
+@import "./mixins";
+
+@import "./global/scaffolding";
+@import "./global/forms";
+@import "./global/typography";
+@import "./global/buttons";
+
+@import "./blocks/header";
+@import "./blocks/footer";
+@import "./blocks/reviews";
+@import "./blocks/banner";
+@import "./blocks/categories";
+@import "./blocks/discount";
+@import "./blocks/sales";
+@import "./blocks/offers";
+@import "./blocks/seafood";
+@import "./blocks/opportunity";
+@import "./blocks/services";
+@import "./blocks/news";
+@import "./blocks/subscribe";

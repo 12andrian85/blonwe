@@ -1,0 +1,23 @@
+.c-pagination {
+    .page-link {
+        border: none;
+    }
+
+    .page-link-number {
+        background-color: $gray-400;
+        color: $black;
+
+        margin: 0 5px;
+        border-radius: 5px;
+    }
+
+    .page-link:focus {
+        border: none;
+    }
+
+    .page-link-number:active {
+        background-color: $primary;
+        color: $white;
+
+    }
+}

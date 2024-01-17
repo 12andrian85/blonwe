@@ -1,0 +1,2118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel</title>
+    <meta name="description" content="About website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header ">
+        <!-- header-top -->
+        <div class="header-top d-none d-xl-flex">
+            <div class="container d-flex justify-content-between">
+                <div class="header-top__information">
+                    <div class="header-top__track pe-2 d-flex align-items-center">
+                        <span class="material-symbols-outlined fs-5">
+                            orders
+                        </span>
+                        <span>Track Order</span>
+                    </div>
+                    <div class="header-top__about px-2"> About Us</div>
+                    <div class="header-top__contact px-2">Contact</div>
+                    <div class="header-top__questions px-2">FAQ</div>
+                </div>
+                <div class="header-top__inner d-flex">
+                    <div class="header-top__delivery d-flex align-items-center px-3">
+                        <div class="header-top__text d-flex align-items-center">
+                            <span class="material-symbols-outlined p-1 fs-5">
+                                electric_moped
+                            </span>
+                            <span class="fw-light">We delivery to you every day from</span>
+                        </div>
+                        <div class="header-top__time rounded-pill">
+                            <span class="">7:00 to 23:00</span>
+                        </div>
+                    </div>
+                    <div class="header-top__options d-flex align-items-center px-3">
+                        <div class="header-top__language  pe-2">
+
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle  fw-medium" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    English
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Francese</a></li>
+                                    <li><a class="dropdown-item" href="#">Italian</a></li>
+                                    <li><a class="dropdown-item" href="#">Spanish</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-top__currency px-2">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle  fw-medium" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    USD
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">CRYPTO</a></li>
+                                    <li><a class="dropdown-item" href="#">USC</a></li>
+                                    <li><a class="dropdown-item" href="#">EURO</a></li>
+                                    <li><a class="dropdown-item" href="#">MDL</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-top__theme ps-2 d-flex align-items-center">
+                            <span class="material-symbols-outlined me-2 fs-6 p-1 rounded-2"
+                                style="background-color:#C9DEDAFF;">
+                                light_mode
+                            </span>
+                            <span>
+                                Dark theme
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!-- navigation-mobile -->
+            <nav class="navbar bg-body-tertiary fixed-top d-xl-none">
+                <div class="container">
+                    <div class="w-100 d-flex flex-row-reverse align-items-center justify-content-between">
+                        <span class="material-symbols-outlined text-primary">
+                            shopping_cart
+                        </span>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="/public/img/logo-grocery.png" alt="" style="width: 10rem;">
+                        </a>
+                        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                                <a class="navbar-brand" href="index.html">
+                                    <img src="/public/img/logo-grocery.png" alt="" style="width: 10rem;">
+                                </a>
+                            </h5>
+                            <button type="button" class="btn-close border-0 bg-white p-0" data-bs-dismiss="offcanvas"
+                                aria-label="Close">
+                                <span class="material-symbols-outlined">
+                                    close
+                                </span>
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+                                <h6 class="navbar-title">main menu</h6>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header d-flex w-100 align-items-center">
+                                                <a href="#" class="nav-link flex-grow-1">Shop</a>
+                                                <button class="accordion-button collapsed flex-shrink-1 w-auto p-0"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                                    aria-controls="flush-collapseOne">
+
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Placeholder content for this accordion,
+                                                    which is
+                                                    intended to demonstrate the <code>.accordion-flush</code> class.
+                                                    This is
+                                                    the
+                                                    first item's accordion body.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Frozen Foods</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">beverages</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">bakery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">blog</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+                                <h6 class="navbar-title">browse categories</h6>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">beverages</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">biscuits & Snacks</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">bread & bakery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">frozen foods</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Fruits & Vegetables</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Breakfast & dairy</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">grocery & staples</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">household needs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">meats & seafood</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+                                <h6 class=" navbar-title navbar-title--helps">blowne helps</h6>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link--helps" href="#">beverages</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link--helps" href="#">biscuits & Snacks</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link--helps" href="#">bread & bakery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link--helps" href="#">frozen foods</a>
+                                </li>
+                            </ul>
+                            <div class="border-bottom">
+                                <h6 class="navbar-title">contact details</h6>
+                                <div class=" d-flex align-items-center fw-bolder mb-2">
+                                    <span class="material-symbols-outlined me-2">
+                                        call
+                                    </span>
+                                    <span class="fs-6">
+                                        555-555-5555
+                                    </span>
+                                </div>
+                                <p class="fs-6">You can call anytime from 9 am to 6 pm.</p>
+                            </div>
+                            <div class="">
+                                <div class=" d-flex align-items-center fw-bolder mb-2">
+                                    <span class="material-symbols-outlined me-2">
+                                        send
+                                    </span>
+                                    <span class="fs-6">
+                                        example@example.com
+                                    </span>
+                                </div>
+                                <p class="fs-6">We will glady assist you in the short time.</p>
+                            </div>
+                            <div class="mb-5">
+                                Copyright 2023 © Blonwe WordPress Theme. All right reserved. Powered by
+                            </div>
+
+
+                            <!-- <li class="nav-item">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                </form>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button type="button" class="btn d-flex align-items-center" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    <span class="material-symbols-outlined me-3">
+                                        person
+                                    </span>
+                                    <div class="d-flex flex-column text-start">
+                                        <small>Sign in</small>
+                                        <span class="text-nowrap text-primary">Account</span>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="px-2">
+                                    <span class="material-symbols-outlined">
+                                        favorite
+                                    </span>
+                                </a>
+                            </li>
+                            <a href="#" class="px-2">
+                                <span class="material-symbols-outlined">
+                                    balance
+                                </span>
+                            </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="px-2 pe-0"><span class="material-symbols-outlined">
+                                        shopping_cart
+                                    </span>
+                                </a>
+                            </li> -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- header-menu -->
+            <div class="header-menu d-flex align-items-center d-none d-xl-flex">
+                <a href="#" class="header__logo" style="width: 185px; height: 50px;">logo</a>
+                <div>
+                    <button type="button" class="btn d-flex align-items-center p-0" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop" style="width: 150px;">
+                        <span class="material-symbols-outlined">
+                            location_on
+                        </span>
+                        <div class="d-flex flex-column text-start">
+                            <small>Deliver to</small>
+                            <span>Select Location</span>
+                        </div>
+                    </button>
+                </div>
+                <!-- search -->
+                <form action="" class="w-100">
+                    <input type="search" class="w-100 py-2" placeholder="Search of Product">
+                </form>
+                <!-- account -->
+                <button type="button" class="btn d-flex align-items-center" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <span class="material-symbols-outlined me-3">
+                        person
+                    </span>
+                    <div class="d-flex flex-column text-start">
+                        <small>Sign in</small>
+                        <span class="text-nowrap text-primary">Account</span>
+                    </div>
+                </button>
+                <div class="header-menu__action d-flex align-items-center">
+                    <a href="#" class="px-2">
+                        <span class="material-symbols-outlined">
+                            favorite
+                        </span>
+                    </a>
+                    <a href="#" class="px-2">
+                        <span class="material-symbols-outlined">
+                            balance
+                        </span>
+                    </a>
+                    <a href="#" class="px-2 pe-0"><span class="material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+            <!-- nav-bar -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 d-none d-xl-flex">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand d-lg-none" href="#">logo</a>
+                    <a href="#"><span class="material-symbols-outlined d-lg-none">
+                            shopping_cart
+                        </span></a>
+                    <!-- navbar-xl -->
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <div class="">
+                            <div class="d-flex align-items-center">
+                                <ul class="navbar-main me-auto mb-2 mb-lg-0 d-lg-flex align-items-center  ">
+                                    <h6 class="navbar-subtitle my-4 d-lg-none">MAIN MENU</h6>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item nav-item--submenu relative">
+                                        <a href="shop.html" class="nav-link d-flex align-items-center">
+                                            <span>Shop</span>
+                                            <span class="material-symbols-outlined">
+                                                expand_more
+                                            </span>
+                                        </a>
+                                        <div
+                                            class="submenu justify-content-between end-0 start-0 p-4 mx-4 position-absolute flex-grow-1 bg-white z-1">
+                                            <ul>
+                                                <h5>title title</h5>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                            </ul>
+                                            <ul>
+                                                <h5>title title</h5>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                            </ul>
+                                            <ul>
+                                                <h5>title title</h5>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                            </ul>
+                                            <ul>
+                                                <h5>title title</h5>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                                <li>item</li>
+                                            </ul>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Frozen Foods</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Beverages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Bakery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item nav-item--submenu relative">
+                            <a href="#" class="nav-link d-flex align-items-center">
+                                <i class="fa-solid fa-tags me-2"></i>
+                                <span>Best Discounts</span>
+                                <span class="material-symbols-outlined">
+                                    expand_more
+                                </span>
+                            </a>
+                            <div
+                                class="submenu justify-content-between end-0 start-0 p-4 position-absolute flex-grow-1 bg-white z-1">
+                                <ul>
+                                    <h5>title title</h5>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                </ul>
+                                <ul>
+                                    <h5>title title</h5>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                </ul>
+                                <ul>
+                                    <h5>title title</h5>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                </ul>
+                                <ul>
+                                    <h5>title title</h5>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="nav-item d-none d-lg-flex">
+                            <a href="components.html" class="text-danger fw-bold">components</a>
+                        </li>
+                        </ul>
+                        <div class="d-flex align-items-center ms-auto">
+                            <span class="material-symbols-outlined me-2 text-danger">
+                                timeline
+                            </span>
+                            <span class="text-danger fs-5 fw-bold">Buy Theme</span>
+
+                        </div>
+                    </div>
+                    <!-- navbar-mobile -->
+                    <div class="d-lg-none">
+                        <ul class="navbar-main me-auto mb-2 mb-lg-0 d-lg-flex align-items-center">
+                            <h6 class="navbar-subtitle my-4 d-lg-none">browse categories</h6>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Beverages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Biscuits & Snacks</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Breads & Bakery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Frozen & Foods</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Fruits & Vegetables</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Breakfast & Dairy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Grocery & Staples</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Household Needs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Meats & Seafoods</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-main me-auto mb-2 mb-lg-0 d-lg-flex align-items-center">
+                            <h6 class="navbar-subtitle my-4 d-lg-none">Blounwe helps</h6>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Wishlist</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Compare</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">My account</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <h6 class="navbar-subtitle my-4 d-lg-none">Contact details</h6>
+                            <a href="#">5555 555 55 555</a>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <h6 class="navbar-subtitle my-4 d-lg-none">Blounwe helps</h6>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+                            </a>
+                        </div>
+                        <span>Copyright 2023</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <!-- c-breadcrumb -->
+            <nav aria-label="breadcrumb" class="c-breadcrumb">
+                <ol class="breadcrumb my-3">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                </ol>
+            </nav>
+            <!-- banner-shop     -->
+            <div class="banner-shop mb-3">
+                <a href="#">
+                    <div class="card ">
+                        <span class="card-discount mb-3">Weekend Discount</span>
+                        <h5 class="card-title my-3">Card title</h5>
+                        <p class="card-text mb-3">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero.
+                        </p>
+                        <div class="card-price">
+                            <span class="card-price__text">form</span>
+                            <span class="card-price__price">$ 175.99</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- products-shop -->
+            <section class="products-shop">
+                <div class="filter d-flex align-items-center justify-content-between mb-3">
+                    <!-- filter -->
+                    <a class="btn d-flex align-items-center p-0 d-xl-none" data-bs-toggle="offcanvas"
+                        href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <span class="material-symbols-outlined me-2">
+                            filter_alt
+                        </span>
+                        <span>Filter</span>
+                    </a>
+                    <span class="fs-6 text-gray-600 d-none d-lg-flex">Showing 1-20 of 57 results</span>
+                    <div class="d-flex">
+                        <!-- sort -->
+                        <div class="input-group">
+                            <label class="input-group-text" for="sort">sort:</label>
+                            <select class="form-select" id="sort">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <!-- Show -->
+                        <div class="input-group d-none d-lg-flex">
+                            <label class="input-group-text" for="show">Show:</label>
+                            <select class="form-select" id="show">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class=" align-items-center d-none d-lg-flex">
+                            <span class="material-symbols-outlined">
+                                widgets
+                            </span>
+                            <span class="material-symbols-outlined">
+                                list
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- category -->
+                <div class="row">
+                    <div class="col col-3 d-none d-xl-flex flex-column">
+                        <div class="c-product-cat">
+                            <h5 class="mb-3 products-shop__title">Product Category</h5>
+                            <div class="mb-3  d-flex align-items-center">
+                                <!-- beverages -->
+                                <div class="accordion accordion-flush w-100" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header d-flex align-items-center">
+                                            <label
+                                                class="d-flex align-items-center flex-grow-1 fw-normal form-check-label"
+                                                for="beverages">
+                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
+                                                    id="beverages">
+                                                Beverages
+                                            </label>
+                                            <button class="accordion-button collapsed p-0 w-auto" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <label
+                                                    class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                    for="biscuits">
+                                                    <input class="form-check-input m-0 me-2" type="checkbox" value=""
+                                                        id="biscuits">
+                                                    Beverages
+                                                </label>
+                                                <label
+                                                    class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                    for="breads">
+                                                    <input class="form-check-input m-0 me-2" type="checkbox" value=""
+                                                        id="breads">
+                                                    Beverages
+                                                </label>
+                                                <label
+                                                    class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                    for="beackfast">
+                                                    <input class="form-check-input m-0 me-2" type="checkbox" value=""
+                                                        id="beackfast">
+                                                    Beverages
+                                                </label>
+                                                <label
+                                                    class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                    for="frozen">
+                                                    <input class="form-check-input m-0 me-2" type="checkbox" value=""
+                                                        id="frozen">
+                                                    Beverages
+                                                </label>
+                                                <label
+                                                    class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                    for="fruits">
+                                                    <input class="form-check-input m-0 me-2" type="checkbox" value=""
+                                                        id="fruits">
+                                                    Beverages
+                                                </label>
+                                                <label
+                                                    class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                    for="grocery">
+                                                    <input class="form-check-input m-0 me-2" type="checkbox" value=""
+                                                        id="grocery">
+                                                    Beverages
+                                                </label>
+                                                <label
+                                                    class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                    for="household">
+                                                    <input class="form-check-input m-0 me-2" type="checkbox" value=""
+                                                        id="household">
+                                                    Beverages
+                                                </label>
+                                                <label
+                                                    class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                    for="meats">
+                                                    <input class="form-check-input m-0 me-2" type="checkbox" value=""
+                                                        id="meats">
+                                                    Beverages
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- biscuits -->
+                            <div class="form-check ps-0 mb-3">
+                                <label class="d-flex align-items-center flex-grow-1 fw-normal form-check-label"
+                                    for="biscuit">
+                                    <input class="form-check-input m-0" type="checkbox" value="" id="biscuit">
+                                    Beverages
+                                </label>
+                            </div>
+                            <!-- breads&bakery -->
+                            <div class="accordion accordion-flush w-100 mb-3" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header d-flex align-items-center">
+                                        <label class="d-flex align-items-center flex-grow-1 fw-normal form-check-label"
+                                            for="backery">
+                                            <input class="form-check-input m-0 me-2" type="checkbox" value=""
+                                                id="backery">
+                                            breads & bakery
+                                        </label>
+                                        <button class="accordion-button collapsed p-0 w-auto" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapsebackery"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapsebackery" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <label
+                                                class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                for="buns">
+                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
+                                                    id="buns">
+                                                Buns & Rolls
+                                            </label>
+                                            <label
+                                                class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                for="cakes">
+                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
+                                                    id="cakes">
+                                                Cakes and Cupcakes
+                                            </label>
+                                            <label
+                                                class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                for="cookies">
+                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
+                                                    id="cookies">
+                                                Cookies and Brownies
+                                            </label>
+                                            <label
+                                                class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                for="muffins">
+                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
+                                                    id="muffins">
+                                                Donuts and Muffins
+                                            </label>
+                                            <label
+                                                class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                for="special">
+                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
+                                                    id="special">
+                                                Order Special Cakes
+                                            </label>
+                                            <label
+                                                class="d-flex align-items-center flex-grow-1 fw-normal form-check-label"
+                                                for="packaged">
+                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
+                                                    id="packaged">
+                                                Packaged Breads
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- frozen foods -->
+                            <div class="form-check ps-0 mb-3">
+                                <label class="d-flex align-items-center flex-grow-1 fw-normal form-check-label"
+                                    for="frozen">
+                                    <input class="form-check-input m-0" type="checkbox" value="" id="frozen">
+                                    Frozen Foods
+                                </label>
+                            </div>
+                            <!-- fruits&vegetables -->
+                            <div class="accordion accordion-flush w-100 mb-3" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header d-flex align-items-center">
+                                        <a href="index.html" class="d-flex flex-grow-1 z-1">
+                                            <label class="d-flex align-items-center  fw-normal form-check-label"
+                                                for="fruits">
+                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
+                                                    id="fruits">
+                                                Fruits & Vegetables
+                                            </label>
+                                        </a>
+                                        <button class="accordion-button collapsed p-0 w-auto" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapsefruits"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapsefruits" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>
+                                                    <a href="shop.html" cat="1">
+                                                        <label
+                                                            class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                            for="bunss">
+                                                            <input class="form-check-input m-0 me-2" type="checkbox"
+                                                                value="1" id="bunss">
+                                                            Buns & Rolls
+                                                        </label>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <label
+                                                class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                for="cakes">
+                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
+                                                    id="cakes">
+                                                Cakes and Cupcakes
+                                            </label>
+                                            <label
+                                                class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                for="cookies">
+                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
+                                                    id="cookies">
+                                                Cookies and Brownies
+                                            </label>
+                                            <label
+                                                class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                for="muffins">
+                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
+                                                    id="muffins">
+                                                Donuts and Muffins
+                                            </label>
+                                            <label
+                                                class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                for="special">
+                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
+                                                    id="special">
+                                                Order Special Cakes
+                                            </label>
+                                            <label
+                                                class="d-flex align-items-center flex-grow-1 fw-normal form-check-label"
+                                                for="packaged">
+                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
+                                                    id="packaged">
+                                                Packaged Breads
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- filter-price -->
+                        <div class="filter-price my-3">
+                            <h5 class="products-shop__title">Filter by price</h5>
+                            <div class="c-input-range">
+                                <div class="range_container">
+                                    <div class="d-flex align-items-center">
+                                        <div class="input-group mb-3 d-flex flex-column">
+                                            <label for="minprice">Min price</label>
+                                            <input type="number" class="w-100 form-control" min="0" max="70" value="0"
+                                                id="minprice">
+                                        </div>
+                                        <span class="mx-2">-</span>
+                                        <div class="input-group mb-3 d-flex flex-column">
+                                            <label for="maxprice">Min price</label>
+                                            <input type="number" class="w-100 form-control" min="0" max="70" value="70"
+                                                id="maxprice">
+                                        </div>
+                                    </div>
+                                    <div class="sliders_control">
+                                        <input id="fromSlider" type="range" value="0" min="0" max="70" />
+                                        <input id="toSlider" type="range" value="100" min="0" max="70" />
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="form_control">
+                                            <span>price:</span>
+                                            <span class="form_control_price">$0</span>
+                                            <span class="d-flex align-items-center mx-2">
+                                                <div class="border-bottom border-dark"
+                                                    style="height: 2px; width: 1rem;"></div>
+                                            </span>
+                                            <span class="form_control_price">$70</span>
+                                        </div>
+                                        <a href="#" class="btn btn-light fw-bold">Filter</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- brands -->
+                        <ul class="brands mb-3">
+                            <h5 class="mb-3 products-shop__title">Brands</h5>
+                            <li>
+                                <div class="form-check d-flex justify-content-between mt-2">
+                                    <div class="">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckIndeterminate">
+                                        <label class="form-check-label" for="flexCheckIndeterminate">
+                                            Frito Lay
+                                        </label>
+                                    </div>
+                                    <span class="text-gray-600">(1)</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check d-flex justify-content-between mt-2">
+                                    <div class="">
+                                        <input class="form-check-input" type="checkbox" value="" id="nespreso">
+                                        <label class="form-check-label" for="nespreso">
+                                            Nespresso
+                                        </label>
+                                    </div>
+                                    <span class="text-gray-600">(1)</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check d-flex justify-content-between mt-2">
+                                    <div class="">
+                                        <input class="form-check-input" type="checkbox" value="" id="oreo">
+                                        <label class="form-check-label" for="oreo">
+                                            Oreo
+                                        </label>
+                                    </div>
+                                    <span class="text-gray-600">(1)</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check d-flex justify-content-between mt-2">
+                                    <div class="">
+                                        <input class="form-check-input" type="checkbox" value="" id="quaker">
+                                        <label class="form-check-label" for="quaker">
+                                            Quaker
+                                        </label>
+                                    </div>
+                                    <span class="text-gray-600">(1)</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="index.html" rel="nofollow">
+                                    <div class="form-check d-flex justify-content-between mt-2">
+                                        <div class="">
+                                            <input class="form-check-input" type="checkbox" value="" id="welch">
+                                            <label class="form-check-label" for="welch">
+                                                Welch`s
+                                            </label>
+                                        </div>
+                                        <span class="text-gray-600">(1)</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- products status -->
+                        <div class="product-status">
+                            <h5 class="products-shop__title">Product Status</h5>
+                            <ul>
+                                <li>
+                                    <a href="index.html" rel="nofollow">
+                                        <div class="form-check d-flex justify-content-between mt-2">
+                                            <div class="">
+                                                <input class="form-check-input" type="checkbox" value="" id="stock">
+                                                <label class="form-check-label" for="stock">
+                                                    In Stock
+                                                </label>
+                                            </div>
+                                            <span class="text-gray-600">(1)</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html" rel="nofollow">
+                                        <div class="form-check d-flex justify-content-between mt-2">
+                                            <div class="">
+                                                <input class="form-check-input" type="checkbox" value="" id="sales">
+                                                <label class="form-check-label" for="sales">
+                                                    On Sales
+                                                </label>
+                                            </div>
+                                            <span class="text-gray-600">(1)</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div class="col col-xl-9">
+                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5"
+                            style="background-attachment: local;">
+                            <div class="col">
+                                <div class="c-products">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <div class="card-header bg-white border-0 p-0">
+                                            <div class="card  border-0">
+                                                <img src="/public/img/image-1-15-600x600.png" class="card-img"
+                                                    alt="...">
+                                                <div class="card-img-overlay">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="card-badge badge bg-danger">22%</span>
+                                                        <ul class="card-list">
+                                                            <li class="card-item">
+                                                                <a href="#"
+                                                                    class="card-favorite my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        favorite
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        open_with
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        balance
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-primary">
+                                            <a href="#" class="card-title text-dark">The Famous Grouse Finest Blended
+                                                Scotch
+                                                Whisky</a>
+                                            <div class="my-2">
+                                                <span
+                                                    class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                <span class="text-danger fs-6 fw-bold">$3.30</span>
+                                            </div>
+                                            <a href="#"
+                                                class="c-countdown__add mb-2  btn btn-primary d-flex justify-content-center">Add
+                                                to
+                                                card</a>
+                                            <span class="text-success fw-semibold">In Stock</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="c-products">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <div class="card-header bg-white border-0 p-0">
+                                            <div class="card  border-0">
+                                                <img src="/public/img/image-1-15-600x600.png" class="card-img"
+                                                    alt="...">
+                                                <div class="card-img-overlay">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="card-badge badge bg-danger">22%</span>
+                                                        <ul class="card-list">
+                                                            <li class="card-item">
+                                                                <a href="#"
+                                                                    class="card-favorite my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        favorite
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        open_with
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        balance
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-primary">
+                                            <a href="#" class="card-title text-dark">The Famous Grouse Finest Blended
+                                                Scotch
+                                                Whisky</a>
+                                            <div class="my-2">
+                                                <span
+                                                    class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                <span class="text-danger fs-6 fw-bold">$3.30</span>
+                                            </div>
+                                            <a href="#"
+                                                class="c-countdown__add mb-2  btn btn-primary d-flex justify-content-center">Add
+                                                to
+                                                card</a>
+                                            <span class="text-success fw-semibold">In Stock</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="c-products">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <div class="card-header bg-white border-0 p-0">
+                                            <div class="card  border-0">
+                                                <img src="/public/img/image-1-15-600x600.png" class="card-img"
+                                                    alt="...">
+                                                <div class="card-img-overlay">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="card-badge badge bg-danger">22%</span>
+                                                        <ul class="card-list">
+                                                            <li class="card-item">
+                                                                <a href="#"
+                                                                    class="card-favorite my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        favorite
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        open_with
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        balance
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-primary">
+                                            <a href="#" class="card-title text-dark">The Famous Grouse Finest Blended
+                                                Scotch
+                                                Whisky</a>
+                                            <div class="my-2">
+                                                <span
+                                                    class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                <span class="text-danger fs-6 fw-bold">$3.30</span>
+                                            </div>
+                                            <a href="#"
+                                                class="c-countdown__add mb-2  btn btn-primary d-flex justify-content-center">Add
+                                                to
+                                                card</a>
+                                            <span class="text-success fw-semibold">In Stock</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="c-products">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <div class="card-header bg-white border-0 p-0">
+                                            <div class="card  border-0">
+                                                <img src="/public/img/image-1-15-600x600.png" class="card-img"
+                                                    alt="...">
+                                                <div class="card-img-overlay">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="card-badge badge bg-danger">22%</span>
+                                                        <ul class="card-list">
+                                                            <li class="card-item">
+                                                                <a href="#"
+                                                                    class="card-favorite my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        favorite
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        open_with
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        balance
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-primary">
+                                            <a href="#" class="card-title text-dark">The Famous Grouse Finest Blended
+                                                Scotch
+                                                Whisky</a>
+                                            <div class="my-2">
+                                                <span
+                                                    class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                <span class="text-danger fs-6 fw-bold">$3.30</span>
+                                            </div>
+                                            <a href="#"
+                                                class="c-countdown__add mb-2  btn btn-primary d-flex justify-content-center">Add
+                                                to
+                                                card</a>
+                                            <span class="text-success fw-semibold">In Stock</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="c-products">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <div class="card-header bg-white border-0 p-0">
+                                            <div class="card  border-0">
+                                                <img src="/public/img/image-1-15-600x600.png" class="card-img"
+                                                    alt="...">
+                                                <div class="card-img-overlay">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="card-badge badge bg-danger">22%</span>
+                                                        <ul class="card-list">
+                                                            <li class="card-item">
+                                                                <a href="#"
+                                                                    class="card-favorite my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        favorite
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        open_with
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        balance
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-primary">
+                                            <a href="#" class="card-title text-dark">The Famous Grouse Finest Blended
+                                                Scotch
+                                                Whisky</a>
+                                            <div class="my-2">
+                                                <span
+                                                    class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                <span class="text-danger fs-6 fw-bold">$3.30</span>
+                                            </div>
+                                            <a href="#"
+                                                class="c-countdown__add mb-2  btn btn-primary d-flex justify-content-center">Add
+                                                to
+                                                card</a>
+                                            <span class="text-success fw-semibold">In Stock</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="c-products">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <div class="card-header bg-white border-0 p-0">
+                                            <div class="card  border-0">
+                                                <img src="/public/img/image-1-15-600x600.png" class="card-img"
+                                                    alt="...">
+                                                <div class="card-img-overlay">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="card-badge badge bg-danger">22%</span>
+                                                        <ul class="card-list">
+                                                            <li class="card-item">
+                                                                <a href="#"
+                                                                    class="card-favorite my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        favorite
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        open_with
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        balance
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-primary">
+                                            <a href="#" class="card-title text-dark">The Famous Grouse Finest Blended
+                                                Scotch
+                                                Whisky</a>
+                                            <div class="my-2">
+                                                <span
+                                                    class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                <span class="text-danger fs-6 fw-bold">$3.30</span>
+                                            </div>
+                                            <a href="#"
+                                                class="c-countdown__add mb-2  btn btn-primary d-flex justify-content-center">Add
+                                                to
+                                                card</a>
+                                            <span class="text-success fw-semibold">In Stock</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="c-products">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <div class="card-header bg-white border-0 p-0">
+                                            <div class="card  border-0">
+                                                <img src="/public/img/image-1-15-600x600.png" class="card-img"
+                                                    alt="...">
+                                                <div class="card-img-overlay">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="card-badge badge bg-danger">22%</span>
+                                                        <ul class="card-list">
+                                                            <li class="card-item">
+                                                                <a href="#"
+                                                                    class="card-favorite my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        favorite
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        open_with
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        balance
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-primary">
+                                            <a href="#" class="card-title text-dark">The Famous Grouse Finest Blended
+                                                Scotch
+                                                Whisky</a>
+                                            <div class="my-2">
+                                                <span
+                                                    class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                <span class="text-danger fs-6 fw-bold">$3.30</span>
+                                            </div>
+                                            <a href="#"
+                                                class="c-countdown__add mb-2  btn btn-primary d-flex justify-content-center">Add
+                                                to
+                                                card</a>
+                                            <span class="text-success fw-semibold">In Stock</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="c-products">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <div class="card-header bg-white border-0 p-0">
+                                            <div class="card  border-0">
+                                                <img src="/public/img/image-1-15-600x600.png" class="card-img"
+                                                    alt="...">
+                                                <div class="card-img-overlay">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="card-badge badge bg-danger">22%</span>
+                                                        <ul class="card-list">
+                                                            <li class="card-item">
+                                                                <a href="#"
+                                                                    class="card-favorite my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        favorite
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        open_with
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        balance
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-primary">
+                                            <a href="#" class="card-title text-dark">The Famous Grouse Finest Blended
+                                                Scotch
+                                                Whisky</a>
+                                            <div class="my-2">
+                                                <span
+                                                    class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                <span class="text-danger fs-6 fw-bold">$3.30</span>
+                                            </div>
+                                            <a href="#"
+                                                class="c-countdown__add mb-2  btn btn-primary d-flex justify-content-center">Add
+                                                to
+                                                card</a>
+                                            <span class="text-success fw-semibold">In Stock</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="c-products">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <div class="card-header bg-white border-0 p-0">
+                                            <div class="card  border-0">
+                                                <img src="/public/img/image-1-15-600x600.png" class="card-img"
+                                                    alt="...">
+                                                <div class="card-img-overlay">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="card-badge badge bg-danger">22%</span>
+                                                        <ul class="card-list">
+                                                            <li class="card-item">
+                                                                <a href="#"
+                                                                    class="card-favorite my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        favorite
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        open_with
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        balance
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-primary">
+                                            <a href="#" class="card-title text-dark">The Famous Grouse Finest Blended
+                                                Scotch
+                                                Whisky</a>
+                                            <div class="my-2">
+                                                <span
+                                                    class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                <span class="text-danger fs-6 fw-bold">$3.30</span>
+                                            </div>
+                                            <a href="#"
+                                                class="c-countdown__add mb-2  btn btn-primary d-flex justify-content-center">Add
+                                                to
+                                                card</a>
+                                            <span class="text-success fw-semibold">In Stock</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="c-products">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <div class="card-header bg-white border-0 p-0">
+                                            <div class="card  border-0">
+                                                <img src="/public/img/image-1-15-600x600.png" class="card-img"
+                                                    alt="...">
+                                                <div class="card-img-overlay">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="card-badge badge bg-danger">22%</span>
+                                                        <ul class="card-list">
+                                                            <li class="card-item">
+                                                                <a href="#"
+                                                                    class="card-favorite my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        favorite
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        open_with
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        balance
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-primary">
+                                            <a href="#" class="card-title text-dark">The Famous Grouse Finest Blended
+                                                Scotch
+                                                Whisky</a>
+                                            <div class="my-2">
+                                                <span
+                                                    class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                <span class="text-danger fs-6 fw-bold">$3.30</span>
+                                            </div>
+                                            <a href="#"
+                                                class="c-countdown__add mb-2  btn btn-primary d-flex justify-content-center">Add
+                                                to
+                                                card</a>
+                                            <span class="text-success fw-semibold">In Stock</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="c-products">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <div class="card-header bg-white border-0 p-0">
+                                            <div class="card  border-0">
+                                                <img src="/public/img/image-1-15-600x600.png" class="card-img"
+                                                    alt="...">
+                                                <div class="card-img-overlay">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="card-badge badge bg-danger">22%</span>
+                                                        <ul class="card-list">
+                                                            <li class="card-item">
+                                                                <a href="#"
+                                                                    class="card-favorite my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        favorite
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        open_with
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        balance
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-primary">
+                                            <a href="#" class="card-title text-dark">The Famous Grouse Finest Blended
+                                                Scotch
+                                                Whisky</a>
+                                            <div class="my-2">
+                                                <span
+                                                    class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                <span class="text-danger fs-6 fw-bold">$3.30</span>
+                                            </div>
+                                            <a href="#"
+                                                class="c-countdown__add mb-2  btn btn-primary d-flex justify-content-center">Add
+                                                to
+                                                card</a>
+                                            <span class="text-success fw-semibold">In Stock</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="c-products">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <div class="card-header bg-white border-0 p-0">
+                                            <div class="card  border-0">
+                                                <img src="/public/img/image-1-15-600x600.png" class="card-img"
+                                                    alt="...">
+                                                <div class="card-img-overlay">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="card-badge badge bg-danger">22%</span>
+                                                        <ul class="card-list">
+                                                            <li class="card-item">
+                                                                <a href="#"
+                                                                    class="card-favorite my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        favorite
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        open_with
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        balance
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-primary">
+                                            <a href="#" class="card-title text-dark">The Famous Grouse Finest Blended
+                                                Scotch
+                                                Whisky</a>
+                                            <div class="my-2">
+                                                <span
+                                                    class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                <span class="text-danger fs-6 fw-bold">$3.30</span>
+                                            </div>
+                                            <a href="#"
+                                                class="c-countdown__add mb-2  btn btn-primary d-flex justify-content-center">Add
+                                                to
+                                                card</a>
+                                            <span class="text-success fw-semibold">In Stock</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="c-products">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <div class="card-header bg-white border-0 p-0">
+                                            <div class="card  border-0">
+                                                <img src="/public/img/image-1-15-600x600.png" class="card-img"
+                                                    alt="...">
+                                                <div class="card-img-overlay">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="card-badge badge bg-danger">22%</span>
+                                                        <ul class="card-list">
+                                                            <li class="card-item">
+                                                                <a href="#"
+                                                                    class="card-favorite my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        favorite
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        open_with
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        balance
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-primary">
+                                            <a href="#" class="card-title text-dark">The Famous Grouse Finest Blended
+                                                Scotch
+                                                Whisky</a>
+                                            <div class="my-2">
+                                                <span
+                                                    class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                <span class="text-danger fs-6 fw-bold">$3.30</span>
+                                            </div>
+                                            <a href="#"
+                                                class="c-countdown__add mb-2  btn btn-primary d-flex justify-content-center">Add
+                                                to
+                                                card</a>
+                                            <span class="text-success fw-semibold">In Stock</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="c-products">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <div class="card-header bg-white border-0 p-0">
+                                            <div class="card  border-0">
+                                                <img src="/public/img/image-1-15-600x600.png" class="card-img"
+                                                    alt="...">
+                                                <div class="card-img-overlay">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="card-badge badge bg-danger">22%</span>
+                                                        <ul class="card-list">
+                                                            <li class="card-item">
+                                                                <a href="#"
+                                                                    class="card-favorite my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        favorite
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        open_with
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        balance
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-primary">
+                                            <a href="#" class="card-title text-dark">The Famous Grouse Finest Blended
+                                                Scotch
+                                                Whisky</a>
+                                            <div class="my-2">
+                                                <span
+                                                    class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                <span class="text-danger fs-6 fw-bold">$3.30</span>
+                                            </div>
+                                            <a href="#"
+                                                class="c-countdown__add mb-2  btn btn-primary d-flex justify-content-center">Add
+                                                to
+                                                card</a>
+                                            <span class="text-success fw-semibold">In Stock</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- c-pagination -->
+                <div class="c-pagination my-4">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination d-flex justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span class="material-symbols-outlined">
+                                        navigate_before
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="page-item page-item"><a class="page-link page-link-number" active href="#">1</a>
+                            </li>
+                            <li class="page-item page-item"><a class="page-link page-link-number" href="#">2</a></li>
+                            <li class="page-item page-item"><a class="page-link page-link-number" href="#">3</a></li>
+                            <li class="page-item page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span class="material-symbols-outlined">
+                                        navigate_next
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </div>
+        </div>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row border-bottom">
+                <div class="footer__block col col-12 col-md-6 col-lg-4">do you need help</div>
+                <div class="col col-12 col-md-6 col-lg-8">
+                    <div class="row">
+                        <div class="footer__block col col-12 col-md-6 col-lg-4">let us help you</div>
+                        <div class="footer__block col col-12 col-md-6 col-lg-4">make money with us</div>
+                        <div class="footer__block col col-12 col-md-6 col-lg-4">get to know us</div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-md-flex justify-content-between align-items-center">
+                <div class="footer__socials d-flex  align-items-center flex-column flex-md-row py-4">
+                    <h6 class="mb-0">follow us:</h6>
+                    <div class="d-flex">
+                        <a class="px-1" href="#">
+                            f
+                        </a>
+                        <a class="px-1" href="#">
+                            tw
+                        </a>
+                        <a class="px-1" href="#">
+                            y
+                        </a>
+                        <a class="px-1" href="#">
+                            ins
+                        </a>
+                        <a class="px-1" href="#">
+                            tele
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__download d-flex  align-items-center flex-column flex-md-row">
+                    <h6 class="mb-0">Download App:</h6>
+                    <div class="d-flex">
+                        <a class="pe-2" href="#">
+                            app store
+                        </a>
+                        <a class="" href="#">
+                            google play
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="" style="background-color: white;">
+            <div class="container d-flex flex-column flex-md-row align-items-center justify-content-md-between">
+                <div class="footer__copyright order-md-1 order-2 my-4 d-flex align-items-center">
+                    <span>Copyright 2023 © Blonwe WordPress Theme. All right reserved. Powered by KLBTheme.</span>
+                </div>
+                <div class="order-1 order-md-2 d-md-flex ">
+                    <span>We accept:</span>
+                    <ul class="d-flex">
+                        <li class="px-2">VISA</li>
+                        <li class="px-2">PayPal</li>
+                        <li class="px-2">Skrill</li>
+                        <li class="px-2 pe-0">Klarna.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- footer-menu -->
+        <nav class="navbar bg-body-tertiary fixed-bottom d-md-none">
+            <div class="container-fluid d-flex ">
+                <div class="d-flex w-100">
+                    <ul class="mb-0 d-flex align-items-center  justify-content-between w-100">
+                        <li class="mx-2 ">
+                            <a href="#" class="d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    storefront
+                                </span>
+                                <small>Store</small>
+                            </a>
+                        </li>
+                        <li class="mx-2 ">
+                            <a href="#" class="d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    search
+                                </span>
+                                <small>Search</small>
+                            </a>
+                        </li>
+                        <li class="mx-2 ">
+                            <a href="#" class="d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                                <small>Wishlist</small>
+                            </a>
+                        </li>
+                        <li class="mx-2 ">
+                            <a href="#" class="d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    account_circle
+                                </span>
+                                <small>Account</small>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler d-flex align-items-center justify-content-between" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation" style="width: 50px;">
+
+                        <span class="navbar-toggler-icon me-0"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </footer>
+    <div style="height: 10rem;"></div>
+       <!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+        aria-controls="offcanvasExample">
+        Link with href
+    </a> -->
+
+
+    <!-- offcanvass-filter -->
+    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        Button with data-bs-target
+      </button> -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal -->
+    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-center">
+                    <h1 class="modal-title fs-5  text-primary" id="exampleModalLabel">My Account
+                    </h1>
+                </div>
+                <div class="modal-body">
+                    <ul class="d-flex flex-column list-unstyled text-center">
+                        <li class="modal-item">
+                            <a href="" class="text-decoration-none">My Account</a>
+                        </li>
+                        <li class="modal-item">
+                            <a href="" class="text-decoration-none">add review</a>
+                        </li>
+                        <li class="modal-item">
+                            <a href="" class="text-decoration-none">message</a>
+                        </li>
+                        <li class="modal-item">
+                            <a href="" class="text-decoration-none">Bookings</a>
+                        </li>
+                    </ul>
+
+                    <ul class="d-flex flex-column list-unstyled text-center">
+                        <li class="modal-item">
+                            <span class="modal-item">
+                                <a href="#" class="text-decoration-none">us</a>
+                            </span>
+                            <span class="modal-item">
+                                <a href="#" class="text-decoration-none">it</a>
+                            </span>
+                            <span class="modal-item">
+                                <a href="#" class="text-decoration-none">md</a>
+                            </span>
+                        </li>
+                        <li class="modal-item">
+                            <a href="" class="text-decoration-none">payment</a>
+                        </li>
+                        <li class="modal-item">
+                            <a href="" class="text-decoration-none">terms conditions</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Modal my-acc -->
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Launch static backdrop modal
+    </button> -->
+
+    <!-- Modal MY ACC -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content p-4">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    <button type="button" class="btn-close border-0" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <form class=" needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="validationCustom01" class="form-label">Nick</label>
+                        <input type="text" class="form-control" id="validationCustom01" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="validationCustom02" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="validationCustom02" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- location -->
+    <div>
+        <!-- Button trigger modal -->
+
+
+        <!-- Modal -->
+        <div class="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modalll title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

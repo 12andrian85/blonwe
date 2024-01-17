@@ -1,4 +1,4 @@
-// @import "./variables";
+@import "./variables";
 @import "./mixins";
 
 @import "./global/scaffolding";
@@ -18,4 +18,26 @@
 @import "./blocks/opportunity";
 @import "./blocks/services";
 @import "./blocks/news";
-@import "./blocks/subscribe";
+@import "./blocks/modal";
+@import "./blocks/modal-account";
+
+
+// components
+@import "./components/c-breadcrumb.scss";
+@import "./components/c-category.scss";
+@import "./components/c-sales.scss";
+@import "./components/c-star.scss";
+@import "./components/c-countdown.scss";
+@import "./components/c-pagination.scss";
+@import "./components/c-products.scss";
+@import "./components/c-product-cat.scss";
+@import "./components/c-input-range.scss";
+@import "./components/c-progress-but.scss";
+@import "./components/c-input-number.scss";
+@import "./components/c-socials.scss";
+@import "./components/c-reviews-star.scss";
+
+        // shop
+@import "./blocks/shop/banner-shop.scss";
+@import "./blocks/shop/products-shop.scss";
+@import "./blocks/type-products.scss";

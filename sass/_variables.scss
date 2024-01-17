@@ -8,8 +8,8 @@ $gray-900: #212529;
 $c-primary:    #004745FF;
 $c-secondary:  #E53E3EFF;
 $red:     #cc0a1e;
-$yellow:  #e6ff07;
-$green:   #5fc01e;
+$yellow:  #FCC419FF;
+$green:   #2F9E44FF;
 $cyan:    #3bdeff;
 // scss-docs-end color-variables
 
@@ -26,7 +26,7 @@ $dark:          $gray-900;
 
 // Square radius
 
-$font-family-base: 'fira sans', serif;
+$font-family-base: 'fira sans', sans-serif;
 
 // Create your own map
 $custom-colors: (

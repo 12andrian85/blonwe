@@ -3,7 +3,11 @@
     &__block{
         height: 10rem;
     }
-  
+    .navbar{
+        .navbar-toggler{
+            width: 3rem;
+        }
+    }
 }
  @media (min-width: $width-tablet) {
     .footer{

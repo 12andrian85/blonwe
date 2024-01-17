@@ -5,7 +5,6 @@
         align-items: center;
         font-weight: 500;
         font-size: 14px;
-        padding-bottom: 30px;
 
         &__information {
             display: flex;
@@ -47,4 +46,52 @@
             }
         }
     }
+
+    .navbar {
+        .navbar-title {
+            text-transform: uppercase;
+            color: $gray-600;
+            font-weight: 500;
+        }
+
+        .nav-link {
+            font-size: 16px;
+            color: $black;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+        .nav-item{
+            padding: 5px 10px;
+
+        }
+
+        .nav-link--helps {
+            font-size: 12px;
+        }
+
+        .navbar-title--helps {
+            font-size: 14px;
+        }
+
+        .submenu{
+            display: none;
+            top: 2.2rem;
+        }
+        .nav-item--submenu:hover{
+            .submenu{
+                display: flex;
+            }
+
+        }
+
+    }
+}
+
+.accordion {
+    .accordion-header a {
+        font-size: 16px;
+        color: $black;
+        font-weight: 500;
+    }
+
 }

@@ -1,0 +1,67 @@
+.c-socials {
+    &__icon {
+        font-size: 14px;
+    }
+
+    &__item {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        border: 1px solid currentColor;
+        justify-content: center;
+        margin-right: 5px;
+    }
+
+    &__item--fb {
+        color: rgb(4, 4, 129);
+        background-color: $white;
+    }
+
+    &__item--fb:hover {
+        color: $white;
+        background-color: rgb(4, 4, 129);
+    }
+
+
+    &__item--tw {
+        color: $blue;
+        background-color: $white;
+    }
+
+    &__item--tw:hover {
+        color: $white;
+        background-color: $blue;
+    }
+
+    &__item--pint {
+        color: #931919;
+        background-color: $white;
+    }
+
+    &__item--pint:hover {
+        color: $white;
+        background-color: #931919;
+        ;
+    }
+
+    &__item--lin {
+        color: rgb(4, 4, 129);
+        background-color: $white;
+    }
+
+    &__item--lin:hover {
+        color: $white;
+        background-color: rgb(4, 4, 129);
+    }
+
+    &__item--redd {
+        color: rgb(232, 146, 75);
+        background-color: $white;
+    }
+
+    &__item--redd:hover {
+        color: $white;
+        background-color: rgb(232, 146, 75);
+    }
+}

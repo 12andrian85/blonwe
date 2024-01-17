@@ -1,0 +1,36 @@
+.c-countdown {
+    border-color: $gray-400;
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 25px;
+        width: 30px;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: $gray-400;
+        border-radius: 5px;
+    }
+
+    &__sep {
+        color: $gray-400;
+    }
+
+    &__text {
+        color: $gray-600;
+        font-size: 12px;
+    }
+    &__add{
+        color: $white;
+        font-weight: 600;
+    }
+    &__add:hover{
+        color: $white;
+    }
+
+}

@@ -1,0 +1,24 @@
+.modal{
+  .modal-icon{
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+  }
+  .modal-input{
+   padding-left:  1.8rem;
+  }  
+  .form-check-input {
+    border: 1px solid $black;
+  }
+  .form-check-label{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .form-check-address{
+    font-size: 0.75rem;
+    font-weight: 100;
+    color: $gray-600;
+  }
+}

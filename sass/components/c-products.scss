@@ -1,0 +1,63 @@
+.c-products {
+    .card {
+        .card-badge {
+            height: max-content;
+            margin-left: -10px;
+        }
+
+        .card-favorite:hover {
+            color: $danger;
+        }
+
+        .card-item a {
+            padding: 2px;
+            background-color: $white;
+        }
+
+        .card-item--show {
+            opacity: 0;
+        }
+
+        .card-title {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .card-title:hover {
+            text-decoration: underline;
+        }
+
+    }
+
+    .card:hover {
+        transition: opacity 0.4s cubic-bezier(.25, .1, .25, 1);
+
+        .card-item--show {
+            opacity: 1;
+            transition: margin-right 2s;
+        }
+
+        .c-countdown {
+            &__item {
+                background-color: $danger;
+                color: $white;
+            }
+        }
+
+    }
+}
+
+@media (min-width: $width-desktop) {
+    .c-products {
+      .card{
+        .card-badge {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+      }
+    }
+}

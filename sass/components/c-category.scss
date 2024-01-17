@@ -1,0 +1,28 @@
+.c-category {
+   
+
+    .card {
+        height: 320px;
+        .card-title {
+            color: $dark;
+        }
+
+        .card-text {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    .card:hover {
+        .card-title {
+            color: $primary;
+        }
+
+        .card-text {
+            transform: scale(1) translateY(-5px);
+            transition: all 0.3s ease-out;
+        }
+
+    }
+
+}

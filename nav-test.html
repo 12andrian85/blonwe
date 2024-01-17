@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel</title>
+    <meta name="description" content="About website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body class="mt-5">
+    <header class="fixed-top">
+        <a class="btn btn-primary" href="index.html">Home</a>
+    </header>
+
+    <div class="tabulation">
+        <div class="overflow-auto">
+            <ul class="nav table nav-tabs overflow-auto flex-nowrap justify-content-md-end border-0 mb-4" id="myTab"
+                role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="btn-tab btn btn-link  px-4 text-nowrap active" id="home-tab" data-bs-toggle="tab"
+                        data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                        aria-selected="true">
+                        All Projects
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="btn-tab btn btn-link px-4 text-nowrap" id="profile-tab" data-bs-toggle="tab"
+                        data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                        aria-selected="false">
+                        Industrial
+                    </button>
+                </li>
+            </ul>
+        </div>
+              
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3">
+                    <div class="col">
+                        <div class="card border-0" style="width: 18rem-;">
+                            <div class="new-works">
+                                <a href="#" class="new-works__wrapper">
+                                    <div class="card new-works__card overflow-hidden border-0 bg-secondary  position-relative">
+                                        <img src="/public/img/billy-albert-vjWlU6CaF58-unsplash.jpg"
+                                            class="new-works__img card-img-top" style="height: 400px;" alt="foto">
+                                        <div class="new-works__block position-absolute bg-white m-3 p-2 top-0 end-0">
+                                            <img src="/SVG/aroow-rectangle.svg" alt="">
+                                        </div>
+                                        <svg class="new-works__icon icon position-absolute w-100">
+                                            <use xlink:href="#Ellipse 1">
+                                            </use>
+                                        </svg>
+                                        <div
+                                            class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
+                                            <span class="new-works__text new-works__text--text">Duplex
+                                                Foue</span> <br>
+                                            <h4 class="new-works__text new-works__text--title">Noe
+                                                Valley
+                                                Zones</h4>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3">
+                    <div class="col">
+                        <div class="card" style="width: 18rem-;">
+                            <div class="card border-0" style="width: 18rem-;">
+                                <div class="new-works">
+                                    <a href="#" class="new-works__wrapper">
+                                        <div
+                                            class="card new-works__card overflow-hidden border-0 bg-primary  position-relative">
+                                            <img src="/public/img/recently-works/industrial-1.jpg"
+                                                class="new-works__img card-img-top" style="height: 400px;" alt="foto">
+                                            <div
+                                                class="new-works__block position-absolute bg-white m-3 p-2 top-0 end-0">
+                                                <img src="/SVG/aroow-rectangle.svg" alt="">
+                                            </div>
+                                            <svg class="new-works__icon icon position-absolute w-100">
+                                                <use xlink:href="#Ellipse 1">
+                                                </use>
+                                            </svg>
+                                            <div
+                                                class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
+                                                <span class="new-works__text new-works__text--text">Duplex
+                                                    Foue</span> <br>
+                                                <h4 class="new-works__text new-works__text--title">
+                                                    Pacific Heights Area
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- collapse -->
+    <div class="d-flex mb-5">
+        <div>
+            <p class="d-inline-flex gap-1">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExampl" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Link with href
+                </a>
+            </p>
+            <div class="collapse" id="collapseExampl">
+                <div class="card card-body">
+                    Some placeholder content for the collapse component. This panel is hidden by default but
+                    revealed
+                    when
+                    the user activates the relevant trigger.
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="d-inline-flex gap-1">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Link with href
+                </a>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    Some placeholder content for the collapse component. This panel is hidden by default but
+                    revealed
+                    when
+                    the user activates the relevant trigger.
+                </div>
+            </div>
+        </div>
+        <style>
+            .thumbnails {
+                display: flex;
+                margin: 1rem auto 0;
+                padding: 0;
+                justify-content: center;
+            }
+
+
+            .thumbnail {
+                width: 70px;
+                height: 70px;
+                overflow: hidden;
+                list-style: none;
+                margin: 0 0.2rem;
+                cursor: pointer;
+            }
+
+
+            .thumbnail img {
+                width: 100%;
+                height: auto;
+            }
+        </style>
+
+        <section id="main-carousel" class="splide" aria-label="My Awesome Gallery">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="/public/img/iamge-3-1.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="public/img/iamge-1-1-300x300.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="public/img/iamge-1-1-300x300.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="public/img/iamge-1-1-300x300.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <ul id="thumbnails" class="thumbnails">
+            <li class="thumbnail">
+                <img src="/public/img/iamge-3-1.png" alt="">
+            </li>
+            <li class="thumbnail">
+                <img src="public/img/iamge-1-1-300x300.png" alt="">
+            </li>
+            <li class="thumbnail">
+                <img src="public/img/iamge-1-1-300x300.png" alt="">
+            </li>
+            <li class="thumbnail">
+                <img src="public/img/iamge-1-1-300x300.png" alt="">
+            </li>
+        </ul>
+
+
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Offcanvas navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav> -->
+
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" id="navbarSupportedContent">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">not working</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header d-flex align-items-center">
+                    <label class="d-flex fw-normal flex-grow-1">
+                        <input type="checkbox" class="ms-3 ">
+                        banan
+                    </label>
+
+                    <button class="accordion-button collapsed flex-shrink-1" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <!-- Accordion Item #1 -->
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                        demonstrate the <code>.accordion-flush</code> class. This is the first item's
+                        accordion
+                        body.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                        demonstrate the <code>.accordion-flush</code> class. This is the second item's
+                        accordion
+                        body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                        demonstrate the <code>.accordion-flush</code> class. This is the third item's
+                        accordion
+                        body. Nothing more exciting happening here in terms of content, but just filling up
+                        the
+                        space to make it look, at least at first glance, a bit more representative of how
+                        this
+                        would look in a real-world application.</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

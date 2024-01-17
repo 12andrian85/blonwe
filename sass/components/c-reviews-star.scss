@@ -1,0 +1,8 @@
+.c-reviews-star{
+    &__list{
+        color: $gray-600;
+    }
+    &__list:hover{
+        color: $warning;
+    }
+}

@@ -1,7 +1,7 @@
 .header {
     .header-top {
         background-color: #E5F3EFFF;
-        padding: 8px 0;
+        // padding: 8px 0;
         align-items: center;
         font-weight: 500;
         font-size: 14px;
@@ -11,40 +11,117 @@
             align-items: center;
         }
 
+        &__delivery {
+            font-size: 0.75rem;
+        }
+
         &__time {
-            padding: 4px 8px;
+            padding: 2px 8px;
             background-color: #C9DEDAFF;
         }
 
         &__options {
-            .accordion {
-                width: min-content;
 
-                .accordion-button::after {
-                    background-position: center;
-                    background-size: 10px;
-                }
-
-                .accordion-button:focus {
-                    box-shadow: none;
-                }
-
-                .accordion-button {
-                    background-color: #E5F3EFFF;
-                    padding: 0;
-                }
-
-                .accordion-body {
-                    width: min-content;
-                    background-color: #E5F3EFFF;
-                    padding: 0;
-                }
-
-                .accordion-collapse {
-                    background-color: #E5F3EFFF;
+            .dropdown button{
+                font-size: 12px;
+            }
+            .dropdown:hover {
+                .dropdown-menu {
+                    display: block;
+                    box-shadow: rgba(27, 31, 34, 0.05) 0px 1px 3px,
+                        rgba(27, 31, 34, 0.05) 0px 20px 25px -5px,
+                        rgba(27, 31, 34, 0.04) 0px 10px 10px -5px;
                 }
             }
         }
+        &__theme{
+            font-size: 0.75rem;
+            font-weight: 600;
+            background-color: transparent;
+        }
+        // .accordion {
+        //     width: min-content;
+
+        //     .accordion-button::after {
+        //         background-position: center;
+        //         background-size: 10px;
+        //     }
+
+        //     .accordion-button:focus {
+        //         box-shadow: none;
+        //     }
+
+        //     .accordion-button {
+        //         background-color: #E5F3EFFF;
+        //         padding: 0;
+        //     }
+
+        //     .accordion-body {
+        //         width: min-content;
+        //         background-color: #E5F3EFFF;
+        //         padding: 0;
+        //     }
+
+        //     .accordion-collapse {
+        //         background-color: #E5F3EFFF;
+        //     }
+        // }
+    }
+
+    .header-menu {
+        .location {
+            .location-small {
+                font-size: 0.75rem;
+                color: $gray-600;
+            }
+
+            .location-select {
+                font-size: 0.87rem;
+                font-weight: 500;
+            }
+        }
+
+        .search {
+            .search-btn {
+                display: flex;
+                align-items: center;
+                height: 2.75rem;
+                border-radius: 0;
+            }
+        }
+
+        .account {
+            margin-left: 2.188rem;
+
+            .account-small {
+                font-size: 0.75rem;
+                color: $gray-600;
+            }
+
+            .account-text {
+                font-size: 0.87rem;
+                font-weight: 500;
+            }
+        }
+
+        .action {
+            .action-icon{
+                font-size: 28px;
+            }
+            .action-count {
+                width: 1rem;
+                height: 1rem;
+                border-radius: 50%;
+                color: white;
+                padding-top: 2px;
+                font-size: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+
     }
 
     .navbar {
@@ -60,7 +137,8 @@
             font-weight: 500;
             text-transform: capitalize;
         }
-        .nav-item{
+
+        .nav-item {
             padding: 5px 10px;
 
         }
@@ -73,25 +151,28 @@
             font-size: 14px;
         }
 
-        .submenu{
+        .submenu {
             display: none;
             top: 2.2rem;
         }
-        .nav-item--submenu:hover{
-            .submenu{
+
+        .nav-item--submenu:hover {
+            .submenu {
                 display: flex;
             }
+
 
         }
 
     }
-}
 
-.accordion {
-    .accordion-header a {
-        font-size: 16px;
-        color: $black;
-        font-weight: 500;
+
+    .accordion {
+        .accordion-header a {
+            font-size: 16px;
+            color: $black;
+            font-weight: 500;
+        }
+
     }
-
 }

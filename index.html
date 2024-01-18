@@ -21,7 +21,7 @@
     <!-- header -->
     <header class="header ">
         <!-- header-top -->
-        <div class="header-top d-none d-xl-flex">
+        <div class="header-top py-1 d-none d-xl-flex">
             <div class="container d-flex justify-content-between">
                 <div class="header-top__information">
                     <div class="header-top__track pe-2 d-flex align-items-center">
@@ -34,6 +34,7 @@
                     <div class="header-top__contact px-2">Contact</div>
                     <div class="header-top__questions px-2">FAQ</div>
                 </div>
+                <!-- header-top__inner -->
                 <div class="header-top__inner d-flex">
                     <div class="header-top__delivery d-flex align-items-center px-3">
                         <div class="header-top__text d-flex align-items-center">
@@ -46,7 +47,8 @@
                             <span class="">7:00 to 23:00</span>
                         </div>
                     </div>
-                    <div class="header-top__options d-flex align-items-center px-3">
+                    <!-- options -->
+                    <div class="header-top__options d-flex align-items-center ps-2 border-start">
                         <div class="header-top__language  pe-2">
 
                             <div class="dropdown">
@@ -54,7 +56,7 @@
                                     aria-expanded="false">
                                     English
                                 </button>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu shadow-lg">
                                     <li><a class="dropdown-item" href="#">Francese</a></li>
                                     <li><a class="dropdown-item" href="#">Italian</a></li>
                                     <li><a class="dropdown-item" href="#">Spanish</a></li>
@@ -75,15 +77,15 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="header-top__theme ps-2 d-flex align-items-center">
+                        <button type="button" class="header-top__theme ps-2 d-flex align-items-center border-0">
                             <span class="material-symbols-outlined me-2 fs-6 p-1 rounded-2"
                                 style="background-color:#C9DEDAFF;">
                                 light_mode
                             </span>
-                            <span>
+                            <span >
                                 Dark theme
                             </span>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -279,50 +281,73 @@
                 </div>
             </nav>
             <!-- header-menu -->
-            <div class="header-menu d-flex align-items-center d-none d-xl-flex">
-                <a href="#" class="header__logo" style="width: 185px; height: 50px;">logo</a>
-                <div>
-                    <button type="button" class="btn d-flex align-items-center p-0" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal" style="width: 150px;">
+            <div class="header-menu d-flex align-items-center d-none d-xl-flex py-3">
+                <a href="#" class="header__logo">
+                    <img src="public/img/logo-grocery.png" alt="" style="width: 180px;">
+                </a>
+                <div class="location">
+                    <button type="button"
+                        class="btn d-flex align-items-center text-nowrap p-1 px-2 border rounded-3 ms-5"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <span class="material-symbols-outlined">
                             location_on
                         </span>
-                        <div class="d-flex flex-column text-start">
-                            <small>Deliver to</small>
-                            <span>Select Location</span>
+                        <div class="d-flex flex-column text-start text-nowrap">
+                            <small class="location-small">Deliver to</small>
+                            <span class="location-select">Select Location</span>
                         </div>
                     </button>
                 </div>
                 <!-- search -->
-                <form action="" class="w-100">
-                    <input type="search" class="w-100 py-2" placeholder="Search of Product">
+                <form action="" class="search overflow-hidden ms-4 w-100 d-flex align-items-center border border-2 border-primary rounded-3 ">
+                    <input type="search" class="w-100 p-2 border-0" placeholder="Search of Product">
+                    <button class="search-btn btn btn-primary">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </button>
                 </form>
                 <!-- account -->
-                <button type="button" class="btn d-flex align-items-center" data-bs-toggle="modal"
+                <button type="button" class="account btn d-flex align-items-center p-0 " data-bs-toggle="modal"
                     data-bs-target="#accountModal">
-                    <span class="material-symbols-outlined me-3">
+                    <span class="material-symbols-outlined me-2 fs-2">
                         person
                     </span>
                     <div class="d-flex flex-column text-start">
-                        <small>Sign in</small>
-                        <span class="text-nowrap text-primary">Account</span>
+                        <small class="account-small">Sign in</small>
+                        <span class="account-text text-nowrap text-primary">Account</span>
                     </div>
                 </button>
-                <div class="header-menu__action d-flex align-items-center">
-                    <a href="#" class="px-2">
-                        <span class="material-symbols-outlined">
+                <!-- action -->
+                <div class="action d-flex align-items-center ms-3">
+                    <a href="#" class="action-item position-relative  px-2">
+                        <span class="action-icon text-dark material-symbols-outlined">
                             favorite
                         </span>
+                        <span class="action-count bg-primary position-absolute top-0 end-0">0</span>
                     </a>
-                    <a href="#" class="px-2">
+                    <a href="#" class="action-item text-dark position-relative  px-2">
+                        <span class="action-icon material-symbols-outlined">
+                            balance
+                        </span>
+                        <span class="action-count bg-primary position-absolute top-0 end-0">0</span>
+                    </a>
+                    <a href="#" class="action-item text-dark position-relative  px-2">
+                        <span class="action-icon material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                        <span class="action-count bg-primary position-absolute top-0 end-0">0</span>
+                    </a>
+                    <!-- <a href="#" class="px-2">
                         <span class="material-symbols-outlined">
                             balance
                         </span>
                     </a>
-                    <a href="#" class="px-2 pe-0"><span class="material-symbols-outlined">
+                    <a href="#" class="px-2 pe-0">
+                        <span class="material-symbols-outlined">
                             shopping_cart
                         </span>
-                    </a>
+                    </a> -->
                 </div>
 
             </div>
@@ -334,7 +359,9 @@
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand d-lg-none" href="#">logo</a>
+                    <a class="navbar-brand d-lg-none" href="home">
+                        <img src="public/img/logo-grocery.png" alt="">
+                    </a>
                     <a href="#"><span class="material-symbols-outlined d-lg-none">
                             shopping_cart
                         </span></a>
@@ -1020,7 +1047,8 @@
     </button> -->
 
     <!-- Modal -->
-    <div class="modal-account modal modal-xl" id="accountModal" tabindex="-1" aria-labelledby="accountModalLabel" aria-hidden="true">
+    <div class="modal-account modal modal-xl" id="accountModal" tabindex="-1" aria-labelledby="accountModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -1038,7 +1066,8 @@
                             <div class="row">
                                 <div class="col col-xl-6 d-none d-xl-flex">
                                     <div class="overflow-hidden object-fit-cover">
-                                        <img class="object-fit-cover w-100" src="public/img/newsletter-form-image.jpg" alt="">
+                                        <img class="object-fit-cover w-100" src="public/img/newsletter-form-image.jpg"
+                                            alt="">
                                     </div>
                                 </div>
                                 <div class="col-xl-6">.col-md-4 .ms-auto</div>

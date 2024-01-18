@@ -11279,7 +11279,6 @@ textarea.form-control-lg {
   }
 }
 ul, li, div, span, article, section, nav, form {
-  outline-style: dashed;
   outline-color: tomato;
   outline-width: 1px;
   list-style: none;
@@ -11304,7 +11303,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .header .header-top {
   background-color: #e5f3ef;
-  padding: 8px 0;
   align-items: center;
   font-weight: 500;
   font-size: 14px;
@@ -11313,31 +11311,63 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   display: flex;
   align-items: center;
 }
+.header .header-top__delivery {
+  font-size: 0.75rem;
+}
 .header .header-top__time {
-  padding: 4px 8px;
+  padding: 2px 8px;
   background-color: #c9deda;
 }
-.header .header-top__options .accordion {
-  width: min-content;
+.header .header-top__options .dropdown button {
+  font-size: 12px;
 }
-.header .header-top__options .accordion .accordion-button::after {
-  background-position: center;
-  background-size: 10px;
+.header .header-top__options .dropdown:hover .dropdown-menu {
+  display: block;
+  box-shadow: rgba(27, 31, 34, 0.05) 0px 1px 3px, rgba(27, 31, 34, 0.05) 0px 20px 25px -5px, rgba(27, 31, 34, 0.04) 0px 10px 10px -5px;
 }
-.header .header-top__options .accordion .accordion-button:focus {
-  box-shadow: none;
+.header .header-top__theme {
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: transparent;
 }
-.header .header-top__options .accordion .accordion-button {
-  background-color: #e5f3ef;
-  padding: 0;
+.header .header-menu .location .location-small {
+  font-size: 0.75rem;
+  color: #6c757d;
 }
-.header .header-top__options .accordion .accordion-body {
-  width: min-content;
-  background-color: #e5f3ef;
-  padding: 0;
+.header .header-menu .location .location-select {
+  font-size: 0.87rem;
+  font-weight: 500;
 }
-.header .header-top__options .accordion .accordion-collapse {
-  background-color: #e5f3ef;
+.header .header-menu .search .search-btn {
+  display: flex;
+  align-items: center;
+  height: 2.75rem;
+  border-radius: 0;
+}
+.header .header-menu .account {
+  margin-left: 2.188rem;
+}
+.header .header-menu .account .account-small {
+  font-size: 0.75rem;
+  color: #6c757d;
+}
+.header .header-menu .account .account-text {
+  font-size: 0.87rem;
+  font-weight: 500;
+}
+.header .header-menu .action .action-icon {
+  font-size: 28px;
+}
+.header .header-menu .action .action-count {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  color: white;
+  padding-top: 2px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header .navbar .navbar-title {
   text-transform: uppercase;
@@ -11366,8 +11396,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .header .navbar .nav-item--submenu:hover .submenu {
   display: flex;
 }
-
-.accordion .accordion-header a {
+.header .accordion .accordion-header a {
   font-size: 16px;
   color: #000;
   font-weight: 500;

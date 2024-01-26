@@ -1,2 +1,16 @@
 .subscribe{
+    &__text{
+        color: $gray-600;
+        font-size: 14px;
+    }
+    &__terms{
+        font-size: 11px;
+    }
+    &__conditions{
+        font-weight: 600;
+        color: $primary;
+    }
+    &__conditions:hover{
+        text-decoration: underline;
+    }
 }

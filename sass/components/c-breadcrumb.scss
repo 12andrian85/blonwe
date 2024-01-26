@@ -1,12 +1,12 @@
 .c-breadcrumb {
     .breadcrumb {
-        font-size: 12px;
-        font-weight: 600;
+        font-size: 13px;
+        font-weight: 400;
         
-        .breadcrumb-item a{
-            font-size: 12px;
-            font-weight: 600;
-
-        }
+        
+    }
+    .breadcrumb-item--active{
+        color: $gray-500;
+        font-weight: 500;
     }
 }

@@ -1,8 +1,19 @@
 .discount {
     background-color: #FFEBEBFF;
+    font-weight: 600;
+    font-size: 18px;
 
     &__inner {
         padding-top: 1.25rem;
         padding-bottom: 1.25rem;
+    }
+    &__code{
+        padding: 5px 10px; 
+        border: 1px dashed $danger;
+        border-radius: 5px;
+    }
+    &__small{
+        font-size: 14px;
+        font-weight: 400;
     }
 }

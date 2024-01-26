@@ -1,4 +1,31 @@
 .news{
     padding-top: 1.85rem;
     padding-bottom: 6.25rem;
+    .card{
+        .card-category{
+            color: $primary;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .card-title{
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+        .card-title:hover{
+            text-decoration: underline;
+        }
+        .card-meta-first{
+            font-size: 12px;
+            color: $gray-500;
+        }
+        .card-meta-second{
+            font-size: 12px;
+            font-weight: 500;
+
+        }
+        .card-meta-last{
+            font-size: 13px;
+        }
+    }
 }

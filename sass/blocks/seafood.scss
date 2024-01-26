@@ -1,11 +1,81 @@
-.seafood{
-    &__item{
-        height: 15rem;
-    }
-}
-@media (min-width: $width-desktop) {
-    .seafood{
-        margin-bottom: 3.12rem;
+.seafood {
+    margin-bottom: 25px;
+    &__item {
+        margin-bottom: 10px;
+        text-transform: capitalize;
     }
 
+    &__btn {
+        justify-content: center;
+        padding: 0px;
+        height: 1.5rem;
+        width: 1.5rem;
+        padding-left: 0.12rem;
+        // margin-right: 2.18rem;
+        font-weight: 500;
+        color: $dark;
+    }
+
+    &__link {
+        position: relative;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 400;
+        padding-bottom: 3px;
+
+    }
+
+    &__link:hover::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        bottom: 0px;
+        background-color: $dark;
+
+    }
+
+    &__more {
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        font-weight: 600;
+        color: #228be6;
+
+    }
+
+    .c-sales {
+        .card {
+            .card-add {
+                width: max-content;
+                padding: 5px 10px;
+            }
+            .card-header{
+                height: 9rem;
+            }
+        }
+    }
+
+    &__block {
+        height: 300px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: $width-desktop) {
+    .seafood {
+        margin-bottom: 3.12rem;
+
+        &__block {
+            height: auto;
+        }
+        .c-sales {
+            .card {
+                .card-header{
+                    height: 15.6rem;
+                }
+            }
+        }   
+    }
 }

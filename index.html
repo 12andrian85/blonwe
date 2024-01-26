@@ -19,20 +19,26 @@
 
 <body>
     <!-- header -->
-    <header class="header ">
+    <header class="header  border-bottom">
         <!-- header-top -->
         <div class="header-top py-1 d-none d-xl-flex">
             <div class="container d-flex justify-content-between">
                 <div class="header-top__information">
                     <div class="header-top__track pe-2 d-flex align-items-center">
-                        <span class="material-symbols-outlined fs-5">
-                            orders
-                        </span>
-                        <span>Track Order</span>
+                            <span class="material-symbols-outlined fs-5">
+                                orders
+                            </span>
+                            <a href="#">Track Order</a>
                     </div>
-                    <div class="header-top__about px-2"> About Us</div>
-                    <div class="header-top__contact px-2">Contact</div>
-                    <div class="header-top__questions px-2">FAQ</div>
+                    <div class="header-top__about px-2">
+                        <a href="#"> About Us</a>
+                    </div>
+                    <div class="header-top__contact px-2">
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="header-top__questions px-2">
+                        <a href="#">FAQ</a>
+                    </div>
                 </div>
                 <!-- header-top__inner -->
                 <div class="header-top__inner d-flex">
@@ -44,7 +50,9 @@
                             <span class="fw-light">We delivery to you every day from</span>
                         </div>
                         <div class="header-top__time rounded-pill">
-                            <span class="">7:00 to 23:00</span>
+                            <a href="#">
+                                <span class="">7:00 to 23:00</span>
+                            </a>
                         </div>
                     </div>
                     <!-- options -->
@@ -82,7 +90,7 @@
                                 style="background-color:#C9DEDAFF;">
                                 light_mode
                             </span>
-                            <span >
+                            <span>
                                 Dark theme
                             </span>
                         </button>
@@ -162,7 +170,7 @@
                                     <a class="nav-link" href="#">bakery</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">blog</a>
+                                    <a class="nav-link" href="https://klbtheme.com/blonwe/grocery/#">tamplate</a>
                                 </li>
                             </ul>
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
@@ -237,45 +245,6 @@
                             <div class="mb-5">
                                 Copyright 2023 © Blonwe WordPress Theme. All right reserved. Powered by
                             </div>
-
-
-                            <!-- <li class="nav-item">
-                                <form class="d-flex" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Search"
-                                        aria-label="Search">
-                                </form>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <button type="button" class="btn d-flex align-items-center" data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop">
-                                    <span class="material-symbols-outlined me-3">
-                                        person
-                                    </span>
-                                    <div class="d-flex flex-column text-start">
-                                        <small>Sign in</small>
-                                        <span class="text-nowrap text-primary">Account</span>
-                                    </div>
-                                </button>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="px-2">
-                                    <span class="material-symbols-outlined">
-                                        favorite
-                                    </span>
-                                </a>
-                            </li>
-                            <a href="#" class="px-2">
-                                <span class="material-symbols-outlined">
-                                    balance
-                                </span>
-                            </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="px-2 pe-0"><span class="material-symbols-outlined">
-                                        shopping_cart
-                                    </span>
-                                </a>
-                            </li> -->
                         </div>
                     </div>
                 </div>
@@ -299,7 +268,8 @@
                     </button>
                 </div>
                 <!-- search -->
-                <form action="" class="search overflow-hidden ms-4 w-100 d-flex align-items-center border border-2 border-primary rounded-3 ">
+                <form action=""
+                    class="search overflow-hidden ms-4 w-100 d-flex align-items-center border border-2 border-primary rounded-3 ">
                     <input type="search" class="w-100 p-2 border-0" placeholder="Search of Product">
                     <button class="search-btn btn btn-primary">
                         <span class="material-symbols-outlined">
@@ -338,22 +308,12 @@
                         </span>
                         <span class="action-count bg-primary position-absolute top-0 end-0">0</span>
                     </a>
-                    <!-- <a href="#" class="px-2">
-                        <span class="material-symbols-outlined">
-                            balance
-                        </span>
-                    </a>
-                    <a href="#" class="px-2 pe-0">
-                        <span class="material-symbols-outlined">
-                            shopping_cart
-                        </span>
-                    </a> -->
                 </div>
 
             </div>
             <!-- nav-bar -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 d-none d-xl-flex">
-                <div class="container-fluid">
+                <div class="container-fluid bg-white">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -382,58 +342,105 @@
                                             </span>
                                         </a>
                                         <div
-                                            class="submenu justify-content-between end-0 start-0 p-4 mx-4 position-absolute flex-grow-1 bg-white z-1">
+                                            class="submenu justify-content-between end-0 start-0  mx-4 position-absolute flex-grow-1 bg-white z-1">
                                             <ul>
-                                                <h5>title title</h5>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
+                                                <h5 class="submenu-title">Shop Lists</h5>
+                                                <li class="submenu-item">
+                                                    <a href="#">shop default</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">shop right sidebar</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">shop width</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">filters area</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">list left sidebar</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">load more button</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">infinite scrolling</a>
+                                                </li>
                                             </ul>
                                             <ul>
-                                                <h5>title title</h5>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
+                                                <h5 class="submenu-title">product detail</h5>
+                                                <li class="submenu-item">
+                                                    <a href="#">product default</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">product variable</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">product grouped</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">product external</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">product downloadable</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">product width video</a>
+                                                </li>
                                             </ul>
                                             <ul>
-                                                <h5>title title</h5>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
+                                                <h5 class="submenu-title">shop pages</h5>
+                                                <li class="submenu-item">
+                                                    <a href="#">cart</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">checkout</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">my account</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">wishlist</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">order tracking</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">featured products</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">best selling products</a>
+                                                </li>
                                             </ul>
                                             <ul>
-                                                <h5>title title</h5>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
+                                                <h5 class="submenu-title">shop layout</h5>
+                                                <li class="submenu-item">
+                                                    <a href="#">two columns</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">there columns</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">there columns wide</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">four columns</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">four columns wide</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">five columns wide</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">six columns wide</a>
+                                                </li>
                                             </ul>
                                         </div>
-
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="type-products.html">Frozen Foods</a>
                         </li>
@@ -444,7 +451,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Bakery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                            <a class="nav-link active text-danger" aria-current="page" href="https://klbtheme.com/blonwe/grocery/#">Tamplate</a>
                         </li>
                         <li class="nav-item nav-item--submenu relative">
                             <a href="#" class="nav-link d-flex align-items-center">
@@ -454,54 +461,246 @@
                                     expand_more
                                 </span>
                             </a>
+                            <!-- discounts -->
                             <div
-                                class="submenu justify-content-between end-0 start-0 p-4 position-absolute flex-grow-1 bg-white z-1">
-                                <ul>
-                                    <h5>title title</h5>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                </ul>
-                                <ul>
-                                    <h5>title title</h5>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                </ul>
-                                <ul>
-                                    <h5>title title</h5>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                </ul>
-                                <ul>
-                                    <h5>title title</h5>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                </ul>
-                            </div>
+                                class="submenu submenu-discount justify-content-between end-0 start-0 px-4 ps-0 position-absolute flex-grow-1 bg-white z-1">
+                                <div class="row">
+                                    <div class="col col-lg-2">
+                                        <!-- c-discounts -->
+                                        <div class="c-discounts">
+                                            <a href="#">
+                                                <div class="card border-0 border-end rounded-0">
+                                                    <div class=" position-relative">
+                                                        <img src="public/img/image-1-47.png" class="card-img-top"
+                                                            alt="...">
+                                                        <span class="badge card-badge position-absolute">14%</span>
+                                                    </div>
+                                                    <div class="card-body pt-0">
+                                                        <div class="">
+                                                            <span
+                                                                class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                            <span
+                                                                class="p-1 rounded-1 bg-success text-white fs-6 fw-bold">$3.30</span>
+                                                        </div>
+                                                        <p class="card-text fw-bold">Signature Wood-Fired Mushroom and
+                                                            Caramelized</p>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="card-star me-3 rounded-pill">
+                                                                <i class="fa-solid fa-star text-warning"></i>
+                                                                <span class="fw-semibold">4.33</span>
+                                                            </div>
+                                                            <span class="fs-sm">3 Reviews</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-2">
+                                        <!-- c-discounts -->
+                                        <div class="c-discounts">
+                                            <a href="#">
+                                                <div class="card border-0 border-end rounded-0">
+                                                    <div class=" position-relative">
+                                                        <img src="public/img/image-1-47.png" class="card-img-top"
+                                                            alt="...">
+                                                        <span class="badge card-badge position-absolute">14%</span>
+                                                    </div>
+                                                    <div class="card-body pt-0">
+                                                        <div class="">
+                                                            <span
+                                                                class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                            <span
+                                                                class="p-1 rounded-1 bg-success text-white fs-6 fw-bold">$3.30</span>
+                                                        </div>
+                                                        <p class="card-text fw-bold">Signature Wood-Fired Mushroom and
+                                                            Caramelized</p>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="card-star me-3 rounded-pill">
+                                                                <i class="fa-solid fa-star text-warning"></i>
+                                                                <span class="fw-semibold">4.33</span>
+                                                            </div>
+                                                            <span class="fs-sm">3 Reviews</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-2">
+                                        <!-- c-discounts -->
+                                        <div class="c-discounts">
+                                            <a href="#">
+                                                <div class="card border-0 border-end rounded-0">
+                                                    <div class=" position-relative">
+                                                        <img src="public/img/image-1-47.png" class="card-img-top"
+                                                            alt="...">
+                                                        <span class="badge card-badge position-absolute">14%</span>
+                                                    </div>
+                                                    <div class="card-body pt-0">
+                                                        <div class="">
+                                                            <span
+                                                                class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                            <span
+                                                                class="p-1 rounded-1 bg-success text-white fs-6 fw-bold">$3.30</span>
+                                                        </div>
+                                                        <p class="card-text fw-bold">Signature Wood-Fired Mushroom and
+                                                            Caramelized</p>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="card-star me-3 rounded-pill">
+                                                                <i class="fa-solid fa-star text-warning"></i>
+                                                                <span class="fw-semibold">4.33</span>
+                                                            </div>
+                                                            <span class="fs-sm">3 Reviews</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-2">
+                                        <!-- c-discounts -->
+                                        <div class="c-discounts">
+                                            <a href="#">
+                                                <div class="card border-0 border-end rounded-0">
+                                                    <div class=" position-relative">
+                                                        <img src="public/img/image-1-47.png" class="card-img-top"
+                                                            alt="...">
+                                                        <span class="badge card-badge position-absolute">14%</span>
+                                                    </div>
+                                                    <div class="card-body pt-0">
+                                                        <div class="">
+                                                            <span
+                                                                class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                            <span
+                                                                class="p-1 rounded-1 bg-success text-white fs-6 fw-bold">$3.30</span>
+                                                        </div>
+                                                        <p class="card-text fw-bold">Signature Wood-Fired Mushroom and
+                                                            Caramelized</p>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="card-star me-3 rounded-pill">
+                                                                <i class="fa-solid fa-star text-warning"></i>
+                                                                <span class="fw-semibold">4.33</span>
+                                                            </div>
+                                                            <span class="fs-sm">3 Reviews</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-2">
+                                        <!-- c-discounts -->
+                                        <div class="c-discounts">
+                                            <a href="#">
+                                                <div class="card border-0 border-end rounded-0">
+                                                    <div class=" position-relative">
+                                                        <img src="public/img/image-1-47.png" class="card-img-top"
+                                                            alt="...">
+                                                        <span class="badge card-badge position-absolute">14%</span>
+                                                    </div>
+                                                    <div class="card-body pt-0">
+                                                        <div class="">
+                                                            <span
+                                                                class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                            <span
+                                                                class="p-1 rounded-1 bg-success text-white fs-6 fw-bold">$3.30</span>
+                                                        </div>
+                                                        <p class="card-text fw-bold">Signature Wood-Fired Mushroom and
+                                                            Caramelized</p>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="card-star me-3 rounded-pill">
+                                                                <i class="fa-solid fa-star text-warning"></i>
+                                                                <span class="fw-semibold">4.33</span>
+                                                            </div>
+                                                            <span class="fs-sm">3 Reviews</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-2">
+                                        <!-- c-discounts -->
+                                        <div class="c-discounts">
+                                            <a href="#">
+                                                <div class="card border-0 rounded-0">
+                                                    <div class=" position-relative">
+                                                        <img src="public/img/image-1-47.png" class="card-img-top"
+                                                            alt="...">
+                                                        <span class="badge card-badge position-absolute">14%</span>
+                                                    </div>
+                                                    <div class="card-body pt-0">
+                                                        <div class="">
+                                                            <span
+                                                                class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                            <span
+                                                                class="p-1 rounded-1 bg-success text-white fs-6 fw-bold">$3.30</span>
+                                                        </div>
+                                                        <p class="card-text fw-bold">Signature Wood-Fired Mushroom and
+                                                            Caramelized</p>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="card-star me-3 rounded-pill">
+                                                                <i class="fa-solid fa-star text-warning"></i>
+                                                                <span class="fw-semibold">4.33</span>
+                                                            </div>
+                                                            <span class="fs-sm">3 Reviews</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
 
+
+                                </div>
+
+
+                                <!-- <ul>
+                                    <h5>title title</h5>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                </ul>
+                                <ul>
+                                    <h5>title title</h5>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                </ul>
+                                <ul>
+                                    <h5>title title</h5>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                </ul>
+                                <ul>
+                                    <h5>title title</h5>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                    <li>item</li>
+                                </ul> -->
+                            </div>
                         </li>
                         <li class="nav-item d-none d-lg-flex">
                             <a href="components.html" class="text-danger fw-bold">components</a>
@@ -511,7 +710,7 @@
                             <span class="material-symbols-outlined me-2 text-danger">
                                 timeline
                             </span>
-                            <span class="text-danger fs-5 fw-bold">Buy Theme</span>
+                            <span class="text-danger fs-6 fw-bold">Buy Theme</span>
 
                         </div>
                     </div>
@@ -584,16 +783,59 @@
             <!-- banner -->
             <section class="banner">
                 <div class="row gy-2-">
+                    <!-- essentials -->
                     <div class="col col-12 col-lg-8">
-                        <a class="banner__essentials" href="#">essentials</a>
+                        <a class="banner-block banner-block__essentials" href="#">
+                            <h6 class="fw-semibold text-success">Blowne Natural Foods</h6>
+                            <h3 class="text-capitalize text-dark fw-bold">
+                                everyday essentials, exceptional prices.
+                            </h3>
+                            <p class="banner-block__text">
+                                We are preparing special discounts for you
+                                organic breakfast product
+                            </p>
+                            <button href="#"
+                                class="banner-block__btn btn btn-primary rounded-pill d-flex align-items-center">
+                                Shop Now
+                                <span class="material-symbols-outlined">
+                                    trending_flat
+                                </span>
+                            </button>
+                        </a>
                     </div>
                     <div class="col col-12 col-lg-4">
                         <div class="row gy-2 g-md-4">
+                            <!-- shopping -->
                             <div class="col col-12">
-                                <a class="banner__shopping" href="#">shopping</a>
+                                <a class=" banner-block banner-block__shopping" href="#">
+                                    <h6 class="fw-semibold text-success">Weekend Discount</h6>
+                                    <h3 class="text-capitalize text-dark fw-bold">
+                                        grocery shopping, reimagined.
+                                    </h3>
+                                    <p class="banner-block__text">
+                                        Feed your family the best
+                                    </p>
+                                    <span class="banner-block__text d-flex align-items-center">
+                                        from
+                                        <h3 class="text-capitalize text-dark fw-semibold mb-0 ms-2">$ 129.99</h3>
+                                    </span>
+                                </a>
                             </div>
+                            <!-- variety -->
                             <div class="col col-12">
-                                <a class="banner__variety" href="#">variety</a>
+                                <a class=" banner-block banner-block__variety" href="#">
+                                    <h6 class="fw-semibold text-success">Weekend Discount</h6>
+                                    <h3 class="text-capitalize text-dark fw-bold">
+                                        where value meets variety
+                                    </h3>
+                                    <p class="banner-block__text">
+                                        Only this week. Don`t miss...
+                                    </p>
+                                    <span class="banner-block__text d-flex align-items-center">
+                                        from
+                                        <h3 class="text-capitalize text-dark fw-semibold mb-0 ms-2">$ 249.99</h3>
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -602,43 +844,139 @@
             <!-- categories -->
             <div class="categories">
                 <section class="splide" id="categories" aria-label="Basic Structure Example">
-                    <div class="splide__track">
+                    <div class="splide__track border rounded-4">
                         <ul class="splide__list">
-                            <li class="splide__slide">Slide 01</li>
-                            <li class="splide__slide">Slide 02</li>
-                            <li class="splide__slide">Slide 03</li>
-                            <li class="splide__slide">Slide 03</li>
-                            <li class="splide__slide">Slide 03</li>
-                            <li class="splide__slide">Slide 03</li>
-                            <li class="splide__slide">Slide 03</li>
-                            <li class="splide__slide">Slide 03</li>
+                            <li class="splide__slide">
+                                <div class="c-category">
+                                    <a href="#" class="card border-0 border-start rounded-0">
+                                        <img src="/public/img/category-drinks.png" class="card-img-top h-auto"
+                                            alt="...">
+                                        <div class="card-body d-flex flex-column align-items-center">
+                                            <h6 class="card-title">Beverages</h6>
+                                            <span class="card-text">13 Products</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="c-category">
+                                    <a href="#" class="card border-0 border-start rounded-0">
+                                        <img src="/public/img/biscuits-snacks.png" class="card-img-top h-auto"
+                                            alt="...">
+                                        <div class="card-body d-flex flex-column align-items-center">
+                                            <h6 class="card-title">Biscuits & Snacks</h6>
+                                            <span class="card-text">8 Products</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="c-category">
+                                    <a href="#" class="card border-0 border-start rounded-0">
+                                        <img src="/public/img/category-bakery.png" class="card-img-top h-auto"
+                                            alt="...">
+                                        <div class="card-body d-flex flex-column align-items-center">
+                                            <h6 class="card-title">Breads & Bakery</h6>
+                                            <span class="card-text">12 Products</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="c-category">
+                                    <a href="#" class="card border-0 border-start rounded-0">
+                                        <img src="/public/img/category-dairy-eggs.png" class="card-img-top h-auto"
+                                            alt="...">
+                                        <div class="card-body d-flex flex-column align-items-center">
+                                            <h6 class="card-title">breakfast & dairy</h6>
+                                            <span class="card-text">7 Products</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="c-category">
+                                    <a href="#" class="card border-0 border-start rounded-0">
+                                        <img src="/public/img/category-frozen.png" class="card-img-top h-auto"
+                                            alt="...">
+                                        <div class="card-body d-flex flex-column align-items-center">
+                                            <h6 class="card-title">frozen foods</h6>
+                                            <span class="card-text">11 Products</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="c-category">
+                                    <a href="#" class="card border-0 border-start rounded-0">
+                                        <img src="/public/img/category-fruits.png" class="card-img-top h-auto"
+                                            alt="...">
+                                        <div class="card-body d-flex flex-column align-items-center">
+                                            <h6 class="card-title">fruits & vegetables</h6>
+                                            <span class="card-text">3 Products</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="c-category">
+                                    <a href="#" class="card border-0 border-start rounded-0">
+                                        <img src="/public/img/grocery-staples.png" class="card-img-top h-auto"
+                                            alt="...">
+                                        <div class="card-body d-flex flex-column align-items-center">
+                                            <h6 class="card-title">grocery & staples</h6>
+                                            <span class="card-text">7 Products</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="c-category">
+                                    <a href="#" class="card border-0 border-start rounded-0">
+                                        <img src="/public/img/category-household.png" class="card-img-top h-auto"
+                                            alt="...">
+                                        <div class="card-body d-flex flex-column align-items-center">
+                                            <h6 class="card-title">household needs</h6>
+                                            <span class="card-text">3 Products</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="c-category">
+                                    <a href="#" class="card border-0 border-start rounded-0">
+                                        <img src="/public/img/category-meat-seafood.png" class="card-img-top h-auto"
+                                            alt="...">
+                                        <div class="card-body d-flex flex-column align-items-center">
+                                            <h6 class="card-title">meat & seafood</h6>
+                                            <span class="card-text">13 Products</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </section>
             </div>
             <!-- discount -->
-            <div class="discount rounded-3 mb-3">
+            <div class="discount rounded-3 mb-4">
                 <a href="theme-kit.html"
                     class="discount__inner text-danger d-flex flex-column flex-md-row justify-content-center align-items-center">
-                    <span class="mx-2 fw-semibold">Lorem ipsum dolor <span class=" text-decoration-underline">sit ipsum
-                            dolor sit</span></span>
-                    <span class="mx-2">FREE25CAD</span>
-                    <span class="mx-2" style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur.</span>
+                    <span class="mx-2">Super discount for your <span class="fw-bold text-decoration-underline">first
+                            purchase</span></span>
+                    <span class="discount__code mx-2">FREE25CAD</span>
+                    <span class="discount__small mx-2">User discount code in the checkout!</span>
                 </a>
             </div>
             <!-- sales -->
             <div class="sales">
-                <div class="d-flex justify-content-between my-4">
-                    <span>Don`t miss this week`s sales</span>
-                    <a href="#" class="btn btn-link text-decoration-none d-flex align-items-center d-none d-md-flex">
+                <div class="d-flex justify-content-between align-items-center my-4">
+                    <span class="sales__title">Don`t miss this week`s sales</span>
+                    <a href="#"
+                        class="sales__btn btn btn-link text-decoration-none d-flex align-items-center d-none d-md-flex text-nowrap">
                         <span class="fs-6 me-2">View all</span>
                         <span class="material-symbols-outlined">
                             trending_flat
-                        </span>
-                    </a>
-                    <a href="#" class="sales__btn btn btn-light rounded-pill d-md-none">
-                        <span class="material-symbols-outlined fs-6">
-                            navigate_next
                         </span>
                     </a>
                 </div>
@@ -646,208 +984,1803 @@
                     aria-label="Basic Structure Example">
                     <div class="splide__track">
                         <ul class="splide__list">
-                            <li class="splide__slide">Slide 01</li>
-                            <li class="splide__slide">Slide 02</li>
-                            <li class="splide__slide">Slide 03</li>
+                            <li class="splide__slide">
+                                <div class="c-sales ">
+                                    <div class="card border-0 border-end rounded-0 mb-3">
+                                        <div class="card-header bg-white border-0">
+                                            <div class="card  border-0">
+                                                <img src="/public/img/iamge-1-1-300x300.png" class="card-img" alt="...">
+                                                <div class="card-img-overlay">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="card-badge badge rounded-pill bg-danger">22%</span>
+                                                        <ul class="card-list">
+                                                            <li class="card-item">
+                                                                <a href="#"
+                                                                    class="card-favorite my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        favorite
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        open_with
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        balance
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-primary">
+                                            <div class="c-star">
+                                                <div class="d-flex align-items-center">
+                                                    <ul class="c-star__list m-0 me-2">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </ul>
+                                                    <span class="c-star__number">3</span>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="card-title text-dark">The Famous Grouse Finest Blended
+                                                Scotch Whisky</a>
+                                            <div class="my-2">
+                                                <span
+                                                    class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                <span class="text-danger fs-5 fw-bold">$3.30</span>
+                                            </div>
+                                            <div class="c-countdown mb-3">
+                                                <div class="c-countdown__list">
+                                                    <span class="c-countdown__item">09</span>
+                                                    <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                                        go_to_line
+                                                    </span>
+                                                    <span class="c-countdown__item">09</span>
+                                                    <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                                        go_to_line
+                                                    </span>
+                                                    <span class="c-countdown__item">09</span>
+                                                    <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                                        go_to_line
+                                                    </span>
+                                                    <span class="c-countdown__item">09</span>
+                                                </div>
+                                                <span class="c-countdown__text">Time remaining until the end of the
+                                                    offer.</span>
+                                            </div>
+                                            <a href="#" class="c-countdown__add btn btn-success">Add to card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="c-sales ">
+                                    <div class="card border-0 border-end mb-3">
+                                        <div class="card-header bg-white border-0">
+                                            <div class="card  border-0">
+                                                <img src="/public/img/iamge-1-1-300x300.png" class="card-img" alt="...">
+                                                <div class="card-img-overlay">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="card-badge badge rounded-pill bg-danger">22%</span>
+                                                        <ul class="card-list">
+                                                            <li class="card-item">
+                                                                <a href="#"
+                                                                    class="card-favorite my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        favorite
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        open_with
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        balance
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-primary">
+                                            <div class="c-star">
+                                                <div class="d-flex align-items-center">
+                                                    <ul class="c-star__list m-0 me-2">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </ul>
+                                                    <span class="c-star__number">3</span>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="card-title text-dark">The Famous Grouse Finest Blended
+                                                Scotch Whisky</a>
+                                            <div class="my-2">
+                                                <span
+                                                    class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                <span class="text-danger fs-5 fw-bold">$3.30</span>
+                                            </div>
+                                            <div class="c-countdown mb-3">
+                                                <div class="c-countdown__list">
+                                                    <span class="c-countdown__item">09</span>
+                                                    <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                                        go_to_line
+                                                    </span>
+                                                    <span class="c-countdown__item">09</span>
+                                                    <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                                        go_to_line
+                                                    </span>
+                                                    <span class="c-countdown__item">09</span>
+                                                    <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                                        go_to_line
+                                                    </span>
+                                                    <span class="c-countdown__item">09</span>
+                                                </div>
+                                                <span class="c-countdown__text">Time remaining until the end of the
+                                                    offer.</span>
+                                            </div>
+                                            <a href="#" class="c-countdown__add btn btn-success">Add to card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="c-sales ">
+                                    <div class="card border-0 border-end mb-3">
+                                        <div class="card-header bg-white border-0">
+                                            <div class="card  border-0">
+                                                <img src="/public/img/iamge-1-1-300x300.png" class="card-img" alt="...">
+                                                <div class="card-img-overlay">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="card-badge badge rounded-pill bg-danger">22%</span>
+                                                        <ul class="card-list">
+                                                            <li class="card-item">
+                                                                <a href="#"
+                                                                    class="card-favorite my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        favorite
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        open_with
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        balance
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-primary">
+                                            <div class="c-star">
+                                                <div class="d-flex align-items-center">
+                                                    <ul class="c-star__list m-0 me-2">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </ul>
+                                                    <span class="c-star__number">3</span>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="card-title text-dark">The Famous Grouse Finest Blended
+                                                Scotch Whisky</a>
+                                            <div class="my-2">
+                                                <span
+                                                    class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                <span class="text-danger fs-5 fw-bold">$3.30</span>
+                                            </div>
+                                            <div class="c-countdown mb-3">
+                                                <div class="c-countdown__list">
+                                                    <span class="c-countdown__item">09</span>
+                                                    <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                                        go_to_line
+                                                    </span>
+                                                    <span class="c-countdown__item">09</span>
+                                                    <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                                        go_to_line
+                                                    </span>
+                                                    <span class="c-countdown__item">09</span>
+                                                    <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                                        go_to_line
+                                                    </span>
+                                                    <span class="c-countdown__item">09</span>
+                                                </div>
+                                                <span class="c-countdown__text">Time remaining until the end of the
+                                                    offer.</span>
+                                            </div>
+                                            <a href="#" class="c-countdown__add btn btn-success">Add to card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="c-sales ">
+                                    <div class="card border-0 border-end mb-3">
+                                        <div class="card-header bg-white border-0">
+                                            <div class="card  border-0">
+                                                <img src="/public/img/iamge-1-1-300x300.png" class="card-img" alt="...">
+                                                <div class="card-img-overlay">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="card-badge badge rounded-pill bg-danger">22%</span>
+                                                        <ul class="card-list">
+                                                            <li class="card-item">
+                                                                <a href="#"
+                                                                    class="card-favorite my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        favorite
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        open_with
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        balance
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-primary">
+                                            <div class="c-star">
+                                                <div class="d-flex align-items-center">
+                                                    <ul class="c-star__list m-0 me-2">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </ul>
+                                                    <span class="c-star__number">3</span>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="card-title text-dark">The Famous Grouse Finest Blended
+                                                Scotch Whisky</a>
+                                            <div class="my-2">
+                                                <span
+                                                    class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                <span class="text-danger fs-5 fw-bold">$3.30</span>
+                                            </div>
+                                            <div class="c-countdown mb-3">
+                                                <div class="c-countdown__list">
+                                                    <span class="c-countdown__item">09</span>
+                                                    <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                                        go_to_line
+                                                    </span>
+                                                    <span class="c-countdown__item">09</span>
+                                                    <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                                        go_to_line
+                                                    </span>
+                                                    <span class="c-countdown__item">09</span>
+                                                    <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                                        go_to_line
+                                                    </span>
+                                                    <span class="c-countdown__item">09</span>
+                                                </div>
+                                                <span class="c-countdown__text">Time remaining until the end of the
+                                                    offer.</span>
+                                            </div>
+                                            <a href="#" class="c-countdown__add btn btn-success">Add to card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="c-sales ">
+                                    <div class="card border-0 border-end mb-3">
+                                        <div class="card-header bg-white border-0">
+                                            <div class="card  border-0">
+                                                <img src="/public/img/iamge-1-1-300x300.png" class="card-img" alt="...">
+                                                <div class="card-img-overlay">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="card-badge badge rounded-pill bg-danger">22%</span>
+                                                        <ul class="card-list">
+                                                            <li class="card-item">
+                                                                <a href="#"
+                                                                    class="card-favorite my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        favorite
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        open_with
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        balance
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-primary">
+                                            <div class="c-star">
+                                                <div class="d-flex align-items-center">
+                                                    <ul class="c-star__list m-0 me-2">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </ul>
+                                                    <span class="c-star__number">3</span>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="card-title text-dark">The Famous Grouse Finest Blended
+                                                Scotch Whisky</a>
+                                            <div class="my-2">
+                                                <span
+                                                    class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                <span class="text-danger fs-5 fw-bold">$3.30</span>
+                                            </div>
+                                            <div class="c-countdown mb-3">
+                                                <div class="c-countdown__list">
+                                                    <span class="c-countdown__item">09</span>
+                                                    <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                                        go_to_line
+                                                    </span>
+                                                    <span class="c-countdown__item">09</span>
+                                                    <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                                        go_to_line
+                                                    </span>
+                                                    <span class="c-countdown__item">09</span>
+                                                    <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                                        go_to_line
+                                                    </span>
+                                                    <span class="c-countdown__item">09</span>
+                                                </div>
+                                                <span class="c-countdown__text">Time remaining until the end of the
+                                                    offer.</span>
+                                            </div>
+                                            <a href="#" class="c-countdown__add btn btn-success">Add to card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="c-sales ">
+                                    <div class="card border-0 border-end mb-3">
+                                        <div class="card-header bg-white border-0">
+                                            <div class="card  border-0">
+                                                <img src="/public/img/iamge-1-1-300x300.png" class="card-img" alt="...">
+                                                <div class="card-img-overlay">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="card-badge badge rounded-pill bg-danger">22%</span>
+                                                        <ul class="card-list">
+                                                            <li class="card-item">
+                                                                <a href="#"
+                                                                    class="card-favorite my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        favorite
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        open_with
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        balance
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-primary">
+                                            <div class="c-star">
+                                                <div class="d-flex align-items-center">
+                                                    <ul class="c-star__list m-0 me-2">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </ul>
+                                                    <span class="c-star__number">3</span>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="card-title text-dark">The Famous Grouse Finest Blended
+                                                Scotch Whisky</a>
+                                            <div class="my-2">
+                                                <span
+                                                    class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                <span class="text-danger fs-5 fw-bold">$3.30</span>
+                                            </div>
+                                            <div class="c-countdown mb-3">
+                                                <div class="c-countdown__list">
+                                                    <span class="c-countdown__item">09</span>
+                                                    <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                                        go_to_line
+                                                    </span>
+                                                    <span class="c-countdown__item">09</span>
+                                                    <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                                        go_to_line
+                                                    </span>
+                                                    <span class="c-countdown__item">09</span>
+                                                    <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                                        go_to_line
+                                                    </span>
+                                                    <span class="c-countdown__item">09</span>
+                                                </div>
+                                                <span class="c-countdown__text">Time remaining until the end of the
+                                                    offer.</span>
+                                            </div>
+                                            <a href="#" class="c-countdown__add btn btn-success">Add to card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="c-sales ">
+                                    <div class="card border-0 border-end mb-3">
+                                        <div class="card-header bg-white border-0">
+                                            <div class="card  border-0">
+                                                <img src="/public/img/iamge-1-1-300x300.png" class="card-img" alt="...">
+                                                <div class="card-img-overlay">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="card-badge badge rounded-pill bg-danger">22%</span>
+                                                        <ul class="card-list">
+                                                            <li class="card-item">
+                                                                <a href="#"
+                                                                    class="card-favorite my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        favorite
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        open_with
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="card-item card-item--show">
+                                                                <a href="#"
+                                                                    class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                                    <span class="material-symbols-outlined">
+                                                                        balance
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-primary">
+                                            <div class="c-star">
+                                                <div class="d-flex align-items-center">
+                                                    <ul class="c-star__list m-0 me-2">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </ul>
+                                                    <span class="c-star__number">3</span>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="card-title text-dark">The Famous Grouse Finest Blended
+                                                Scotch Whisky</a>
+                                            <div class="my-2">
+                                                <span
+                                                    class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                <span class="text-danger fs-5 fw-bold">$3.30</span>
+                                            </div>
+                                            <div class="c-countdown mb-3">
+                                                <div class="c-countdown__list">
+                                                    <span class="c-countdown__item">09</span>
+                                                    <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                                        go_to_line
+                                                    </span>
+                                                    <span class="c-countdown__item">09</span>
+                                                    <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                                        go_to_line
+                                                    </span>
+                                                    <span class="c-countdown__item">09</span>
+                                                    <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                                        go_to_line
+                                                    </span>
+                                                    <span class="c-countdown__item">09</span>
+                                                </div>
+                                                <span class="c-countdown__text">Time remaining until the end of the
+                                                    offer.</span>
+                                            </div>
+                                            <a href="#" class="c-countdown__add btn btn-success">Add to card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </section>
             </div>
             <!-- offers -->
             <section class="offers">
-                <div class="row">
-                    <div class="offers__element col col-12 col-md-4">card1</div>
-                    <div class="offers__element col col-12 col-md-4">card2</div>
-                    <div class="offers__element col col-12 col-md-4">card3</div>
+                <div class="row m-0">
+                    <div class="offers__element col col-12 col-md-4">
+                        <a href="#">
+                            <div class="card border-0 rounded-4 overflow-hidden">
+                                <img src="public/img/banner-21.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay d-flex flex-column justify-content-center p-xl-4">
+                                    <h6 class="card-title fw-semibold text-success">Weekend Discount</h6>
+                                    <h3 class="text-dark fw-semibold">Taste the Best</h3>
+                                    <span class="text-gray-600 mb-3">shine the morning</span>
+                                    <span class="text-gray-600">from <span class="fs-4 text-dark fw-bolder">$
+                                            109.99</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="offers__element col col-12 col-md-4">
+                        <a href="#">
+                            <div class="card border-0 rounded-4 overflow-hidden">
+                                <img src="public/img/banner-22.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay d-flex flex-column justify-content-center p-xl-4">
+                                    <h6 class="card-title fw-semibold text-success">Weekend Discount</h6>
+                                    <h3 class="text-dark fw-semibold">Ditch the Junk</h3>
+                                    <span class="text-gray-600 mb-3">Breakfast bade better</span>
+                                    <span class="text-gray-600">from <span class="fs-4 text-dark fw-bolder">$
+                                            117.99</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="offers__element col col-12 col-md-4">
+                        <a href="#">
+                            <div class="card border-0 rounded-4 overflow-hidden">
+                                <img src="public/img/banner-23.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay d-flex flex-column justify-content-center p-xl-4">
+                                    <h6 class="card-title fw-semibold text-success">Weekend Discount</h6>
+                                    <h3 class="text-dark fw-semibold">Natural eggs</h3>
+                                    <span class="text-gray-600 mb-3">Eat one every day</span>
+                                    <span class="text-gray-600">from <span class="fs-4 text-dark fw-bolder">$
+                                            124.99</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </section>
             <!-- seafood -->
-            <div class="seafood">
+            <div class="seafood p-auto">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h6>Meat & Seafood</h6>
+                    <h4 class="fw-medium">Meat & Seafood</h4>
                     <a href="#" class="btn btn-link text-decoration-none d-flex align-items-center d-none d-md-flex">
                         <span class="fs-6 me-2">View all</span>
                         <span class="material-symbols-outlined">
                             trending_flat
                         </span>
                     </a>
-                    <a href="#" class="sales__btn btn btn-light rounded-pill d-md-none">
+                    <a href="#" class="seafood__btn btn btn-light rounded-pill d-md-none">
                         <span class="material-symbols-outlined fs-6">
                             navigate_next
                         </span>
                     </a>
                 </div>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="row  overflow-hidden">
-                        <div class="seafood__item col col-12 col-md-5 col-lg-2">menu</div>
-                        <div class="seafood__item col col-12 col-md-7 col-lg-3">image</div>
-                        <div class="seafood__item col col-12 col-lg-7">
-                            <ul class="d-flex overflow-auto table">
-                                <li style="height: 15rem; min-width: 13.7rem;">card1</li>
-                                <li style="height: 15rem; min-width: 13.7rem;">card2</li>
-                                <li style="height: 15rem; min-width: 13.7rem;">card3</li>
-                            </ul>
+                <div class="row  border rounded-4 m-0 overflow-hidden">
+                    <div class="col col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-between p-4">
+                        <ul class="seafood__list">
+                            <li class="seafood__item">
+                                <a href="#" class="seafood__link">Beef</a>
+                            </li>
+                            <li class="seafood__item">
+                                <a href="#" class="seafood__link">Breakfast Sausage</a>
+                            </li>
+                            <li class="seafood__item">
+                                <a href="#" class="seafood__link">Chicken</a>
+                            </li>
+                            <li class="seafood__item">
+                                <a href="#" class="seafood__link">Crab and Shellfish</a>
+                            </li>
+                            <li class="seafood__item">
+                                <a href="#" class="seafood__link">Dinner Sausage</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="#" class="seafood__more">
+                                View All Meats & Seafoods
+                                <span class="material-symbols-outlined ms-2">
+                                    trending_flat
+                                </span>
+                            </a>
                         </div>
                     </div>
-                </div>
-                <!-- opportunity -->
-                <div class="opportunity">
-                    <div class="row">
-                        <div class="opportunity__block my-3 col col-12 col-md-6">big-block</div>
-                        <div class="opportunity__block my-3 col col-12 col-md-6">big-block</div>
+                    <div class="col col-12 col-md-8 col-lg-3 seafood__block px-0">
+                        <div class="card border-0 rounded-0 h-100">
+                            <img src="/public/img/banner-24.jpg" class="card-img h-100 rounded-0" alt="...">
+                            <div class="card-img-overlay d-flex flex-column  p-4">
+                                <h6 class="card-title fw-semibold text-success">Weekend Discount</h6>
+                                <h3 class="text-dark fw-semibold">Ditch the Junk</h3>
+                                <span class="text-gray-600 mb-3">Breakfast bade better</span>
+                                <span class="text-gray-600">from <span class="fs-4 text-dark fw-bolder">$
+                                        117.99</span></span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!-- Beverages-->
-                <div class="Beverages pb-4 mb-1">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <h6>Beverages</h6>
-                        <a href="#"
-                            class="btn btn-link text-decoration-none d-flex align-items-center d-none d-md-flex">
-                            <span class="fs-6 me-2">View all</span>
-                            <span class="material-symbols-outlined">
-                                trending_flat
-                            </span>
-                        </a>
-                        <a href="#" class="sales__btn btn btn-light rounded-pill d-md-none">
-                            <span class="material-symbols-outlined fs-6">
-                                navigate_next
-                            </span>
-                        </a>
-                    </div>
-                    <div class="row">
-                        <div class="seafood__item col col-12 col-md-5 col-lg-2">menu</div>
-                        <div class="seafood__item col col-12 col-md-7 col-lg-3">image</div>
-                        <div class="seafood__item col col-12 col-lg-7">
-                            <ul class="d-flex overflow-auto table">
-                                <li style="height: 15rem; min-width: 13.7rem;">card1</li>
-                                <li style="height: 15rem; min-width: 13.7rem;">card2</li>
-                                <li style="height: 15rem; min-width: 13.7rem;">card3</li>
-                            </ul>
+                    <div class="col col-12 col-md-12 col-lg-7 d-flex p-0">
+                        <!-- card -->
+                        <div class="c-sales">
+                            <div class="card border-0 rounded-0 border-end">
+                                <div class="card-header bg-white border-0">
+                                    <div class="card  border-0">
+                                        <img src="/public/img/image-1-49-300x300.png" class="card-img" alt="...">
+                                        <div class="card-img-overlay  pb-0">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="card-badge badge bg-danger">22%</span>
+                                                <ul class="card-list">
+                                                    <li class="card-item">
+                                                        <a href="#"
+                                                            class="card-favorite my-1 btn border-gray-600 bg-white rounded-circle d-flex align-items-center">
+                                                            <span class="material-symbols-outlined">
+                                                                favorite
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="card-item card-item--show">
+                                                        <a href="#"
+                                                            class="my-1 btn border-gray-600 bg-white rounded-circle d-flex align-items-center">
+                                                            <span class="material-symbols-outlined">
+                                                                open_with
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="card-item card-item--show">
+                                                        <a href="#"
+                                                            class="my-1 btn border-gray-600 bg-white rounded-circle d-flex align-items-center">
+                                                            <span class="material-symbols-outlined">
+                                                                balance
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-primary d-flex flex-column pt-0">
+                                    <div class="c-star">
+                                        <div class="d-flex align-items-center">
+                                            <ul class="c-star__list m-0 me-2">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </ul>
+                                            <span class="c-star__number">3</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="card-title text-dark">uSDA choice angus beef stew meat</a>
+                                    <span class="card-weight badge bg-white text-gray-600 border rounded-2">1 kg</span>
+                                    <div class="my-2">
+                                        <span
+                                            class="text-gray-600 fw-bold text-decoration-line-through me-2">$7.99</span>
+                                        <span class="text-danger fs-5 fw-bold">$6.99</span>
+                                    </div>
+                                    <a href="#" class="c-countdown__add mb-2 card-add btn btn-success">Add to card</a>
+                                    <span class="fw-bolder text-success">In Stock</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="c-sales">
+                            <div class="card border-0 rounded-0">
+                                <div class="card-header bg-white border-0">
+                                    <div class="card  border-0">
+                                        <img src="/public/img/image-1-45-300x300.png" class="card-img" alt="...">
+                                        <div class="card-img-overlay  pb-0">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="card-badge badge bg-danger">22%</span>
+                                                <ul class="card-list">
+                                                    <li class="card-item">
+                                                        <a href="#"
+                                                            class="card-favorite my-1 btn border-gray-600 bg-white rounded-circle d-flex align-items-center">
+                                                            <span class="material-symbols-outlined">
+                                                                favorite
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="card-item card-item--show">
+                                                        <a href="#"
+                                                            class="my-1 btn border-gray-600 bg-white rounded-circle d-flex align-items-center">
+                                                            <span class="material-symbols-outlined">
+                                                                open_with
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="card-item card-item--show">
+                                                        <a href="#"
+                                                            class="my-1 btn border-gray-600 bg-white rounded-circle d-flex align-items-center">
+                                                            <span class="material-symbols-outlined">
+                                                                balance
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-primary d-flex flex-column pt-0">
+                                    <div class="c-star">
+                                        <div class="d-flex align-items-center">
+                                            <ul class="c-star__list m-0 me-2">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </ul>
+                                            <span class="c-star__number">3</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="card-title text-dark">shazans fresh halal beef mince -
+                                        delicious</a>
+                                    <span class="card-weight badge bg-white text-gray-600 border rounded-2">1 kg</span>
+                                    <div class="my-2">
+                                        <span
+                                            class="text-gray-600 fw-bold text-decoration-line-through me-2">$9.99</span>
+                                        <span class="text-danger fs-5 fw-bold">$8.99</span>
+                                    </div>
+                                    <a href="#" class="c-countdown__add mb-2 card-add btn btn-success">Add to card</a>
+                                    <span class="fw-bolder text-success">In Stock</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="c-sales d-none d-md-block">
+                            <div class="card border-0  border-start rounded-0">
+                                <div class="card-header bg-white border-0">
+                                    <div class="card  border-0">
+                                        <img src="/public/img/image-1-21-300x300.png" class="card-img" alt="...">
+                                        <div class="card-img-overlay  pb-0">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="card-badge badge bg-danger">22%</span>
+                                                <ul class="card-list">
+                                                    <li class="card-item">
+                                                        <a href="#"
+                                                            class="card-favorite my-1 btn border-gray-600 bg-white rounded-circle d-flex align-items-center">
+                                                            <span class="material-symbols-outlined">
+                                                                favorite
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="card-item card-item--show">
+                                                        <a href="#"
+                                                            class="my-1 btn border-gray-600 bg-white rounded-circle d-flex align-items-center">
+                                                            <span class="material-symbols-outlined">
+                                                                open_with
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="card-item card-item--show">
+                                                        <a href="#"
+                                                            class="my-1 btn border-gray-600 bg-white rounded-circle d-flex align-items-center">
+                                                            <span class="material-symbols-outlined">
+                                                                balance
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-primary d-flex flex-column pt-0">
+                                    <div class="c-star">
+                                        <div class="d-flex align-items-center">
+                                            <ul class="c-star__list m-0 me-2">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </ul>
+                                            <span class="c-star__number">3</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="card-title text-dark">kirstys Spanish chicken & brown rice</a>
+                                    <span class="card-weight badge bg-white text-gray-600 border rounded-2">1 kg</span>
+                                    <div class="my-2">
+                                        <span
+                                            class="text-gray-600 fw-bold text-decoration-line-through me-2">$3.90</span>
+                                        <span class="text-danger fs-5 fw-bold">$2.90</span>
+                                    </div>
+                                    <a href="#" class="c-countdown__add mb-2 card-add btn btn-success">Add to card</a>
+                                    <span class="fw-bolder text-success">In Stock</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- opportunity -->
+            <div class="opportunity mb-4">
+                <div class="row">
+                    <div class="opportunity__block col col-12 col-md-6">
+                        <!-- c-hot-product -->
+                        <div class="c-hot-product border border-danger border-2 rounded-3 overflow-hidden mb-3 mb-md-0">
+                            <div class="bg-danger p-3">
+                                <span class="fs-5 fw-bolder text-white">Time is running out, don`t miss the opportunity
+                                </span>
+                            </div>
+                            <!-- card -->
+                            <div class="card mb-3 border-0 border-bottom rounded-0">
+                                <div class="row g-0">
+                                    <div class="col-md-4 position-relative">
+                                        <div class="badge card-badge bg-danger">22%</div>
+                                        <img src="public/img/image-1-15-300x300.png" class="img-fluid w-100" alt="...">
+                                        <div class="card-item position-absolute">
+                                            <a href="#"
+                                                class="card-favorite my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                <span class="material-symbols-outlined">
+                                                    favorite
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body pb-0">
+                                            <div class="c-star">
+                                                <div class="d-flex align-items-center">
+                                                    <ul class="c-star__list m-0 me-2">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </ul>
+                                                    <span class="c-star__number">3</span>
+                                                </div>
+                                            </div>
+                                            <h5 class="card-title fs-6 fw-semibold text-capitalize">great value peanut
+                                                dark chocolate protein</h5>
+                                            <span
+                                                class="card-weight badge bg-white text-gray-600 border rounded-2 mb-2">1
+                                                kg</span>
+                                            <div class="mb-2">
+                                                <span
+                                                    class="text-gray-600 fw-bold text-decoration-line-through">$7.99</span>
+                                                <span class="text-danger fs-5 fw-bold">$6.99</span>
+                                            </div>
+                                            <div class="c-progress-but mb-3">
+                                                <div class="progress-bg progress bg-grey-600 mb-2" role="progressbar"
+                                                    aria-label="Info example" aria-valuenow="50" aria-valuemin="0"
+                                                    aria-valuemax="100">
+                                                    <div class="progress-bar rounded-pill bg-danger position-relative"
+                                                        style="width: 40%;">
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <span
+                                                            class="card-available text-gray-600 fw-semibold">Available:</span>
+                                                        <span class="card-stock text-dark fw-bolder">44</span>
+                                                    </div>
+                                                    <div>
+                                                        <span
+                                                            class="card-available text-gray-600 fw-semibold">Sold:</span>
+                                                        <span class="card-stock text-danger fw-bolder">35</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-3 d-lg-flex align-items-center">
+                                <!-- c-countdown -->
+                                <div class="c-countdown mb-2 mb-lg-0">
+                                    <div class="c-countdown__list">
+                                        <span class="c-countdown__item text-white bg-danger">09</span>
+                                        <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                            go_to_line
+                                        </span>
+                                        <span class="c-countdown__item text-white bg-danger">09</span>
+                                        <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                            go_to_line
+                                        </span>
+                                        <span class="c-countdown__item text-white bg-danger">09</span>
+                                        <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                            go_to_line
+                                        </span>
+                                        <span class="c-countdown__item text-white bg-danger">09</span>
+                                    </div>
+                                </div>
+                                <p class="c-hot-product-text ms-lg-4 my-auto">Time remaining until the end of the offer
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opportunity__block col col-12 col-md-6">
+                        <!-- c-hot-product -->
+                        <div class="c-hot-product border border-danger border-2 rounded-3 overflow-hidden">
+                            <div class="bg-danger p-3">
+                                <span class="fs-5 fw-bolder text-white">Time is running out, don`t miss the opportunity
+                                </span>
+                            </div>
+                            <!-- card -->
+                            <div class="card mb-3 border-0 border-bottom rounded-0">
+                                <div class="row g-0">
+                                    <div class="col-md-4 position-relative">
+                                        <div class="badge card-badge bg-danger">22%</div>
+                                        <img src="public/img/image-1-16-300x300.png" class="img-fluid w-100" alt="...">
+                                        <div class="card-item position-absolute">
+                                            <a href="#"
+                                                class="card-favorite my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
+                                                <span class="material-symbols-outlined">
+                                                    favorite
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body pb-0">
+                                            <div class="c-star">
+                                                <div class="d-flex align-items-center">
+                                                    <ul class="c-star__list m-0 me-2">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </ul>
+                                                    <span class="c-star__number">3</span>
+                                                </div>
+                                            </div>
+                                            <h5 class="card-title fs-6 fw-semibold text-capitalize">Fresh Green Giant
+                                                Veggie Spirals Zucchini</h5>
+                                            <span
+                                                class="card-weight badge bg-white text-gray-600 border rounded-2 mb-2">1
+                                                kg</span>
+                                            <div class="mb-2">
+                                                <span
+                                                    class="text-gray-600 fw-bold text-decoration-line-through">$530</span>
+                                                <span class="text-danger fs-5 fw-bold">$4.25</span>
+                                            </div>
+                                            <div class="c-progress-but mb-3">
+                                                <div class="progress-bg progress bg-grey-600 mb-2" role="progressbar"
+                                                    aria-label="Info example" aria-valuenow="50" aria-valuemin="0"
+                                                    aria-valuemax="100">
+                                                    <div class="progress-bar rounded-pill bg-danger position-relative"
+                                                        style="width: 40%;">
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <span
+                                                            class="card-available text-gray-600 fw-semibold">Available:</span>
+                                                        <span class="card-stock text-dark fw-bolder">44</span>
+                                                    </div>
+                                                    <div>
+                                                        <span
+                                                            class="card-available text-gray-600 fw-semibold">Sold:</span>
+                                                        <span class="card-stock text-danger fw-bolder">35</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-3 d-lg-flex align-items-center">
+                                <!-- c-countdown -->
+                                <div class="c-countdown mb-2 mb-lg-0">
+                                    <div class="c-countdown__list">
+                                        <span class="c-countdown__item text-white bg-danger">09</span>
+                                        <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                            go_to_line
+                                        </span>
+                                        <span class="c-countdown__item text-white bg-danger">09</span>
+                                        <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                            go_to_line
+                                        </span>
+                                        <span class="c-countdown__item text-white bg-danger">09</span>
+                                        <span class="material-symbols-outlined fs-6 c-countdown__sep">
+                                            go_to_line
+                                        </span>
+                                        <span class="c-countdown__item text-white bg-danger">09</span>
+                                    </div>
+                                </div>
+                                <p class="c-hot-product-text ms-lg-4 my-auto">Time remaining until the end of the offer
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Beverages-->
+            <!-- seafood -->
+            <div class="seafood p-auto">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4 class="fw-medium">Beverages</h4>
+                    <a href="#" class="btn btn-link text-decoration-none d-flex align-items-center d-none d-md-flex">
+                        <span class="fs-6 me-2">View all</span>
+                        <span class="material-symbols-outlined">
+                            trending_flat
+                        </span>
+                    </a>
+                    <a href="#" class="seafood__btn btn btn-light rounded-pill d-md-none">
+                        <span class="material-symbols-outlined fs-6">
+                            navigate_next
+                        </span>
+                    </a>
+                </div>
+                <div class="row  border rounded-4 m-0 overflow-hidden">
+                    <div class="col col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-between p-4">
+                        <ul class="seafood__list">
+                            <li class="seafood__item">
+                                <a href="#" class="seafood__link">coffee</a>
+                            </li>
+                            <li class="seafood__item">
+                                <a href="#" class="seafood__link">craft beer</a>
+                            </li>
+                            <li class="seafood__item">
+                                <a href="#" class="seafood__link">drink boxer & pouches</a>
+                            </li>
+                            <li class="seafood__item">
+                                <a href="#" class="seafood__link">milk & plant-based milk</a>
+                            </li>
+                            <li class="seafood__item">
+                                <a href="#" class="seafood__link">soda & pop</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="#" class="seafood__more">
+                                View All Beverages
+                                <span class="material-symbols-outlined ms-2">
+                                    trending_flat
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-8 col-lg-3 seafood__block px-0">
+                        <div class="card border-0 rounded-0 h-100">
+                            <img src="/public/img/baverages-banner.jpg"
+                                class="card-img h-100 rounded-0 object-fit-cover" alt="...">
+                            <div class="card-img-overlay d-flex flex-column  p-4">
+                                <h6 class="card-title fw-semibold text-success">Weekend Discount</h6>
+                                <h3 class="text-dark fw-semibold">Your Culinary Crown</h3>
+                                <span class="text-gray-600 mb-3">Feed your family the best</span>
+                                <span class="text-gray-600">from <span
+                                        class="fs-4 text-dark fw-bolder">$342.99</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-12 col-lg-7 d-flex p-0">
+                        <!-- card -->
+                        <div class="c-sales">
+                            <div class="card border-0 rounded-0 border-end">
+                                <div class="card-header bg-white border-0">
+                                    <div class="card  border-0">
+                                        <img src="/public/img/iamge-1-1-300x300.png" class="card-img" alt="...">
+                                        <div class="card-img-overlay  pb-0">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="card-badge badge bg-danger">22%</span>
+                                                <ul class="card-list">
+                                                    <li class="card-item">
+                                                        <a href="#"
+                                                            class="card-favorite my-1 btn border-gray-600 bg-white rounded-circle d-flex align-items-center">
+                                                            <span class="material-symbols-outlined">
+                                                                favorite
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="card-item card-item--show">
+                                                        <a href="#"
+                                                            class="my-1 btn border-gray-600 bg-white rounded-circle d-flex align-items-center">
+                                                            <span class="material-symbols-outlined">
+                                                                open_with
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="card-item card-item--show">
+                                                        <a href="#"
+                                                            class="my-1 btn border-gray-600 bg-white rounded-circle d-flex align-items-center">
+                                                            <span class="material-symbols-outlined">
+                                                                balance
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-primary d-flex flex-column pt-0">
+                                    <div class="c-star">
+                                        <div class="d-flex align-items-center">
+                                            <ul class="c-star__list m-0 me-2">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </ul>
+                                            <span class="c-star__number">3</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="card-title text-dark">the famous grouse finest blended scotch
+                                        whisky</a>
+                                    <div class="my-2">
+                                        <span
+                                            class="text-gray-600 fw-bold text-decoration-line-through me-2">$14.00</span>
+                                        <span class="text-danger fs-5 fw-bold">$11.00</span>
+                                    </div>
+                                    <a href="#" class="c-countdown__add mb-2 card-add btn btn-success">Add to card</a>
+                                    <span class="fw-bolder text-success">In Stock</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="c-sales">
+                            <div class="card border-0 rounded-0">
+                                <div class="card-header bg-white border-0">
+                                    <div class="card  border-0">
+                                        <img src="/public/img/image-1-9-300x300.png" class="card-img"
+                                            style=" width:200px-;" alt="...">
+                                        <div class="card-img-overlay  pb-0">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="card-badge badge bg-danger">22%</span>
+                                                <ul class="card-list">
+                                                    <li class="card-item">
+                                                        <a href="#"
+                                                            class="card-favorite my-1 btn border-gray-600 bg-white rounded-circle d-flex align-items-center">
+                                                            <span class="material-symbols-outlined">
+                                                                favorite
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="card-item card-item--show">
+                                                        <a href="#"
+                                                            class="my-1 btn border-gray-600 bg-white rounded-circle d-flex align-items-center">
+                                                            <span class="material-symbols-outlined">
+                                                                open_with
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="card-item card-item--show">
+                                                        <a href="#"
+                                                            class="my-1 btn border-gray-600 bg-white rounded-circle d-flex align-items-center">
+                                                            <span class="material-symbols-outlined">
+                                                                balance
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-primary d-flex flex-column pt-0">
+                                    <div class="c-star">
+                                        <div class="d-flex align-items-center">
+                                            <ul class="c-star__list m-0 me-2">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </ul>
+                                            <span class="c-star__number">3</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="card-title text-dark">
+                                        disaronno amaretto liquore alle mandorle
+                                    </a>
+                                    <div class="my-2">
+                                        <span
+                                            class="text-gray-600 fw-bold text-decoration-line-through me-2">$18.70</span>
+                                        <span class="text-danger fs-5 fw-bold">$14.70</span>
+                                    </div>
+                                    <a href="#" class="c-countdown__add mb-2 card-add btn btn-success">Add to card</a>
+                                    <span class="fw-bolder text-success">In Stock</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="c-sales d-none d-md-block">
+                            <div class="card border-0  border-start rounded-0">
+                                <div class="card-header bg-white border-0">
+                                    <div class="card  border-0">
+                                        <img src="/public/img/image-1-18-300x300.png" class="card-img" alt="...">
+                                        <div class="card-img-overlay  pb-0">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="card-badge badge bg-danger">22%</span>
+                                                <ul class="card-list">
+                                                    <li class="card-item">
+                                                        <a href="#"
+                                                            class="card-favorite my-1 btn border-gray-600 bg-white rounded-circle d-flex align-items-center">
+                                                            <span class="material-symbols-outlined">
+                                                                favorite
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="card-item card-item--show">
+                                                        <a href="#"
+                                                            class="my-1 btn border-gray-600 bg-white rounded-circle d-flex align-items-center">
+                                                            <span class="material-symbols-outlined">
+                                                                open_with
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="card-item card-item--show">
+                                                        <a href="#"
+                                                            class="my-1 btn border-gray-600 bg-white rounded-circle d-flex align-items-center">
+                                                            <span class="material-symbols-outlined">
+                                                                balance
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-primary d-flex flex-column pt-0">
+                                    <div class="c-star">
+                                        <div class="d-flex align-items-center">
+                                            <ul class="c-star__list m-0 me-2">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </ul>
+                                            <span class="c-star__number">3</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="card-title text-dark">innocent orange juice with bits</a>
+                                    <div class="my-2">
+                                        <span
+                                            class="text-gray-600 fw-bold text-decoration-line-through me-2">$2.50</span>
+                                        <span class="text-danger fs-5 fw-bold">$2.00</span>
+                                    </div>
+                                    <a href="#" class="c-countdown__add mb-2 card-add btn btn-success">Add to card</a>
+                                    <span class="fw-bolder text-success">In Stock</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- offers -->
             <!-- offers 2 -->
             <section class="offers">
-                <div class="row">
-                    <div class="offers__element col col-12 col-md-4">card1</div>
-                    <div class="offers__element col col-12 col-md-4">card2</div>
-                    <div class="offers__element col col-12 col-md-4">card3</div>
+                <div class="row m-0">
+                    <div class="offers__element col col-12 col-md-4">
+                        <a href="#">
+                            <div class="card border-0 rounded-4 overflow-hidden">
+                                <img src="public/img/banner-25.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay d-flex flex-column justify-content-center p-xl-4">
+                                    <h6 class="card-title fw-semibold text-success">Weekend Discount</h6>
+                                    <h4 class="text-dark fw-semibold">Bread & Bakery</h4>
+                                    <span class="text-gray-600 mb-3">Blonwe Weekend Discount</span>
+                                    <span class="text-gray-600">from <span class="fs-4 text-dark fw-bolder">$
+                                            175.99</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="offers__element col col-12 col-md-4">
+                        <a href="#">
+                            <div class="card border-0 rounded-4 overflow-hidden">
+                                <img src="public/img/banner-26.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay d-flex flex-column justify-content-center p-xl-4">
+                                    <h6 class="card-title fw-semibold text-success">Weekend Discount</h6>
+                                    <h4 class="text-dark fw-semibold">Organic Beverages</h4>
+                                    <span class="text-gray-600 mb-3">Blonwe Weekend Discount</span>
+                                    <span class="text-gray-600">from <span class="fs-4 text-dark fw-bolder">$
+                                            159.99</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="offers__element col col-12 col-md-4">
+                        <a href="#">
+                            <div class="card border-0 rounded-4 overflow-hidden">
+                                <img src="public/img/banner-27.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay d-flex flex-column justify-content-center p-xl-4">
+                                    <h6 class="card-title fw-semibold text-success">Weekend Discount</h6>
+                                    <h4 class="text-dark fw-semibold">Frozen Foods</h4>
+                                    <span class="text-gray-600 mb-3">Blonwe Weekend Discount</span>
+                                    <span class="text-gray-600">from <span class="fs-4 text-dark fw-bolder">$
+                                            249.99</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </section>
             <!-- services -->
-            <div class="services border-bottom">
+            <div class="services border-bottom p-2 pb-5">
                 <div class="row d-flex align-items-center justify-content-between">
-                    <div class="services__item col col-12 col-md-3">free</div>
-                    <div class="services__item col col-12 col-md-3">support</div>
-                    <div class="services__item col col-12 col-md-3">return</div>
-                    <div class="services__item col col-12 col-md-3">discountx`</div>
+                    <div class="services__item col col-12 col-md-3">
+                        <div class="services__wrapper">
+                            <span class="fs-1 material-symbols-outlined services__icon">
+                                directions_boat
+                            </span>
+                            <div class="d-flex flex-column">
+                                <span class="services__oferts">Free delivery</span>
+                                <span class="services__decriptions">Free shipping on all order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__item col col-12 col-md-3">
+                        <div class="services__wrapper">
+                            <span class="fs-1 material-symbols-outlined services__icon">
+                                perm_phone_msg
+                            </span>
+                            <div class="d-flex flex-column">
+                                <span class="services__oferts">Online Suport 24/7</span>
+                                <span class="services__decriptions">Support online 24 hour a day</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__item col col-12 col-md-3">
+                        <div class="services__wrapper">
+                            <span class="fs-1 material-symbols-outlined services__icon">
+                                credit_card
+                            </span>
+                            <div class="d-flex flex-column">
+                                <span class="services__oferts">Mony Return</span>
+                                <span class="services__decriptions">Back guarantee under 7 days</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__item col col-12 col-md-3">
+                        <div class="services__wrapper">
+                            <span class="fs-1 material-symbols-outlined services__icon">
+                                south
+                            </span>
+                            <div class="d-flex flex-column">
+                                <span class="services__oferts">Members Discount</span>
+                                <span class="services__decriptions">Onevery order over $120.00x</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <!-- news -->
-            <div class="news border-bottom">
+            <section class="news p-lg-5">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h6>Our News</h6>
+                    <h4 class="fw-medium">Beverages</h4>
                     <a href="#" class="btn btn-link text-decoration-none d-flex align-items-center d-none d-md-flex">
                         <span class="fs-6 me-2">View all</span>
                         <span class="material-symbols-outlined">
                             trending_flat
                         </span>
                     </a>
-                    <a href="#" class="sales__btn btn btn-light rounded-pill d-md-none">
+                    <a href="#" class="seafood__btn btn btn-light rounded-pill d-md-none">
                         <span class="material-symbols-outlined fs-6">
                             navigate_next
                         </span>
                     </a>
                 </div>
-                <div class="row d-flex align-items-center justify-content-between">
-                    <div class="news__item col col-12 col-md-3">tablet</div>
-                    <div class="news__item col col-12 col-md-3">smartphone</div>
-                    <div class="news__item col col-12 col-md-3">tablet</div>
-                    <div class="news__item col col-12 col-md-3">smartphone</div>
+                <div class="row">
+                    <div class="col col-12 col-md-6 col-lg-3">
+                        <!-- card -->
+                        <div class="card border-0 mb-3">
+                            <a href="#" class="rounded-3 overflow-hidden">
+                                <img src="public/img/post-04-500x347.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body p-0 pt-2">
+                                <span class="card-category">tablet</span>
+                                <h5 class="card-title mt-2">english breakfast tea with tasty donut desserts</h5>
+                            </div>
+                            <div class="card-meta">
+                                <span class="card-meta-first">by</span>
+                                <span class="card-meta-second">sinan</span>
+                                <span class="card-meta-second m-2 mt-0">•</span>
+                                <span class="card-meta-last">7 mar 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6 col-lg-3">
+                        <!-- card -->
+                        <div class="card border-0 mb-3">
+                            <a href="#" class="rounded-3 overflow-hidden">
+                                <img src="public/img/post-03-500x347.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body p-0 pt-2">
+                                <span class="card-category">smartphone</span>
+                                <h5 class="card-title mt-2">the problem with typefaces on the web</h5>
+                            </div>
+                            <div class="card-meta">
+                                <span class="card-meta-first">by</span>
+                                <span class="card-meta-second">sinan</span>
+                                <span class="card-meta-second m-2 mt-0">•</span>
+                                <span class="card-meta-last">7 mar 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6 col-lg-3">
+                        <!-- card -->
+                        <div class="card border-0 mb-3">
+                            <a href="#" class="rounded-3 overflow-hidden">
+                                <img src="public/img/post-02-500x347.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body p-0 pt-2">
+                                <span class="card-category">tablet</span>
+                                <h5 class="card-title mt-2">but i must explain to you all this mistaken idea</h5>
+                            </div>
+                            <div class="card-meta">
+                                <span class="card-meta-first">by</span>
+                                <span class="card-meta-second">sinan</span>
+                                <span class="card-meta-second m-2 mt-0">•</span>
+                                <span class="card-meta-last">7 mar 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6 col-lg-3">
+                        <!-- card -->
+                        <div class="card border-0 mb-3">
+                            <a href="#" class="rounded-3 overflow-hidden">
+                                <img src="public/img/post-01-500x347.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body p-0 pt-2">
+                                <span class="card-category">smartphone0</span>
+                                <h5 class="card-title mt-2">on the other hand we provide denounce with righteous</h5>
+                            </div>
+                            <div class="card-meta">
+                                <span class="card-meta-first">by</span>
+                                <span class="card-meta-second">sinan</span>
+                                <span class="card-meta-second m-2 mt-0">•</span>
+                                <span class="card-meta-last">7 mar 2023</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
         <!-- subscribe -->
-        <div class="subscribe my-5">
+        <div class="subscribe py-5 border-top">
             <div class="container">
                 <div class="row d-flex align-items-center">
-                    <div class="col col-12 col-md-6 subscribe__text">
-                        <h5>Join our newsletter for £10 offs</h5>
-                        <p>Register now to get latest updates on promotions & coupons.
+                    <div class="col col-12 col-md-4">
+                        <h4 class="fw-semibold ">Join our newsletter for £10 offs</h4>
+                        <p class=" subscribe__text">Register now to get latest updates on promotions & coupons.
                             Don’t worry, we not spam!
                         </p>
                     </div>
-                    <div class="col col-12 col-md-6">
+                    <div class="col col-12 col-md-4 ms-auto">
                         <form class="d-flex" role="search">
-                            <input class="form-control rounded-end-0" type="search" placeholder="Search"
-                                aria-label="Search">
-                            <button class="btn btn-success rounded-start-0 text-white" type="submit">Search</button>
+                            <input class="form-control rounded-end-0 fw-semibold p-2" type="search"
+                                placeholder="Enter your email address" aria-label="Search">
+                            <button class="btn btn-primary rounded-start-0 text-white" type="submit">Subscribe</button>
                         </form>
+                        <div class="">
+                            <span class="subscribe__terms">By subscribing you agree to our
+                                <span class="subscribe__conditions">Terms & Conditions and Privacy & cookies
+                                    Policy</span>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </main>
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer pt-5">
         <div class="container">
             <div class="row border-bottom">
-                <div class="footer__block col col-12 col-md-6 col-lg-4">do you need help</div>
-                <div class="col col-12 col-md-6 col-lg-8">
+                <div class="footer__block col col-12 col-md-6 col-lg-3 border-end">
+                    <h6 class="footer__title">do you need help ?</h6>
+                    <p class="footer__text">Autoseligen syr. Nek diarask fröbomba. Nör antipol kynoda nynat. Pressa
+                        fåmoska.</p>
+                    <div class="d-flex flex-column mb-3">
+                        <a href="tel:0 800 300-353" class="footer__tel">0 800 300-353</a>
+                        <span class="footer__small">Free from fixed and mobile phones in USA.</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="footer__lab">Email:</span>
+                        <a href="#" class="footer__mail">info@example.com</a>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <span class="footer__lab">Call Center hours</span>
+                        <span class="footer__call-center">Mon-Sun 09:00-19:00</span>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-6 col-lg-9">
                     <div class="row">
-                        <div class="footer__block col col-12 col-md-6 col-lg-4">let us help you</div>
-                        <div class="footer__block col col-12 col-md-6 col-lg-4">make money with us</div>
-                        <div class="footer__block col col-12 col-md-6 col-lg-4">get to know us</div>
+                        <div class="footer__block footer__block--first col col-12 col-md-6 col-lg-4 ">
+                            <h6 class="footer__title">let us help you</h6>
+                            <ul>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Accessibility Statement
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Your Orders
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Returns & Replacements
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Shipping Rates & Policies
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Refund and Returns Policy
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Terms and Conditions
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Cookie Settings
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Help Center
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__block col col-12 col-md-6 col-lg-4">
+                            <h6 class="footer__title">make money with us</h6>
+                            <ul>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Sell on Blonwe
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Sell Your Services on Blonwe
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Sell on Blonwe Business
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Sell Your Apps on Blonwe
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Become an Affilate
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Advertise Your Products
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Sell-Publish with Us
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Become an Blonwe Vendor
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__block col col-12 col-md-6 col-lg-4">
+                            <h6 class="footer__title">get to know us</h6>
+                            <ul>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Careers for Blonwe
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        About Blonwe
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Inverstor Relations
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Blonwe Devices
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Customer reviews
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Social Responsibility
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Store Locations
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="d-md-flex justify-content-between align-items-center">
-                <div class="footer__socials d-flex  align-items-center flex-column flex-md-row py-4">
-                    <h6 class="mb-0">follow us:</h6>
-                    <div class="d-flex">
-                        <a class="px-1" href="#">
-                            f
-                        </a>
-                        <a class="px-1" href="#">
-                            tw
-                        </a>
-                        <a class="px-1" href="#">
-                            y
-                        </a>
-                        <a class="px-1" href="#">
-                            ins
-                        </a>
-                        <a class="px-1" href="#">
-                            tele
-                        </a>
+            <div class="footer__inner d-md-flex justify-content-between align-items-center py-3">
+                <div class="footer__netwoks d-flex  align-items-center flex-column flex-md-row py-4">
+                    <h6 class="footer__subtitle mb-0">follow us:</h6>
+                    <!-- c-networks-->
+                    <div class="c-networks">
+                        <ul class="d-flex align-items-center m-0">
+                            <li class="me-1">
+                                <a href="#" class="c-networks__link">
+                                    <span class="c-networks__item rounded-circle">
+                                        <i class="c-networks__icon fa-brands fa-facebook-f"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="me-1">
+                                <a href="#" class="c-networks__link">
+                                    <span class="c-networks__item rounded-circle">
+                                        <i class="c-networks__icon fa-brands fa-twitter"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="me-1">
+                                <a href="#" class="c-networks__link">
+                                    <span class="c-networks__item rounded-circle">
+                                        <i class="c-networks__icon fa-brands fa-youtube"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="me-1">
+                                <a href="#" class="c-networks__link">
+                                    <span class="c-networks__item rounded-circle">
+                                        <i class="c-networks__icon fa-brands fa-instagram"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="me-1">
+                                <a href="#" class="c-networks__link">
+                                    <span class="c-networks__item rounded-circle">
+                                        <i class="c-networks__icon fa-brands fa-telegram"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="footer__download d-flex  align-items-center flex-column flex-md-row">
-                    <h6 class="mb-0">Download App:</h6>
-                    <div class="d-flex">
+                    <h6 class="footer__subtitle mb-0">Download App:</h6>
+                    <div class="d-flex ms-2">
                         <a class="pe-2" href="#">
-                            app store
+                            <img src="public/img/app-store.png" alt="">
                         </a>
                         <a class="" href="#">
-                            google play
+                            <img src="public/img/google-play.png" alt="">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="" style="background-color: white;">
+        <div class="bg-white pt-4 pb-5">
             <div class="container d-flex flex-column flex-md-row align-items-center justify-content-md-between">
                 <div class="footer__copyright order-md-1 order-2 my-4 d-flex align-items-center">
-                    <span>Copyright 2023 © Blonwe WordPress Theme. All right reserved. Powered by KLBTheme.</span>
+                    <span>Copyright 2023 © Blonwe WordPress Theme. All right reserved. Powered by <span
+                            class="footer__element">KLBTheme</span>.</span>
                 </div>
-                <div class="order-1 order-md-2 d-md-flex ">
-                    <span>We accept:</span>
-                    <ul class="d-flex">
-                        <li class="px-2">VISA</li>
-                        <li class="px-2">PayPal</li>
-                        <li class="px-2">Skrill</li>
-                        <li class="px-2 pe-0">Klarna.</li>
+                <div class="order-1 order-md-2 d-md-flex align-items-center">
+                    <span class="footer__subtitle text-center">We accept:</span>
+                    <ul class="footer__pay d-flex align-items-center mb-0">
+                        <li class="footer__card px-2">
+                            <img src="public/img/visa.png" alt="visa">
+                        </li>
+                        <li class="footer__payment px-2">
+                            <img src="public/img/mastercard.png" alt="mastercard">
+                        </li>
+                        <li class="footer__payment px-2">
+                            <img src="public/img/paypal.png" alt="paypal">
+                        </li>
+                        <li class="footer__payment px-2">
+                            <img src="public/img/skrill.png" alt="skrill">
+                        </li>
+                        <li class="footer__payment px-2">
+                            <img src="public/img/maestro.png" alt="maestro">
+                        </li>
+                        <li class="footer__payment px-2">
+                            <img src="public/img/klarna.png" alt="klarna">
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -925,14 +2858,7 @@
             </div>
         </nav>
     </footer>
-    <div style="height: 10rem;"></div>
-
-    <!-- modal-location -->
-    <!-- btn-modal -->
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
-    </button> -->
-    <!-- Modal -->
+    <!-- Location -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -1036,41 +2962,67 @@
             </div>
         </div>
     </div>
-    </div>
 
-    <!-- modal-account -->
-    <!-- btn -->
-    <!-- Button trigger modal -->
-
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#accountModal">
-        accountModal
-    </button> -->
-
-    <!-- Modal -->
+    <!-- sig in account -->
     <div class="modal-account modal modal-xl" id="accountModal" tabindex="-1" aria-labelledby="accountModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="accountModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close border-0 bg-white" data-bs-dismiss="modal"
-                        aria-label="Close">
-                        <span class="material-symbols-outlined">
-                            close
-                        </span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col col-xl-6 d-none d-xl-flex">
-                                    <div class="overflow-hidden object-fit-cover">
-                                        <img class="object-fit-cover w-100" src="public/img/newsletter-form-image.jpg"
-                                            alt="">
-                                    </div>
+            <div class="modal-content rounded-4 overflow-hidden">
+                <div class="modal-body p-0">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col col-xl-6 d-none d-xl-flex px-0">
+                                <div class="overflow-hidden object-fit-cover">
+                                    <img class="object-fit-cover w-100" src="public/img/newsletter-form-image.jpg"
+                                        alt="">
                                 </div>
-                                <div class="col-xl-6">.col-md-4 .ms-auto</div>
+                            </div>
+                            <div class="col-xl-6 pt-4">
+                                <div class="w-100 d-flex justify-content-end">
+                                    <button type="button" class="btn-close border-0 bg-white ms-auto"
+                                        data-bs-dismiss="modal" aria-label="Close">
+                                        <span class="material-symbols-outlined">
+                                            close
+                                        </span>
+                                    </button>
+                                </div>
+                                <h3 class="modal-title fw-medium text-center mb-4" id="accountModalLabel">Log in
+                                </h3>
+                                <!-- form -->
+                                <form action="" class="classform p-5 pt-3 border-bottom">
+                                    <div class="mb-3">
+                                        <label for="formGroupExampleInput" class="form-label">Username or your email
+                                            address*</label>
+                                        <input type="text" class="form-control" id="formGroupExampleInput"
+                                            placeholder="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formGroupExampleInput2" class="form-label">Password*</label>
+                                        <input type="password" class="form-control" id="formGroupExampleInput2"
+                                            placeholder="">
+                                    </div>
+                                    <div class="">
+                                        <div class="form-check d-flex align-items-center mb-3">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <label class="form-check-label" for="gridCheck">
+                                                Check me out
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 mb-3">
+                                        <button type="submit" class="btn btn-primary w-100 p-2">Log in</button>
+                                    </div>
+                                    <div class="d-flex justify-content-center mb-5">
+                                        <a href="#" class="form-lost">Lost your passoword ?</a>
+                                    </div>
+                                    <p class="form-text">By continuing, you accept the Website Regulations , Regulations
+                                        for the sale of
+                                        alcoholic beverages and the <span class="form-privacy text-primary">Privacy
+                                            Policy</span></p>
+                                </form>
+                                <div class="modal-account-register d-flex justify-content-center py-3">
+                                    You dont have an account yet? <span class="modal-account-new">Register Now</span>
+                                </div>
                             </div>
                         </div>
                     </div>

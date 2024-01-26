@@ -1,28 +1,86 @@
 .sales {
     margin-bottom: 3rem;
+
+    &__title {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
     &__btn {
-        display: flex;
         justify-content: center;
-        align-items: center;
         padding: 0px;
         height: 1.5rem;
         width: 1.5rem;
         padding-left: 0.12rem;
+        margin-right: 2.18rem;
+        font-weight: 500;
+        color: $dark;
     }
-    .splide{
-        &__slide{
-            height: 25.93rem;
+
+    &__btn:hover {
+        color: $primary;
+    }
+
+    .splide {
+        &__slide {
+            // height: 25.93rem;
         }
-        &__arrows{
+
+        &__arrows {
             display: none;
         }
     }
 }
-@media (min-width: $width-desktop) {
-    .sales{
-        margin-bottom: 3.6rem;
-        &__arrows{
-            display: block;
+
+@media (min-width: $width-tablet) {
+    .sales {
+        .splide {
+
+            &__arrows {
+                // display: block;
+                opacity: 1;
+            }
+            &__arrows svg{
+                fill: white;
+            }
+
+
+            &__arrow--next {
+                z-index: 1;
+                right: -1.35rem;
+                background-color: $red;
+                border: 1px solid $red;
+                width: 40px;
+                height: 40px;
+                font-size: 12px;
+                opacity: 1;
+            }
+            
+            &__arrow--prev {
+                opacity: 1;
+                z-index: 1;
+                left: -1.35rem;
+                background-color: $danger;
+                border: 1px solid $danger;
+                width: 40px;
+                height: 40px;
+                font-size: 12px;
+            }
         }
+        .splide:hover{
+            .splide__arrows{
+                display: block;
+            }
+        }
+
+      
+
+    }
+}
+
+@media (min-width: $width-desktop) {
+    .sales {
+        margin-bottom: 3.6rem;
+
     }
 }

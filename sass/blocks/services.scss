@@ -2,10 +2,25 @@
     padding-bottom: 3.12rem;
 
     &__item {
-        height: 3.75rem;
+        // height: 3.75rem;
         margin-bottom: 1.25rem;
     }
+    &__wrapper{
+        display: flex;
+        align-items: center;
+    }
+    &__icon{
+        color: $primary;
+        margin-right: 1.87rem;
 
+    }
+    &__oferts{
+        font-weight: 600;
+    }
+    &__decriptions{
+        font-size: 12px;
+        color: $gray-600;
+    }
 
 }
 @media (min-width: $width-tablet) {

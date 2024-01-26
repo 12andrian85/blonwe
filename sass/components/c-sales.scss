@@ -13,11 +13,15 @@
             opacity: 0;
         }
         .card-title{
+            text-transform: capitalize;
             font-size: 14px;
             font-weight: 700;
         }
         .card-title:hover{
             text-decoration: underline;
+        }
+        .card-weight{
+            width: max-content;
         }
 
     }

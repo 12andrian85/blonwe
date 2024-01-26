@@ -1,27 +1,114 @@
 .footer {
     background-color: #F8F9FAFF;
-    &__block{
-        height: 10rem;
+
+    &__block {
+        margin-bottom: 25px;
     }
-    .navbar{
-        .navbar-toggler{
+
+    &__title {
+        text-transform: capitalize;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 14px;
+    }
+
+    &__small {
+        font-size: 12px;
+        color: $gray-600;
+    }
+
+    &__tel {
+        color: $primary;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    &__lab {
+        color: $gray-600;
+        font-size: 14px;
+    }
+
+    &__mail,
+    &__item {
+        color: $dark;
+        position: relative;
+        font-size: 14px;
+        font-weight: 500;
+        margin-left: 5px;
+    }
+
+    &__item:hover::before,
+    &__mail:hover::before {
+        position: absolute;
+        content: '';
+        bottom: -1px;
+        width: 100%;
+        height: 1px;
+        background-color: $dark;
+    }
+
+    &__item {
+        font-weight: 400;
+    }
+
+    &__wrapper {
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+
+    &__call-center {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    &__networks{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &__subtitle{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &__copyright{
+        font-size: 13px;
+
+    }
+    &__element{
+        font-weight: 500;
+        text-decoration: underline;
+    }
+    &__element:hover{
+        text-decoration: none;
+    }
+
+    .navbar {
+        .navbar-toggler {
             width: 3rem;
         }
     }
 }
- @media (min-width: $width-tablet) {
-    .footer{
-        &__block{
-           margin-bottom: 2rem;
+
+@media (min-width: $width-tablet) {
+    .footer {
+        &__block {
+            margin-bottom: 2rem;
         }
     }
 }
-@media (min-width: $width-desktop) {
-     .footer{
-         &__block{
-            margin-bottom: 5rem;
-         }
-     }
 
-    
- }
+@media (min-width: $width-desktop) {
+    .footer {
+        &__block {
+            margin-bottom: 5rem;
+
+        }
+
+        &__block--first {
+            padding-left: 70px;
+        }
+    }
+
+
+}

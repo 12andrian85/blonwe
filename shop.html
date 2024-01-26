@@ -19,21 +19,28 @@
 
 <body>
     <!-- header -->
-    <header class="header ">
+    <header class="header  border-bottom">
         <!-- header-top -->
-        <div class="header-top d-none d-xl-flex">
+        <div class="header-top py-1 d-none d-xl-flex">
             <div class="container d-flex justify-content-between">
                 <div class="header-top__information">
                     <div class="header-top__track pe-2 d-flex align-items-center">
                         <span class="material-symbols-outlined fs-5">
                             orders
                         </span>
-                        <span>Track Order</span>
+                        <a href="#">Track Order</a>
                     </div>
-                    <div class="header-top__about px-2"> About Us</div>
-                    <div class="header-top__contact px-2">Contact</div>
-                    <div class="header-top__questions px-2">FAQ</div>
+                    <div class="header-top__about px-2">
+                        <a href="#"> About Us</a>
+                    </div>
+                    <div class="header-top__contact px-2">
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="header-top__questions px-2">
+                        <a href="#">FAQ</a>
+                    </div>
                 </div>
+                <!-- header-top__inner -->
                 <div class="header-top__inner d-flex">
                     <div class="header-top__delivery d-flex align-items-center px-3">
                         <div class="header-top__text d-flex align-items-center">
@@ -43,10 +50,13 @@
                             <span class="fw-light">We delivery to you every day from</span>
                         </div>
                         <div class="header-top__time rounded-pill">
-                            <span class="">7:00 to 23:00</span>
+                            <a href="#">
+                                <span class="">7:00 to 23:00</span>
+                            </a>
                         </div>
                     </div>
-                    <div class="header-top__options d-flex align-items-center px-3">
+                    <!-- options -->
+                    <div class="header-top__options d-flex align-items-center ps-2 border-start">
                         <div class="header-top__language  pe-2">
 
                             <div class="dropdown">
@@ -54,7 +64,7 @@
                                     aria-expanded="false">
                                     English
                                 </button>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu shadow-lg">
                                     <li><a class="dropdown-item" href="#">Francese</a></li>
                                     <li><a class="dropdown-item" href="#">Italian</a></li>
                                     <li><a class="dropdown-item" href="#">Spanish</a></li>
@@ -75,7 +85,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="header-top__theme ps-2 d-flex align-items-center">
+                        <button type="button" class="header-top__theme ps-2 d-flex align-items-center border-0">
                             <span class="material-symbols-outlined me-2 fs-6 p-1 rounded-2"
                                 style="background-color:#C9DEDAFF;">
                                 light_mode
@@ -83,7 +93,7 @@
                             <span>
                                 Dark theme
                             </span>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -160,7 +170,7 @@
                                     <a class="nav-link" href="#">bakery</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">blog</a>
+                                    <a class="nav-link" href="https://klbtheme.com/blonwe/grocery/#">tamplate</a>
                                 </li>
                             </ul>
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
@@ -235,106 +245,83 @@
                             <div class="mb-5">
                                 Copyright 2023 © Blonwe WordPress Theme. All right reserved. Powered by
                             </div>
-
-
-                            <!-- <li class="nav-item">
-                                <form class="d-flex" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Search"
-                                        aria-label="Search">
-                                </form>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <button type="button" class="btn d-flex align-items-center" data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop">
-                                    <span class="material-symbols-outlined me-3">
-                                        person
-                                    </span>
-                                    <div class="d-flex flex-column text-start">
-                                        <small>Sign in</small>
-                                        <span class="text-nowrap text-primary">Account</span>
-                                    </div>
-                                </button>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="px-2">
-                                    <span class="material-symbols-outlined">
-                                        favorite
-                                    </span>
-                                </a>
-                            </li>
-                            <a href="#" class="px-2">
-                                <span class="material-symbols-outlined">
-                                    balance
-                                </span>
-                            </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="px-2 pe-0"><span class="material-symbols-outlined">
-                                        shopping_cart
-                                    </span>
-                                </a>
-                            </li> -->
                         </div>
                     </div>
                 </div>
             </nav>
             <!-- header-menu -->
-            <div class="header-menu d-flex align-items-center d-none d-xl-flex">
-                <a href="#" class="header__logo" style="width: 185px; height: 50px;">logo</a>
-                <div>
-                    <button type="button" class="btn d-flex align-items-center p-0" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop" style="width: 150px;">
+            <div class="header-menu d-flex align-items-center d-none d-xl-flex py-3">
+                <a href="#" class="header__logo">
+                    <img src="public/img/logo-grocery.png" alt="" style="width: 180px;">
+                </a>
+                <div class="location">
+                    <button type="button"
+                        class="btn d-flex align-items-center text-nowrap p-1 px-2 border rounded-3 ms-5"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <span class="material-symbols-outlined">
                             location_on
                         </span>
-                        <div class="d-flex flex-column text-start">
-                            <small>Deliver to</small>
-                            <span>Select Location</span>
+                        <div class="d-flex flex-column text-start text-nowrap">
+                            <small class="location-small">Deliver to</small>
+                            <span class="location-select">Select Location</span>
                         </div>
                     </button>
                 </div>
                 <!-- search -->
-                <form action="" class="w-100">
-                    <input type="search" class="w-100 py-2" placeholder="Search of Product">
+                <form action=""
+                    class="search overflow-hidden ms-4 w-100 d-flex align-items-center border border-2 border-primary rounded-3 ">
+                    <input type="search" class="w-100 p-2 border-0" placeholder="Search of Product">
+                    <button class="search-btn btn btn-primary">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </button>
                 </form>
                 <!-- account -->
-                <button type="button" class="btn d-flex align-items-center" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop">
-                    <span class="material-symbols-outlined me-3">
+                <button type="button" class="account btn d-flex align-items-center p-0 " data-bs-toggle="modal"
+                    data-bs-target="#accountModal">
+                    <span class="material-symbols-outlined me-2 fs-2">
                         person
                     </span>
                     <div class="d-flex flex-column text-start">
-                        <small>Sign in</small>
-                        <span class="text-nowrap text-primary">Account</span>
+                        <small class="account-small">Sign in</small>
+                        <span class="account-text text-nowrap text-primary">Account</span>
                     </div>
                 </button>
-                <div class="header-menu__action d-flex align-items-center">
-                    <a href="#" class="px-2">
-                        <span class="material-symbols-outlined">
+                <!-- action -->
+                <div class="action d-flex align-items-center ms-3">
+                    <a href="#" class="action-item position-relative  px-2">
+                        <span class="action-icon text-dark material-symbols-outlined">
                             favorite
                         </span>
+                        <span class="action-count bg-primary position-absolute top-0 end-0">0</span>
                     </a>
-                    <a href="#" class="px-2">
-                        <span class="material-symbols-outlined">
+                    <a href="#" class="action-item text-dark position-relative  px-2">
+                        <span class="action-icon material-symbols-outlined">
                             balance
                         </span>
+                        <span class="action-count bg-primary position-absolute top-0 end-0">0</span>
                     </a>
-                    <a href="#" class="px-2 pe-0"><span class="material-symbols-outlined">
+                    <a href="#" class="action-item text-dark position-relative  px-2">
+                        <span class="action-icon material-symbols-outlined">
                             shopping_cart
                         </span>
+                        <span class="action-count bg-primary position-absolute top-0 end-0">0</span>
                     </a>
                 </div>
 
             </div>
             <!-- nav-bar -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 d-none d-xl-flex">
-                <div class="container-fluid">
+                <div class="container-fluid bg-white">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand d-lg-none" href="#">logo</a>
+                    <a class="navbar-brand d-lg-none" href="home">
+                        <img src="public/img/logo-grocery.png" alt="">
+                    </a>
                     <a href="#"><span class="material-symbols-outlined d-lg-none">
                             shopping_cart
                         </span></a>
@@ -345,7 +332,7 @@
                                 <ul class="navbar-main me-auto mb-2 mb-lg-0 d-lg-flex align-items-center  ">
                                     <h6 class="navbar-subtitle my-4 d-lg-none">MAIN MENU</h6>
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                                     </li>
                                     <li class="nav-item nav-item--submenu relative">
                                         <a href="shop.html" class="nav-link d-flex align-items-center">
@@ -355,60 +342,107 @@
                                             </span>
                                         </a>
                                         <div
-                                            class="submenu justify-content-between end-0 start-0 p-4 mx-4 position-absolute flex-grow-1 bg-white z-1">
+                                            class="submenu justify-content-between end-0 start-0  mx-4 position-absolute flex-grow-1 bg-white z-1">
                                             <ul>
-                                                <h5>title title</h5>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
+                                                <h5 class="submenu-title">Shop Lists</h5>
+                                                <li class="submenu-item">
+                                                    <a href="#">shop default</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">shop right sidebar</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">shop width</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">filters area</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">list left sidebar</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">load more button</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">infinite scrolling</a>
+                                                </li>
                                             </ul>
                                             <ul>
-                                                <h5>title title</h5>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
+                                                <h5 class="submenu-title">product detail</h5>
+                                                <li class="submenu-item">
+                                                    <a href="#">product default</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">product variable</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">product grouped</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">product external</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">product downloadable</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">product width video</a>
+                                                </li>
                                             </ul>
                                             <ul>
-                                                <h5>title title</h5>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
+                                                <h5 class="submenu-title">shop pages</h5>
+                                                <li class="submenu-item">
+                                                    <a href="#">cart</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">checkout</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">my account</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">wishlist</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">order tracking</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">featured products</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">best selling products</a>
+                                                </li>
                                             </ul>
                                             <ul>
-                                                <h5>title title</h5>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
+                                                <h5 class="submenu-title">shop layout</h5>
+                                                <li class="submenu-item">
+                                                    <a href="#">two columns</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">there columns</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">there columns wide</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">four columns</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">four columns wide</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">five columns wide</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">six columns wide</a>
+                                                </li>
                                             </ul>
                                         </div>
-
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Frozen Foods</a>
+                            <a class="nav-link active" aria-current="page" href="type-products.html">Frozen Foods</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Beverages</a>
@@ -417,7 +451,8 @@
                             <a class="nav-link active" aria-current="page" href="#">Bakery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                            <a class="nav-link active text-danger" aria-current="page"
+                                href="https://klbtheme.com/blonwe/grocery/#">Tamplate</a>
                         </li>
                         <li class="nav-item nav-item--submenu relative">
                             <a href="#" class="nav-link d-flex align-items-center">
@@ -427,54 +462,201 @@
                                     expand_more
                                 </span>
                             </a>
+                            <!-- discounts -->
                             <div
-                                class="submenu justify-content-between end-0 start-0 p-4 position-absolute flex-grow-1 bg-white z-1">
-                                <ul>
-                                    <h5>title title</h5>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                </ul>
-                                <ul>
-                                    <h5>title title</h5>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                </ul>
-                                <ul>
-                                    <h5>title title</h5>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                </ul>
-                                <ul>
-                                    <h5>title title</h5>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                </ul>
-                            </div>
+                                class="submenu submenu-discount justify-content-between end-0 start-0 px-4 ps-0 position-absolute flex-grow-1 bg-white z-1">
+                                <div class="row">
+                                    <div class="col col-lg-2">
+                                        <!-- c-discounts -->
+                                        <div class="c-discounts">
+                                            <a href="#">
+                                                <div class="card border-0 border-end rounded-0">
+                                                    <div class=" position-relative">
+                                                        <img src="public/img/image-1-47.png" class="card-img-top"
+                                                            alt="...">
+                                                        <span class="badge card-badge position-absolute">14%</span>
+                                                    </div>
+                                                    <div class="card-body pt-0">
+                                                        <div class="">
+                                                            <span
+                                                                class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                            <span
+                                                                class="p-1 rounded-1 bg-success text-white fs-6 fw-bold">$3.30</span>
+                                                        </div>
+                                                        <p class="card-text fw-bold">Signature Wood-Fired Mushroom and
+                                                            Caramelized</p>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="card-star me-3 rounded-pill">
+                                                                <i class="fa-solid fa-star text-warning"></i>
+                                                                <span class="fw-semibold">4.33</span>
+                                                            </div>
+                                                            <span class="fs-sm">3 Reviews</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-2">
+                                        <!-- c-discounts -->
+                                        <div class="c-discounts">
+                                            <a href="#">
+                                                <div class="card border-0 border-end rounded-0">
+                                                    <div class=" position-relative">
+                                                        <img src="public/img/image-1-47.png" class="card-img-top"
+                                                            alt="...">
+                                                        <span class="badge card-badge position-absolute">14%</span>
+                                                    </div>
+                                                    <div class="card-body pt-0">
+                                                        <div class="">
+                                                            <span
+                                                                class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                            <span
+                                                                class="p-1 rounded-1 bg-success text-white fs-6 fw-bold">$3.30</span>
+                                                        </div>
+                                                        <p class="card-text fw-bold">Signature Wood-Fired Mushroom and
+                                                            Caramelized</p>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="card-star me-3 rounded-pill">
+                                                                <i class="fa-solid fa-star text-warning"></i>
+                                                                <span class="fw-semibold">4.33</span>
+                                                            </div>
+                                                            <span class="fs-sm">3 Reviews</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-2">
+                                        <!-- c-discounts -->
+                                        <div class="c-discounts">
+                                            <a href="#">
+                                                <div class="card border-0 border-end rounded-0">
+                                                    <div class=" position-relative">
+                                                        <img src="public/img/image-1-47.png" class="card-img-top"
+                                                            alt="...">
+                                                        <span class="badge card-badge position-absolute">14%</span>
+                                                    </div>
+                                                    <div class="card-body pt-0">
+                                                        <div class="">
+                                                            <span
+                                                                class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                            <span
+                                                                class="p-1 rounded-1 bg-success text-white fs-6 fw-bold">$3.30</span>
+                                                        </div>
+                                                        <p class="card-text fw-bold">Signature Wood-Fired Mushroom and
+                                                            Caramelized</p>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="card-star me-3 rounded-pill">
+                                                                <i class="fa-solid fa-star text-warning"></i>
+                                                                <span class="fw-semibold">4.33</span>
+                                                            </div>
+                                                            <span class="fs-sm">3 Reviews</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-2">
+                                        <!-- c-discounts -->
+                                        <div class="c-discounts">
+                                            <a href="#">
+                                                <div class="card border-0 border-end rounded-0">
+                                                    <div class=" position-relative">
+                                                        <img src="public/img/image-1-47.png" class="card-img-top"
+                                                            alt="...">
+                                                        <span class="badge card-badge position-absolute">14%</span>
+                                                    </div>
+                                                    <div class="card-body pt-0">
+                                                        <div class="">
+                                                            <span
+                                                                class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                            <span
+                                                                class="p-1 rounded-1 bg-success text-white fs-6 fw-bold">$3.30</span>
+                                                        </div>
+                                                        <p class="card-text fw-bold">Signature Wood-Fired Mushroom and
+                                                            Caramelized</p>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="card-star me-3 rounded-pill">
+                                                                <i class="fa-solid fa-star text-warning"></i>
+                                                                <span class="fw-semibold">4.33</span>
+                                                            </div>
+                                                            <span class="fs-sm">3 Reviews</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-2">
+                                        <!-- c-discounts -->
+                                        <div class="c-discounts">
+                                            <a href="#">
+                                                <div class="card border-0 border-end rounded-0">
+                                                    <div class=" position-relative">
+                                                        <img src="public/img/image-1-47.png" class="card-img-top"
+                                                            alt="...">
+                                                        <span class="badge card-badge position-absolute">14%</span>
+                                                    </div>
+                                                    <div class="card-body pt-0">
+                                                        <div class="">
+                                                            <span
+                                                                class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                            <span
+                                                                class="p-1 rounded-1 bg-success text-white fs-6 fw-bold">$3.30</span>
+                                                        </div>
+                                                        <p class="card-text fw-bold">Signature Wood-Fired Mushroom and
+                                                            Caramelized</p>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="card-star me-3 rounded-pill">
+                                                                <i class="fa-solid fa-star text-warning"></i>
+                                                                <span class="fw-semibold">4.33</span>
+                                                            </div>
+                                                            <span class="fs-sm">3 Reviews</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-2">
+                                        <!-- c-discounts -->
+                                        <div class="c-discounts">
+                                            <a href="#">
+                                                <div class="card border-0 rounded-0">
+                                                    <div class=" position-relative">
+                                                        <img src="public/img/image-1-47.png" class="card-img-top"
+                                                            alt="...">
+                                                        <span class="badge card-badge position-absolute">14%</span>
+                                                    </div>
+                                                    <div class="card-body pt-0">
+                                                        <div class="">
+                                                            <span
+                                                                class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                            <span
+                                                                class="p-1 rounded-1 bg-success text-white fs-6 fw-bold">$3.30</span>
+                                                        </div>
+                                                        <p class="card-text fw-bold">Signature Wood-Fired Mushroom and
+                                                            Caramelized</p>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="card-star me-3 rounded-pill">
+                                                                <i class="fa-solid fa-star text-warning"></i>
+                                                                <span class="fw-semibold">4.33</span>
+                                                            </div>
+                                                            <span class="fs-sm">3 Reviews</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
 
+
+                                </div>
+
+                            </div>
                         </li>
                         <li class="nav-item d-none d-lg-flex">
                             <a href="components.html" class="text-danger fw-bold">components</a>
@@ -484,7 +666,7 @@
                             <span class="material-symbols-outlined me-2 text-danger">
                                 timeline
                             </span>
-                            <span class="text-danger fs-5 fw-bold">Buy Theme</span>
+                            <span class="text-danger fs-6 fw-bold">Buy Theme</span>
 
                         </div>
                     </div>
@@ -555,63 +737,66 @@
     <main>
         <div class="container">
             <!-- c-breadcrumb -->
-            <nav aria-label="breadcrumb" class="c-breadcrumb">
-                <ol class="breadcrumb my-3">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Shop</li>
-                </ol>
-            </nav>
+            <div class="breadcrumb-shop">
+                <nav aria-label="breadcrumb" class="c-breadcrumb">
+                    <ol class="breadcrumb my-2">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item breadcrumb-item--active active" aria-current="page">Shop</li>
+                    </ol>
+                </nav>
+            </div>
             <!-- banner-shop     -->
-            <div class="banner-shop mb-3">
+            <div class="banner-shop">
                 <a href="#">
                     <div class="card ">
                         <span class="card-discount mb-3">Weekend Discount</span>
-                        <h5 class="card-title my-3">Card title</h5>
+                        <h2 class="card-title mb-3">Bringing Bature`s Bounty to You</h2>
                         <p class="card-text mb-3">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero.
+                            We have prepared special discounts for you on grocery products...
                         </p>
                         <div class="card-price">
-                            <span class="card-price__text">form</span>
-                            <span class="card-price__price">$ 175.99</span>
+                            <span class="card-label">form</span>
+                            <span class="card-pay">$ 175.99</span>
                         </div>
                     </div>
                 </a>
             </div>
             <!-- products-shop -->
             <section class="products-shop">
-                <div class="filter d-flex align-items-center justify-content-between mb-3">
+                <div class="filter d-flex align-items-center justify-content-between border-bottom mb-3 p-3">
                     <!-- filter -->
                     <a class="btn d-flex align-items-center p-0 d-xl-none" data-bs-toggle="offcanvas"
                         href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                         <span class="material-symbols-outlined me-2">
                             filter_alt
                         </span>
-                        <span>Filter</span>
+                        <span class="fw-medium">Filter</span>
                     </a>
-                    <span class="fs-6 text-gray-600 d-none d-lg-flex">Showing 1-20 of 57 results</span>
+                    <span class="products-shop__bar text-gray-600 d-none d-lg-flex">Showing 1-20 of 57 results</span>
                     <div class="d-flex">
                         <!-- sort -->
-                        <div class="input-group">
+                        <div class="input-group border-end">
                             <label class="input-group-text" for="sort">sort:</label>
-                            <select class="form-select" id="sort">
-                                <option selected>Choose...</option>
+                            <select class="form-select border-0" id="sort">
+                                <option selected class="text-dark">Sort by lasted</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
                             </select>
                         </div>
                         <!-- Show -->
-                        <div class="input-group d-none d-lg-flex">
+                        <div class="input-group d-none d-lg-flex border-end">
                             <label class="input-group-text" for="show">Show:</label>
-                            <select class="form-select" id="show">
+                            <select class="form-select border-0" id="show">
                                 <option selected>Choose...</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
                             </select>
                         </div>
+
                         <div class=" align-items-center d-none d-lg-flex">
-                            <span class="material-symbols-outlined">
+                            <span class="material-symbols-outlined mx-2">
                                 widgets
                             </span>
                             <span class="material-symbols-outlined">
@@ -622,366 +807,540 @@
                 </div>
                 <!-- category -->
                 <div class="row">
-                    <div class="col col-3 d-none d-xl-flex flex-column">
-                        <div class="c-product-cat">
-                            <h5 class="mb-3 products-shop__title">Product Category</h5>
-                            <div class="mb-3  d-flex align-items-center">
+                    <div class="col col-3 d-none d-xl-flex pe-2">
+                        <div class="d-flex flex-column border-end w-100 pe-3">
+                            <div class="c-product-cat">
+                                <h6 class="mb-3 products-shop__title">Product Category</h6>
                                 <!-- beverages -->
-                                <div class="accordion accordion-flush w-100" id="accordionFlushExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header d-flex align-items-center">
-                                            <label
-                                                class="d-flex align-items-center flex-grow-1 fw-normal form-check-label"
-                                                for="beverages">
-                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
-                                                    id="beverages">
-                                                Beverages
-                                            </label>
-                                            <button class="accordion-button collapsed p-0 w-auto" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                                aria-expanded="false" aria-controls="flush-collapseOne">
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                            data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">
+                                <div class="mb-2 d-flex align-items-center">
+                                    <div class="accordion accordion-flush w-100" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header d-flex align-items-center">
                                                 <label
-                                                    class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
-                                                    for="biscuits">
+                                                    class="d-flex align-items-center flex-grow-1 fw-normal form-check-label"
+                                                    for="beverages">
                                                     <input class="form-check-input m-0 me-2" type="checkbox" value=""
-                                                        id="biscuits">
+                                                        id="beverages">
                                                     Beverages
                                                 </label>
+                                                <button class="accordion-button collapsed p-0 w-auto" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="biscuits">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="biscuits">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="breads">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="breads">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="beackfast">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="beackfast">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="frozen">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="frozen">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="fruits">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="fruits">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="grocery">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="grocery">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="household">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="household">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="meats">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="meats">
+                                                        Beverages
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- biscuits -->
+                                <div class="form-check ps-0 mb-2">
+                                    <label class="d-flex align-items-center flex-grow-1 fw-normal form-check-label"
+                                        for="biscuit">
+                                        <input class="form-check-input m-0 me-2" type="checkbox" value="" id="biscuit">
+                                        Biscuits & Snacks
+                                    </label>
+                                </div>
+                                <!-- bread & bakery -->
+                                <div class="mb-2  d-flex align-items-center">
+                                    <div class="accordion accordion-flush w-100" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header d-flex align-items-center">
                                                 <label
-                                                    class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
-                                                    for="breads">
+                                                    class="d-flex align-items-center flex-grow-1 fw-normal form-check-label"
+                                                    for="beverages">
                                                     <input class="form-check-input m-0 me-2" type="checkbox" value=""
-                                                        id="breads">
-                                                    Beverages
+                                                        id="beverages">
+                                                    breads & bakery
                                                 </label>
+                                                <button class="accordion-button collapsed p-0 w-auto" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="biscuits">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="biscuits">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="breads">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="breads">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="beackfast">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="beackfast">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="frozen">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="frozen">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="fruits">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="fruits">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="grocery">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="grocery">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="household">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="household">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="meats">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="meats">
+                                                        Beverages
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- breakfast & dairy -->
+                                <div class="mb-2  d-flex align-items-center">
+                                    <div class="accordion accordion-flush w-100" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header d-flex align-items-center">
                                                 <label
-                                                    class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
-                                                    for="beackfast">
+                                                    class="d-flex align-items-center flex-grow-1 fw-normal form-check-label"
+                                                    for="beverages">
                                                     <input class="form-check-input m-0 me-2" type="checkbox" value=""
-                                                        id="beackfast">
-                                                    Beverages
+                                                        id="beverages">
+                                                    breakfast & dairy
                                                 </label>
+                                                <button class="accordion-button collapsed p-0 w-auto" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="biscuits">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="biscuits">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="breads">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="breads">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="beackfast">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="beackfast">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="frozen">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="frozen">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="fruits">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="fruits">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="grocery">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="grocery">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="household">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="household">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="meats">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="meats">
+                                                        Beverages
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- frozen foods-->
+                                <div class="form-check ps-0 mb-2">
+                                    <label class="d-flex align-items-center flex-grow-1 fw-normal form-check-label"
+                                        for="biscuit">
+                                        <input class="form-check-input m-0 me-2" type="checkbox" value="" id="biscuit">
+                                        frozen foods
+                                    </label>
+                                </div>
+                                <!-- fruits & vegetables -->
+                                <div class="mb-2  d-flex align-items-center">
+                                    <div class="accordion accordion-flush w-100" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header d-flex align-items-center">
                                                 <label
-                                                    class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
-                                                    for="frozen">
+                                                    class="d-flex align-items-center flex-grow-1 fw-normal form-check-label"
+                                                    for="beverages">
                                                     <input class="form-check-input m-0 me-2" type="checkbox" value=""
-                                                        id="frozen">
-                                                    Beverages
+                                                        id="beverages">
+                                                    fruits & vegetables
                                                 </label>
+                                                <button class="accordion-button collapsed p-0 w-auto" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="biscuits">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="biscuits">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="breads">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="breads">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="beackfast">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="beackfast">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="frozen">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="frozen">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="fruits">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="fruits">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="grocery">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="grocery">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="household">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="household">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="meats">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="meats">
+                                                        Beverages
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- grocery & staples -->
+                                <div class="form-check ps-0 mb-2">
+                                    <label class="d-flex align-items-center flex-grow-1 fw-normal form-check-label"
+                                        for="biscuit">
+                                        <input class="form-check-input m-0 me-2" type="checkbox" value="" id="biscuit">
+                                        grocery & staples
+                                    </label>
+                                </div>
+                                <!-- household needs -->
+                                <div class="form-check ps-0 mb-2">
+                                    <label class="d-flex align-items-center flex-grow-1 fw-normal form-check-label"
+                                        for="biscuit">
+                                        <input class="form-check-input m-0 me-2" type="checkbox" value="" id="biscuit">
+                                        household needs
+                                    </label>
+                                </div>
+                                <!-- meats & seafoods -->
+                                <div class="mb-2  d-flex align-items-center">
+                                    <div class="accordion accordion-flush w-100" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header d-flex align-items-center">
                                                 <label
-                                                    class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
-                                                    for="fruits">
+                                                    class="d-flex align-items-center flex-grow-1 fw-normal form-check-label"
+                                                    for="beverages">
                                                     <input class="form-check-input m-0 me-2" type="checkbox" value=""
-                                                        id="fruits">
-                                                    Beverages
+                                                        id="beverages">
+                                                    meats & seafoods
                                                 </label>
-                                                <label
-                                                    class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
-                                                    for="grocery">
-                                                    <input class="form-check-input m-0 me-2" type="checkbox" value=""
-                                                        id="grocery">
-                                                    Beverages
-                                                </label>
-                                                <label
-                                                    class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
-                                                    for="household">
-                                                    <input class="form-check-input m-0 me-2" type="checkbox" value=""
-                                                        id="household">
-                                                    Beverages
-                                                </label>
-                                                <label
-                                                    class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
-                                                    for="meats">
-                                                    <input class="form-check-input m-0 me-2" type="checkbox" value=""
-                                                        id="meats">
-                                                    Beverages
-                                                </label>
+                                                <button class="accordion-button collapsed p-0 w-auto" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="biscuits">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="biscuits">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="breads">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="breads">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="beackfast">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="beackfast">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="frozen">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="frozen">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="fruits">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="fruits">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="grocery">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="grocery">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="household">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="household">
+                                                        Beverages
+                                                    </label>
+                                                    <label
+                                                        class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
+                                                        for="meats">
+                                                        <input class="form-check-input m-0 me-2" type="checkbox"
+                                                            value="" id="meats">
+                                                        Beverages
+                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- biscuits -->
-                            <div class="form-check ps-0 mb-3">
-                                <label class="d-flex align-items-center flex-grow-1 fw-normal form-check-label"
-                                    for="biscuit">
-                                    <input class="form-check-input m-0" type="checkbox" value="" id="biscuit">
-                                    Beverages
-                                </label>
-                            </div>
-                            <!-- breads&bakery -->
-                            <div class="accordion accordion-flush w-100 mb-3" id="accordionFlushExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header d-flex align-items-center">
-                                        <label class="d-flex align-items-center flex-grow-1 fw-normal form-check-label"
-                                            for="backery">
-                                            <input class="form-check-input m-0 me-2" type="checkbox" value=""
-                                                id="backery">
-                                            breads & bakery
-                                        </label>
-                                        <button class="accordion-button collapsed p-0 w-auto" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapsebackery"
-                                            aria-expanded="false" aria-controls="flush-collapseOne">
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapsebackery" class="accordion-collapse collapse"
-                                        data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <label
-                                                class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
-                                                for="buns">
-                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
-                                                    id="buns">
-                                                Buns & Rolls
-                                            </label>
-                                            <label
-                                                class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
-                                                for="cakes">
-                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
-                                                    id="cakes">
-                                                Cakes and Cupcakes
-                                            </label>
-                                            <label
-                                                class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
-                                                for="cookies">
-                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
-                                                    id="cookies">
-                                                Cookies and Brownies
-                                            </label>
-                                            <label
-                                                class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
-                                                for="muffins">
-                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
-                                                    id="muffins">
-                                                Donuts and Muffins
-                                            </label>
-                                            <label
-                                                class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
-                                                for="special">
-                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
-                                                    id="special">
-                                                Order Special Cakes
-                                            </label>
-                                            <label
-                                                class="d-flex align-items-center flex-grow-1 fw-normal form-check-label"
-                                                for="packaged">
-                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
-                                                    id="packaged">
-                                                Packaged Breads
-                                            </label>
+                            <!-- filter-price -->
+                            <div class="filter-price my-3">
+                                <h5 class="products-shop__title">Filter by price</h5>
+                                <div class="c-input-range">
+                                    <div class="range_container">
+                                        <div class="d-flex align-items-center">
+                                            <div class="input-group mb-3 d-flex flex-column">
+                                                <label for="minprice">Min price</label>
+                                                <input type="number" class="w-100 form-control" min="0" max="70"
+                                                    value="0" id="minprice">
+                                            </div>
+                                            <span class="mx-2">-</span>
+                                            <div class="input-group mb-3 d-flex flex-column">
+                                                <label for="maxprice">Min price</label>
+                                                <input type="number" class="w-100 form-control" min="0" max="70"
+                                                    value="70" id="maxprice">
+                                            </div>
+                                        </div>
+                                        <div class="sliders_control">
+                                            <input id="fromSlider" type="range" value="0" min="0" max="70" />
+                                            <input id="toSlider" type="range" value="100" min="0" max="70" />
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="form_control">
+                                                <span>price:</span>
+                                                <span class="form_control_price">$0</span>
+                                                <span class="d-flex align-items-center mx-2">
+                                                    <div class="border-bottom border-dark"
+                                                        style="height: 2px; width: 1rem;"></div>
+                                                </span>
+                                                <span class="form_control_price">$70</span>
+                                            </div>
+                                            <a href="#" class="btn btn-light fw-bold">Filter</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- frozen foods -->
-                            <div class="form-check ps-0 mb-3">
-                                <label class="d-flex align-items-center flex-grow-1 fw-normal form-check-label"
-                                    for="frozen">
-                                    <input class="form-check-input m-0" type="checkbox" value="" id="frozen">
-                                    Frozen Foods
-                                </label>
-                            </div>
-                            <!-- fruits&vegetables -->
-                            <div class="accordion accordion-flush w-100 mb-3" id="accordionFlushExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header d-flex align-items-center">
-                                        <a href="index.html" class="d-flex flex-grow-1 z-1">
-                                            <label class="d-flex align-items-center  fw-normal form-check-label"
-                                                for="fruits">
-                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
-                                                    id="fruits">
-                                                Fruits & Vegetables
-                                            </label>
-                                        </a>
-                                        <button class="accordion-button collapsed p-0 w-auto" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapsefruits"
-                                            aria-expanded="false" aria-controls="flush-collapseOne">
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapsefruits" class="accordion-collapse collapse"
-                                        data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <ul>
-                                                <li>
-                                                    <a href="shop.html" cat="1">
-                                                        <label
-                                                            class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
-                                                            for="bunss">
-                                                            <input class="form-check-input m-0 me-2" type="checkbox"
-                                                                value="1" id="bunss">
-                                                            Buns & Rolls
-                                                        </label>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <label
-                                                class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
-                                                for="cakes">
-                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
-                                                    id="cakes">
-                                                Cakes and Cupcakes
-                                            </label>
-                                            <label
-                                                class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
-                                                for="cookies">
-                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
-                                                    id="cookies">
-                                                Cookies and Brownies
-                                            </label>
-                                            <label
-                                                class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
-                                                for="muffins">
-                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
-                                                    id="muffins">
-                                                Donuts and Muffins
-                                            </label>
-                                            <label
-                                                class="d-flex mb-2 align-items-center flex-grow-1 fw-normal form-check-label"
-                                                for="special">
-                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
-                                                    id="special">
-                                                Order Special Cakes
-                                            </label>
-                                            <label
-                                                class="d-flex align-items-center flex-grow-1 fw-normal form-check-label"
-                                                for="packaged">
-                                                <input class="form-check-input m-0 me-2" type="checkbox" value=""
-                                                    id="packaged">
-                                                Packaged Breads
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- filter-price -->
-                        <div class="filter-price my-3">
-                            <h5 class="products-shop__title">Filter by price</h5>
-                            <div class="c-input-range">
-                                <div class="range_container">
-                                    <div class="d-flex align-items-center">
-                                        <div class="input-group mb-3 d-flex flex-column">
-                                            <label for="minprice">Min price</label>
-                                            <input type="number" class="w-100 form-control" min="0" max="70" value="0"
-                                                id="minprice">
-                                        </div>
-                                        <span class="mx-2">-</span>
-                                        <div class="input-group mb-3 d-flex flex-column">
-                                            <label for="maxprice">Min price</label>
-                                            <input type="number" class="w-100 form-control" min="0" max="70" value="70"
-                                                id="maxprice">
-                                        </div>
-                                    </div>
-                                    <div class="sliders_control">
-                                        <input id="fromSlider" type="range" value="0" min="0" max="70" />
-                                        <input id="toSlider" type="range" value="100" min="0" max="70" />
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div class="form_control">
-                                            <span>price:</span>
-                                            <span class="form_control_price">$0</span>
-                                            <span class="d-flex align-items-center mx-2">
-                                                <div class="border-bottom border-dark"
-                                                    style="height: 2px; width: 1rem;"></div>
-                                            </span>
-                                            <span class="form_control_price">$70</span>
-                                        </div>
-                                        <a href="#" class="btn btn-light fw-bold">Filter</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- brands -->
-                        <ul class="brands mb-3">
-                            <h5 class="mb-3 products-shop__title">Brands</h5>
-                            <li>
-                                <div class="form-check d-flex justify-content-between mt-2">
-                                    <div class="">
-                                        <input class="form-check-input" type="checkbox" value=""
-                                            id="flexCheckIndeterminate">
-                                        <label class="form-check-label" for="flexCheckIndeterminate">
-                                            Frito Lay
-                                        </label>
-                                    </div>
-                                    <span class="text-gray-600">(1)</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-check d-flex justify-content-between mt-2">
-                                    <div class="">
-                                        <input class="form-check-input" type="checkbox" value="" id="nespreso">
-                                        <label class="form-check-label" for="nespreso">
-                                            Nespresso
-                                        </label>
-                                    </div>
-                                    <span class="text-gray-600">(1)</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-check d-flex justify-content-between mt-2">
-                                    <div class="">
-                                        <input class="form-check-input" type="checkbox" value="" id="oreo">
-                                        <label class="form-check-label" for="oreo">
-                                            Oreo
-                                        </label>
-                                    </div>
-                                    <span class="text-gray-600">(1)</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-check d-flex justify-content-between mt-2">
-                                    <div class="">
-                                        <input class="form-check-input" type="checkbox" value="" id="quaker">
-                                        <label class="form-check-label" for="quaker">
-                                            Quaker
-                                        </label>
-                                    </div>
-                                    <span class="text-gray-600">(1)</span>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="index.html" rel="nofollow">
+                            <!-- brands -->
+                            <ul class="brands mb-3">
+                                <h5 class="mb-3 products-shop__title">Brands</h5>
+                                <li>
                                     <div class="form-check d-flex justify-content-between mt-2">
                                         <div class="">
-                                            <input class="form-check-input" type="checkbox" value="" id="welch">
-                                            <label class="form-check-label" for="welch">
-                                                Welch`s
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckIndeterminate">
+                                            <label class="form-check-label" for="flexCheckIndeterminate">
+                                                Frito Lay
                                             </label>
                                         </div>
                                         <span class="text-gray-600">(1)</span>
                                     </div>
-                                </a>
-                            </li>
-                        </ul>
-                        <!-- products status -->
-                        <div class="product-status">
-                            <h5 class="products-shop__title">Product Status</h5>
-                            <ul>
+                                </li>
                                 <li>
-                                    <a href="index.html" rel="nofollow">
-                                        <div class="form-check d-flex justify-content-between mt-2">
-                                            <div class="">
-                                                <input class="form-check-input" type="checkbox" value="" id="stock">
-                                                <label class="form-check-label" for="stock">
-                                                    In Stock
-                                                </label>
-                                            </div>
-                                            <span class="text-gray-600">(1)</span>
+                                    <div class="form-check d-flex justify-content-between mt-2">
+                                        <div class="">
+                                            <input class="form-check-input" type="checkbox" value="" id="nespreso">
+                                            <label class="form-check-label" for="nespreso">
+                                                Nespresso
+                                            </label>
                                         </div>
-                                    </a>
+                                        <span class="text-gray-600">(1)</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check d-flex justify-content-between mt-2">
+                                        <div class="">
+                                            <input class="form-check-input" type="checkbox" value="" id="oreo">
+                                            <label class="form-check-label" for="oreo">
+                                                Oreo
+                                            </label>
+                                        </div>
+                                        <span class="text-gray-600">(1)</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check d-flex justify-content-between mt-2">
+                                        <div class="">
+                                            <input class="form-check-input" type="checkbox" value="" id="quaker">
+                                            <label class="form-check-label" for="quaker">
+                                                Quaker
+                                            </label>
+                                        </div>
+                                        <span class="text-gray-600">(1)</span>
+                                    </div>
                                 </li>
                                 <li>
                                     <a href="index.html" rel="nofollow">
                                         <div class="form-check d-flex justify-content-between mt-2">
                                             <div class="">
-                                                <input class="form-check-input" type="checkbox" value="" id="sales">
-                                                <label class="form-check-label" for="sales">
-                                                    On Sales
+                                                <input class="form-check-input" type="checkbox" value="" id="welch">
+                                                <label class="form-check-label" for="welch">
+                                                    Welch`s
                                                 </label>
                                             </div>
                                             <span class="text-gray-600">(1)</span>
@@ -989,9 +1348,39 @@
                                     </a>
                                 </li>
                             </ul>
+                            <!-- products status -->
+                            <div class="product-status">
+                                <h5 class="products-shop__title">Product Status</h5>
+                                <ul>
+                                    <li>
+                                        <a href="index.html" rel="nofollow">
+                                            <div class="form-check d-flex justify-content-between mt-2">
+                                                <div class="">
+                                                    <input class="form-check-input" type="checkbox" value="" id="stock">
+                                                    <label class="form-check-label" for="stock">
+                                                        In Stock
+                                                    </label>
+                                                </div>
+                                                <span class="text-gray-600">(1)</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html" rel="nofollow">
+                                            <div class="form-check d-flex justify-content-between mt-2">
+                                                <div class="">
+                                                    <input class="form-check-input" type="checkbox" value="" id="sales">
+                                                    <label class="form-check-label" for="sales">
+                                                        On Sales
+                                                    </label>
+                                                </div>
+                                                <span class="text-gray-600">(1)</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-
-
                     </div>
                     <div class="col col-xl-9">
                         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5"
@@ -1838,69 +2227,253 @@
                 </div>
             </section>
         </div>
-        </div>
-
     </main>
-
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer pt-5">
         <div class="container">
             <div class="row border-bottom">
-                <div class="footer__block col col-12 col-md-6 col-lg-4">do you need help</div>
-                <div class="col col-12 col-md-6 col-lg-8">
+                <div class="footer__block col col-12 col-md-6 col-lg-3 border-end">
+                    <h6 class="footer__title">do you need help ?</h6>
+                    <p class="footer__text">Autoseligen syr. Nek diarask fröbomba. Nör antipol kynoda nynat. Pressa
+                        fåmoska.</p>
+                    <div class="d-flex flex-column mb-3">
+                        <a href="tel:0 800 300-353" class="footer__tel">0 800 300-353</a>
+                        <span class="footer__small">Free from fixed and mobile phones in USA.</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="footer__lab">Email:</span>
+                        <a href="#" class="footer__mail">info@example.com</a>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <span class="footer__lab">Call Center hours</span>
+                        <span class="footer__call-center">Mon-Sun 09:00-19:00</span>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-6 col-lg-9">
                     <div class="row">
-                        <div class="footer__block col col-12 col-md-6 col-lg-4">let us help you</div>
-                        <div class="footer__block col col-12 col-md-6 col-lg-4">make money with us</div>
-                        <div class="footer__block col col-12 col-md-6 col-lg-4">get to know us</div>
+                        <div class="footer__block footer__block--first col col-12 col-md-6 col-lg-4 ">
+                            <h6 class="footer__title">let us help you</h6>
+                            <ul>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Accessibility Statement
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Your Orders
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Returns & Replacements
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Shipping Rates & Policies
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Refund and Returns Policy
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Terms and Conditions
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Cookie Settings
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Help Center
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__block col col-12 col-md-6 col-lg-4">
+                            <h6 class="footer__title">make money with us</h6>
+                            <ul>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Sell on Blonwe
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Sell Your Services on Blonwe
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Sell on Blonwe Business
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Sell Your Apps on Blonwe
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Become an Affilate
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Advertise Your Products
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Sell-Publish with Us
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Become an Blonwe Vendor
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__block col col-12 col-md-6 col-lg-4">
+                            <h6 class="footer__title">get to know us</h6>
+                            <ul>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Careers for Blonwe
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        About Blonwe
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Inverstor Relations
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Blonwe Devices
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Customer reviews
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Social Responsibility
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Store Locations
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="d-md-flex justify-content-between align-items-center">
-                <div class="footer__socials d-flex  align-items-center flex-column flex-md-row py-4">
-                    <h6 class="mb-0">follow us:</h6>
-                    <div class="d-flex">
-                        <a class="px-1" href="#">
-                            f
-                        </a>
-                        <a class="px-1" href="#">
-                            tw
-                        </a>
-                        <a class="px-1" href="#">
-                            y
-                        </a>
-                        <a class="px-1" href="#">
-                            ins
-                        </a>
-                        <a class="px-1" href="#">
-                            tele
-                        </a>
+            <div class="footer__inner d-md-flex justify-content-between align-items-center py-3">
+                <div class="footer__netwoks d-flex  align-items-center flex-column flex-md-row py-4">
+                    <h6 class="footer__subtitle mb-0">follow us:</h6>
+                    <!-- c-networks-->
+                    <div class="c-networks">
+                        <ul class="d-flex align-items-center m-0">
+                            <li class="me-1">
+                                <a href="#" class="c-networks__link">
+                                    <span class="c-networks__item rounded-circle">
+                                        <i class="c-networks__icon fa-brands fa-facebook-f"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="me-1">
+                                <a href="#" class="c-networks__link">
+                                    <span class="c-networks__item rounded-circle">
+                                        <i class="c-networks__icon fa-brands fa-twitter"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="me-1">
+                                <a href="#" class="c-networks__link">
+                                    <span class="c-networks__item rounded-circle">
+                                        <i class="c-networks__icon fa-brands fa-youtube"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="me-1">
+                                <a href="#" class="c-networks__link">
+                                    <span class="c-networks__item rounded-circle">
+                                        <i class="c-networks__icon fa-brands fa-instagram"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="me-1">
+                                <a href="#" class="c-networks__link">
+                                    <span class="c-networks__item rounded-circle">
+                                        <i class="c-networks__icon fa-brands fa-telegram"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="footer__download d-flex  align-items-center flex-column flex-md-row">
-                    <h6 class="mb-0">Download App:</h6>
-                    <div class="d-flex">
+                    <h6 class="footer__subtitle mb-0">Download App:</h6>
+                    <div class="d-flex ms-2">
                         <a class="pe-2" href="#">
-                            app store
+                            <img src="public/img/app-store.png" alt="">
                         </a>
                         <a class="" href="#">
-                            google play
+                            <img src="public/img/google-play.png" alt="">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="" style="background-color: white;">
+        <div class="bg-white pt-4 pb-5">
             <div class="container d-flex flex-column flex-md-row align-items-center justify-content-md-between">
                 <div class="footer__copyright order-md-1 order-2 my-4 d-flex align-items-center">
-                    <span>Copyright 2023 © Blonwe WordPress Theme. All right reserved. Powered by KLBTheme.</span>
+                    <span>Copyright 2023 © Blonwe WordPress Theme. All right reserved. Powered by <span
+                            class="footer__element">KLBTheme</span>.</span>
                 </div>
-                <div class="order-1 order-md-2 d-md-flex ">
-                    <span>We accept:</span>
-                    <ul class="d-flex">
-                        <li class="px-2">VISA</li>
-                        <li class="px-2">PayPal</li>
-                        <li class="px-2">Skrill</li>
-                        <li class="px-2 pe-0">Klarna.</li>
+                <div class="order-1 order-md-2 d-md-flex align-items-center">
+                    <span class="footer__subtitle text-center">We accept:</span>
+                    <ul class="footer__pay d-flex align-items-center mb-0">
+                        <li class="footer__card px-2">
+                            <img src="public/img/visa.png" alt="visa">
+                        </li>
+                        <li class="footer__payment px-2">
+                            <img src="public/img/mastercard.png" alt="mastercard">
+                        </li>
+                        <li class="footer__payment px-2">
+                            <img src="public/img/paypal.png" alt="paypal">
+                        </li>
+                        <li class="footer__payment px-2">
+                            <img src="public/img/skrill.png" alt="skrill">
+                        </li>
+                        <li class="footer__payment px-2">
+                            <img src="public/img/maestro.png" alt="maestro">
+                        </li>
+                        <li class="footer__payment px-2">
+                            <img src="public/img/klarna.png" alt="klarna">
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -1950,157 +2523,203 @@
                         <span class="navbar-toggler-icon me-0"></span>
                     </button>
                 </div>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
             </div>
         </nav>
     </footer>
-    <div style="height: 10rem;"></div>
-       <!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-        aria-controls="offcanvasExample">
-        Link with href
-    </a> -->
 
-
-    <!-- offcanvass-filter -->
-    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-        Button with data-bs-target
-      </button> -->
-
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div>
-                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
-                lists, etc.
-            </div>
-            <div class="dropdown mt-3">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                    Dropdown button
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- modal -->
-    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header d-flex justify-content-center">
-                    <h1 class="modal-title fs-5  text-primary" id="exampleModalLabel">My Account
-                    </h1>
-                </div>
-                <div class="modal-body">
-                    <ul class="d-flex flex-column list-unstyled text-center">
-                        <li class="modal-item">
-                            <a href="" class="text-decoration-none">My Account</a>
-                        </li>
-                        <li class="modal-item">
-                            <a href="" class="text-decoration-none">add review</a>
-                        </li>
-                        <li class="modal-item">
-                            <a href="" class="text-decoration-none">message</a>
-                        </li>
-                        <li class="modal-item">
-                            <a href="" class="text-decoration-none">Bookings</a>
-                        </li>
-                    </ul>
-
-                    <ul class="d-flex flex-column list-unstyled text-center">
-                        <li class="modal-item">
-                            <span class="modal-item">
-                                <a href="#" class="text-decoration-none">us</a>
-                            </span>
-                            <span class="modal-item">
-                                <a href="#" class="text-decoration-none">it</a>
-                            </span>
-                            <span class="modal-item">
-                                <a href="#" class="text-decoration-none">md</a>
-                            </span>
-                        </li>
-                        <li class="modal-item">
-                            <a href="" class="text-decoration-none">payment</a>
-                        </li>
-                        <li class="modal-item">
-                            <a href="" class="text-decoration-none">terms conditions</a>
-                        </li>
-
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- Modal my-acc -->
-
-    <!-- Button trigger modal -->
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-        Launch static backdrop modal
-    </button> -->
-
-    <!-- Modal MY ACC -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content p-4">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-                    <button type="button" class="btn-close border-0" data-bs-dismiss="modal" aria-label="Close">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-                </div>
-                <form class=" needs-validation" novalidate>
-                    <div class="mb-3">
-                        <label for="validationCustom01" class="form-label">Nick</label>
-                        <input type="text" class="form-control" id="validationCustom01" value="" required>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="validationCustom02" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="validationCustom02" value="" required>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <button class="btn btn-primary" type="submit">Submit form</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
 
     <!-- location -->
-    <div>
-        <!-- Button trigger modal -->
-
-
-        <!-- Modal -->
-        <div class="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modalll title</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title fs-5" id="exampleModalLabel">Delivery to you</h6>
+                    <button type="button" class="btn-close border-0 bg-white" data-bs-dismiss="modal"
+                        aria-label="Close">
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-2">
+                        <h2 class="moda-title">Where can i deliver my purchases?</h2>
+                        <span class="moda-text">Available delivery time vary depending on where you order from</span>
                     </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Understood</button>
+                    <form action="#" class="">
+                        <!-- search -->
+                        <div class="position-relative my-3">
+                            <span class="modal-icon material-symbols-outlined">
+                                location_on
+                            </span>
+                            <input class="modal-input py-3  w-100 rounded-2" type="search"
+                                placeholder="Find your location">
+                        </div>
+                        <!-- list -->
+                        <ul>
+                            <li class="p-3">
+                                <div class="form-check d-flex ps-0 justify-content-between">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Select location
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                </div>
+                            </li>
+                            <li class="p-3">
+                                <div class="form-check d-flex ps-0 justify-content-between">
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Alabama
+                                        <span class="form-check-address">
+                                            348 Black Rock Tpke, CT 06852
+                                        </span>
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2">
+                                </div>
+                            </li>
+                            <li class="p-3">
+                                <div class="form-check d-flex ps-0 justify-content-between">
+                                    <label class="form-check-label" for="alaska">
+                                        Alaska
+                                        <span class="form-check-address">
+                                            348 Black Rock Tpke, CT 06852
+                                        </span>
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="alaska"
+                                        checked>
+                                </div>
+                            </li>
+                            <li class="p-3">
+                                <div class="form-check d-flex ps-0 justify-content-between">
+                                    <label class="form-check-label" for="arizona">
+                                        Arizona
+                                        <span class="form-check-address">
+                                            8915 Gerber Road, Sacramento, CA 95829
+                                        </span>
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="arizona"
+                                        checked>
+                                </div>
+                            </li>
+                            <li class="p-3">
+                                <div class="form-check d-flex ps-0 justify-content-between">
+                                    <label class="form-check-label" for="california">
+                                        California
+                                        <span class="form-check-address">
+                                            348 Black Rock Tpke, CT 06852
+                                        </span>
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="california">
+                                </div>
+                            </li>
+                            <li class="p-3">
+                                <div class="form-check d-flex ps-0 justify-content-between">
+                                    <label class="form-check-label" for="colorodo">
+                                        Colorado
+                                        <span class="form-check-address">
+                                            8915 Gerber Road, Sacramento, CA 95829
+                                        </span>
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="colorodo"
+                                        checked>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign In -->
+    <div class="modal-account modal modal-xl" id="accountModal" tabindex="-1" aria-labelledby="accountModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-4 overflow-hidden">
+                <div class="modal-body p-0">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col col-xl-6 d-none d-xl-flex px-0">
+                                <div class="overflow-hidden object-fit-cover">
+                                    <img class="object-fit-cover w-100" src="public/img/newsletter-form-image.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-xl-6 pt-4">
+                                <div class="w-100 d-flex justify-content-end">
+                                    <button type="button" class="btn-close border-0 bg-white ms-auto"
+                                        data-bs-dismiss="modal" aria-label="Close">
+                                        <span class="material-symbols-outlined">
+                                            close
+                                        </span>
+                                    </button>
+                                </div>
+                                <h3 class="modal-title fw-medium text-center mb-4" id="accountModalLabel">Log in
+                                </h3>
+                                <!-- form -->
+                                <form action="" class="classform p-5 pt-3 border-bottom">
+                                    <div class="mb-3">
+                                        <label for="formGroupExampleInput" class="form-label">Username or your email
+                                            address*</label>
+                                        <input type="text" class="form-control" id="formGroupExampleInput"
+                                            placeholder="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formGroupExampleInput2" class="form-label">Password*</label>
+                                        <input type="password" class="form-control" id="formGroupExampleInput2"
+                                            placeholder="">
+                                    </div>
+                                    <div class="">
+                                        <div class="form-check d-flex align-items-center mb-3">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <label class="form-check-label" for="gridCheck">
+                                                Check me out
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 mb-3">
+                                        <button type="submit" class="btn btn-primary w-100 p-2">Log in</button>
+                                    </div>
+                                    <div class="d-flex justify-content-center mb-5">
+                                        <a href="#" class="form-lost">Lost your passoword ?</a>
+                                    </div>
+                                    <p class="form-text">By continuing, you accept the Website Regulations , Regulations
+                                        for the sale of
+                                        alcoholic beverages and the <span class="form-privacy text-primary">Privacy
+                                            Policy</span></p>
+                                </form>
+                                <div class="modal-account-register d-flex justify-content-center py-3">
+                                    You dont have an account yet? <span class="modal-account-new">Register Now</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

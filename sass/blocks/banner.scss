@@ -1,26 +1,45 @@
 .banner {
+    margin-top: 4rem;
     margin-bottom: 1.87rem;
-    &__essentials {
-        min-height: 14.37rem;
+
+    .banner-block {
+        border-radius: 15px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 2.5rem 1.87rem;
+        margin-top: 1rem;
         display: block;
+
+        &__text {
+            font-size: 14px;
+            color: $gray-600;
+        }
+
+        &__btn {
+            font-size: 12px;
+            padding: 0 0.6rem;
+        }
     }
 
-    &__shopping {
-        min-height: 14.37rem;
-
-        display: block;
+    .banner-block__essentials {
+        background-image: url("/public/img/banner-18.jpg");
     }
 
-    &__variety {
-        min-height: 14.37rem;
-        display: block;
+    .banner-block__shopping {
+        background-image: url("/public/img/banner-19.jpg");
+    }
+
+    .banner-block__variety {
+        background-image: url("/public/img/banner-20.jpg");
     }
 }
 
 @media (min-width: $width-desktop) {
     .banner {
-        &__essentials {
-            min-height: 36.87rem;
+        margin-top: 1.875rem;
+        .banner-block__essentials {
+            height: 32rem;
         }
     }
 }

@@ -1,0 +1,29 @@
+.c-discounts {
+    .card {
+        .card-img-top {
+            padding-left: 2rem;
+        }
+
+        .card-badge {
+            background-color: $danger;
+            bottom: 20px;
+            left: 40px;
+        }
+
+        .card-text {
+            font-size: 12px;
+        }
+
+        .card-star {
+            background-color: #FFF6DCFF;
+            padding: 0 6px;
+        }
+    }
+}
+
+// right: -18px;
+// background-color: white;
+// border: 1px solid;
+// width: 40px;
+// height: 40px;
+// font-size: 12px;

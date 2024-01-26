@@ -22,9 +22,10 @@
 
         &__options {
 
-            .dropdown button{
+            .dropdown button {
                 font-size: 12px;
             }
+
             .dropdown:hover {
                 .dropdown-menu {
                     display: block;
@@ -34,11 +35,13 @@
                 }
             }
         }
-        &__theme{
+
+        &__theme {
             font-size: 0.75rem;
             font-weight: 600;
             background-color: transparent;
         }
+
         // .accordion {
         //     width: min-content;
 
@@ -105,9 +108,10 @@
         }
 
         .action {
-            .action-icon{
+            .action-icon {
                 font-size: 28px;
             }
+
             .action-count {
                 width: 1rem;
                 height: 1rem;
@@ -139,7 +143,7 @@
         }
 
         .nav-item {
-            padding: 5px 10px;
+            padding: 0.625rem;
 
         }
 
@@ -152,8 +156,32 @@
         }
 
         .submenu {
+            padding: 1.563rem;
+            padding-right: 12.5rem;
             display: none;
-            top: 2.2rem;
+            top: 2.813rem;
+        }
+
+        .submenu-discount {
+            padding-bottom: 40px;
+        }
+
+        .submenu-title {
+            font-size: 16px;
+            color: #000;
+            font-weight: 600;
+            text-transform: capitalize;
+            margin-bottom: 12px;
+        }
+
+        .submenu-item a {
+            color: $gray-600;
+        }
+
+        .submenu-item {
+            padding: 5px 0;
+            text-transform: capitalize;
+            font-size: 14px;
         }
 
         .nav-item--submenu:hover {

@@ -1,5 +1,4 @@
 .categories {
-    height: 170px;
     margin-bottom: 4.06rem;
 
     .splide {
@@ -17,11 +16,29 @@
 
 @media (min-width: $width-tablet) {
     .categories {
-        height: 11.56rem;
 
         .splide {
             &__arrow {
                 display: block;
+            }
+
+            &__arrow--next {
+                z-index: 1;
+                right: -1.25rem;
+                background-color: $white;
+                border: 1px solid $gray-500;
+                width: 40px;
+                height: 40px;
+                font-size: 12px;
+            }
+            &__arrow--prev {
+                z-index: 1;
+                left: -1.25rem;
+                background-color: $white;
+                border: 1px solid $gray-500;
+                width: 40px;
+                height: 40px;
+                font-size: 12px;
             }
         }
     }
@@ -29,6 +46,5 @@
 
 @media (min-width: $width-desktop) {
     .categories {
-        height: 18.75rem;
     }
 }

@@ -11,22 +11,23 @@ if (splideCategories) {
 
   new Splide('#categories', {
     type: 'loop',
-    perPage: 3,
+    perPage: 1,
+    perMove: 1,
     // autoplay: 'true',
-    // focus: 'center',
+    focus: 'center',
     arrows: true,
     breakpoints: {
       640: {
         perPage: 1,
       },
       768: {
-        perPage: 6,
+        perPage: 3,
       },
       1200: {
-        perPage: 8,
+        perPage: 4,
       },
       2560: {
-        perPage: 9,
+        perPage: 5,
       },
     }
   }).mount();
@@ -35,10 +36,11 @@ if (splideCategories) {
 if (splideSales) {
 
   new Splide('#sales', {
-    type: 'loop',
+    // type: 'loop',
     perPage: 3,
-    // autoplay: 'true',
-    // focus: 'center',
+    perMove: 1,
+    focus  : 0,
+    // omitEnd: true,
     arrows: true,
     breakpoints: {
       640: {
@@ -56,9 +58,9 @@ if (splideSales) {
     }
   }).mount();
 }
-  // input-number
+// input-number
 // $('.quantity-button').off('click').on('click', function () {
-  
+
 //   if ($(this).hasClass('quantity-add')) {
 //     var addValue = parseInt($(this).parent().find('input').val()) + 1;
 // 		$(this).parent().find('input').val(addValue).trigger('change');
@@ -103,42 +105,42 @@ if (splideSales) {
 // }
 
 
-var splide = new Splide( '#main-carousel', {
+var splide = new Splide('#main-carousel', {
   pagination: false,
   focus: 'center',
-} );
+});
 
 
-var thumbnails = document.getElementsByClassName( 'thumbnail' );
+var thumbnails = document.getElementsByClassName('thumbnail');
 var current;
 
 
-for ( var i = 0; i < thumbnails.length; i++ ) {
-  initThumbnail( thumbnails[ i ], i );
+for (var i = 0; i < thumbnails.length; i++) {
+  initThumbnail(thumbnails[i], i);
 }
 
 
-function initThumbnail( thumbnail, index ) {
-  thumbnail.addEventListener( 'click', function () {
-    splide.go( index );
-  } );
+function initThumbnail(thumbnail, index) {
+  thumbnail.addEventListener('click', function () {
+    splide.go(index);
+  });
 }
 
 
-splide.on( 'mounted move', function () {
-  var thumbnail = thumbnails[ splide.index ];
+splide.on('mounted move', function () {
+  var thumbnail = thumbnails[splide.index];
 
 
-  if ( thumbnail ) {
-    if ( current ) {
-      current.classList.remove( 'is-active' );
+  if (thumbnail) {
+    if (current) {
+      current.classList.remove('is-active');
     }
 
 
-    thumbnail.classList.add( 'is-active' );
+    thumbnail.classList.add('is-active');
     current = thumbnail;
   }
-} );
+});
 
 
 splide.mount();

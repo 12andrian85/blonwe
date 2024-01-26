@@ -1,0 +1,21 @@
+.c-networks{
+    margin-left: 10px;
+    &__link {
+        margin-right: 5px;
+        display: block;
+    }
+
+    &__item {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $dark;
+        background-color: $gray-400;
+    }
+    &__item:hover {
+        background-color: $gray-500;
+
+    }
+}

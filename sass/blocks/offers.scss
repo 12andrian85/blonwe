@@ -2,8 +2,32 @@
     margin-bottom: 3rem;
 
     &__element {
-        height: 12.5rem;
-        padding: 0.93rem;
+        padding: 0.93rem 0;
+    }
+    
+    .card {
+        .card-img {
+            height: 10.3rem;
+        }
+    }
+    
+}
+@media (min-width: $width-tablet) {
+    .offers{
+        &__element {
+            padding: 0.93rem;
+        }
+
+    }
+
+}
+@media (min-width: $width-desktop) {
+    .offers{
+        .card {
+            .card-img {
+                height: auto;
+            }
+        }
 
     }
 }

@@ -2,9 +2,14 @@
    
 
     .card {
-        height: 320px;
+        // height: 320px;
+        .card-img-top{
+            padding: 25px;
+        }
         .card-title {
             color: $dark;
+            font-weight: 500;
+            text-transform: capitalize;
         }
 
         .card-text {

@@ -4,11 +4,34 @@
         font-size: 1rem;
         font-weight: 600;
     }
+    &__bar{
+        font-size: 12px;
+    }
 
     .brands{
         font-size: 14px;
     }
     .product-status{
         font-size: 14px;
+    }
+    .input-group{
+        .input-group-text{
+            border: none;
+            font-size: 14px;
+            padding-right: 5px;
+            color: $gray-500;
+            background-color: white;
+        }
+    }
+    .form-select{
+        font-size: 14px;
+        padding-left: 3px;
+    }
+    .form-check-input{
+        margin-right: 10px;
+    }
+    .form-check-label{
+        text-transform: capitalize;
+
     }
 }

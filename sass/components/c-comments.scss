@@ -1,0 +1,27 @@
+.c-comments {
+    display: flex;
+    align-items: flex-start;
+    margin: 1.5625rem 0;
+    padding-bottom: 1.5625rem;
+    border-bottom: 1px solid $gray-400;
+
+    &__avatar {}
+
+    &__author {
+        font-size: 14px;
+        color: $gray-500;
+    }
+
+    &__text {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .c-star {
+        margin-top: 10px;
+        &__list{
+            letter-spacing: -1px;
+        }
+
+    }
+}

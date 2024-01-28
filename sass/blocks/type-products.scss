@@ -1,34 +1,65 @@
 .type-products {
-    &__img {
-        .thumbnails {
+    margin-top: 4.68rem;
+
+    .splide {
+        position: relative;
+
+        &__slide {
             display: flex;
-            margin: 1rem auto 0;
-            padding: 0;
             justify-content: center;
         }
 
+        &__slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__slide img {
+            width: auto;
+            height: 250px;
+        }
+
+        &__arrows {
+            display: none;
+        }
+
+        &__badge {
+            height: max-content;
+        }
+
+        &__open {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            display: flex;
+        }
+
+    }
+
+    .thumbnails {
+        display: flex;
+        margin: 1rem auto 0;
+        padding: 0;
+        justify-content: center;
 
         .thumbnail {
-            width: 70px;
-            height: 70px;
+            width: 40px;
+            height: 40px;
             overflow: hidden;
             list-style: none;
             margin: 0 0.2rem;
             cursor: pointer;
-        }
+            border: 1px solid $dark;
+            border-radius: 10px;
 
+        }
 
         .thumbnail img {
             width: 100%;
             height: auto;
-        }
-
-        .splide {
-
-            &__slide {
-                display: flex;
-                justify-content: center;
-            }
         }
     }
 
@@ -36,15 +67,144 @@
 
         .checklist {
             color: $dark;
+            padding-bottom: 5px;
+            border-bottom: 1px solid $gray-500;
+            margin-bottom: 10px;
 
             &__items {
                 display: flex;
+                align-items: flex-start;
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+
+            &__inner {
+                display: flex;
                 align-items: center;
             }
-            &__check{
-                font-size: 20p;
+
+            &__icon {
+                font-size: 20px;
+                color: $primary;
+            }
+
+        }
+
+        .information {
+            &__item {
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+
+            &__categories {
+                color: $gray-500;
+            }
+
+            &__text {
+                color: $dark;
+                font-weight: 500;
             }
         }
     }
 
+    &__text {
+        font-size: 14px;
+        color: $dark;
+        opacity: 0.7;
+    }
+
+    .tabulation {
+        // padding-bottom: 2.5rem;
+        // margin-bottom: 3rem;
+
+        .nav {
+            border-bottom: 1px solid $gray-500;
+        }
+
+        .btn-tab:focus {
+            color: $dark;
+        }
+
+        .nav-item {
+            .active {
+                color: $dark;
+            }
+        }
+
+        .btn-tab {
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            color: $gray-500;
+        }
+
+        .tab-add {
+            display: flex;
+            font-size: 14px;
+            background-color: $gray-100;
+            border: 1px solid $gray-300;
+
+            &__weight {
+                font-weight: 500;
+                padding: 10px 11px;
+                flex-grow: 2;
+
+            }
+
+            &__kg {
+                padding: 10px 11px;
+                flex-grow: 1;
+            }
+        }
+
+        .tab-reviews {
+            &__cont {
+                font-size: 48px;
+            }
+
+            .c-star {
+                &__list {
+                    height: 24px;
+                    letter-spacing: -3px;
+                }
+
+                &__description {
+                    font-size: 14px;
+                }
+            }
+
+            .comment {
+                .c-star__list {
+                    letter-spacing: -1px;
+                }
+            }
+            .add-comment{
+                font-size: 14px;
+                
+                .c-reviews-star{
+                    &__list{
+                        font-size: 12px;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+}
+
+@media (min-width: $width-desktop) {
+    .type-products {
+        .splide {
+            &__badge {
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                justify-content: center;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
 }

@@ -25,6 +25,49 @@
     <div class="container p-4">
         <div class="row">
             <div class="col-12 col-md-6 mx-auto">
+                <!-- c-comments -->
+                <div class="c-comments  mb-3">
+                    <div class="c-comments__avatar me-3 d-none d-md-flex">
+                        <img class="rounded-circle" src="public/img/image-avatar.png" alt="avatar">
+                    </div>
+                    <!-- c-reviews-star -->
+                    <div class="">
+                        <div class="c-star mb-3">
+                            <div class="d-flex align-items-center">
+                                <ul class="c-star__list mb-0">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </ul>
+                            </div>
+                            <div class="c-comments__author">
+                                <span class="fw-semibold">sinan <span class="fw-normal">- july 29,2023</span></span>
+                            </div>
+                        </div>
+                        <p class="c-comments__text mb-0">Sed perspiciatis unde omnis iste natus error
+                            sit voluptatem accusantium doloremque laudantium.
+                        </p>
+                    </div>
+                </div>
+                <!--c-rating -->
+                <div class="c-rating">
+                    <div class="c-rating__star">
+                        <i class="fa-solid fa-star me-1"></i>
+                        <span class="c-rating__numb text-dark fw-medium">5</span>
+                    </div>
+                    <div class="c-progress-but w-100 mx-3">
+                        <a href="#" class="progres-link">
+                            <div class="progress-bg progress bg-grey-600" role="progressbar" aria-label="Info example"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar rounded-pill bg-warning position-relative" style="width: 70%;">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <span class="c-rating__sum">2</span>
+                </div>
                 <!-- c-networks-->
                 <div class="c-networks my-3">
                     <ul class="d-flex align-items-center">
@@ -180,7 +223,7 @@
                 </div>
                 <!-- c-breadcrumb -->
                 <nav aria-label="breadcrumb" class="c-breadcrumb">
-                    <ol class="breadcrumb">
+                    <ol class="breadcrumb-list">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                         <li class="breadcrumb-item breadcrumb-item--active active" aria-current="page">Shop</li>
                     </ol>
@@ -462,7 +505,7 @@
                                 </span>
                                 <span class="form_control_price">$70</span>
                             </div>
-                            <a href="#" class="btn btn-light fw-bold">Filter</a>
+                            <a href="#" class="p-2 px-4 bg-grey-600 btn btn-light fw-semibold">Filter</a>
                         </div>
                     </div>
                 </div>
@@ -527,16 +570,26 @@
                         </li>
                     </ul>
                 </div>
-
                 <!-- c-reviews-star -->
                 <div class="c-reviews-star">
                     <div class="d-flex align-items-center">
                         <ul class="c-reviews-star__list me-2 my-3">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                            <a class="c-reviews-star__link" href="#">
+                                <i class="fa-solid fa-star"></i>
+                            </a>
+                            <a class="c-reviews-star__link" href="#">
+                                <i class="fa-solid fa-star"></i>
+                            </a>
+                            <a class="c-reviews-star__link" href="#">
+                                <i class="fa-solid fa-star"></i>
+                            </a>
+                            <a class="c-reviews-star__link" href="#">
+                                <i class="fa-solid fa-star"></i>
+                            </a>
+                            <a class="c-reviews-star__link" href="#">
+                                <i class="fa-solid fa-star"></i>
+                            </a>
+                            
                         </ul>
                         <span class="c-reviews-star__number">3</span>
                     </div>

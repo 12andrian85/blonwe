@@ -1,21 +1,24 @@
-.products-shop{
+.products-shop {
 
-    &__title{
+    &__title {
         font-size: 1rem;
         font-weight: 600;
     }
-    &__bar{
+
+    &__bar {
         font-size: 12px;
     }
 
-    .brands{
+    .brands {
         font-size: 14px;
     }
-    .product-status{
+
+    .product-status {
         font-size: 14px;
     }
-    .input-group{
-        .input-group-text{
+
+    .input-group {
+        .input-group-text {
             border: none;
             font-size: 14px;
             padding-right: 5px;
@@ -23,15 +26,61 @@
             background-color: white;
         }
     }
-    .form-select{
+
+    .form-select {
         font-size: 14px;
         padding-left: 3px;
     }
-    .form-check-input{
+
+    .form-check-input {
         margin-right: 10px;
     }
-    .form-check-label{
+
+    .form-check-label {
         text-transform: capitalize;
 
     }
+
+    .join-us {
+        padding: 1.25rem 0;
+
+        .join-us-text {
+            font-size: 15px;
+            color: $gray-600;
+        }
+
+        .join-us-mail {
+            border: 1px solid $gray-500;
+            border-top-left-radius: 7px;
+            border-bottom-left-radius: 7px;
+            padding: 10px;
+        }
+
+        .input-group {
+            width: max-content;
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+
+        .join-us-btn {
+            padding: 10px;
+
+        }
+    }
+}
+
+@media (min-width: $width-tablet) {
+    .products-shop {
+
+        .join-us {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3.5rem 0;
+            
+        }
+
+    }
+
 }

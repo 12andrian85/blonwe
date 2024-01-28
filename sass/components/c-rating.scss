@@ -1,0 +1,39 @@
+.c-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 2px 10px;
+
+
+    &__star {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: $warning;
+    }
+
+    &__num{
+        font-size: 15px;
+    }
+
+    &__sum {
+        font-size: 14px;
+    }
+    
+    .c-progress-but {
+        .progress-bg {
+            height: 6px;
+        }
+
+        .progress-bar {
+            height: 6px;
+        }
+    }
+}
+.c-rating:hover{
+    padding: 2px 10px;
+    background-color: $gray-400;
+    border-radius: 25px;
+
+}

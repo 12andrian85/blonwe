@@ -2,7 +2,7 @@
     .range_container {
         display: flex;
         flex-direction: column;
-        margin: 2rem 0  ;
+        margin: 1.9rem 0  ;
 
     }
 
@@ -15,15 +15,19 @@
         position: relative;
         display: flex;
         align-items: center;
-        font-size: 1.1rem;
+        font-size: 0.8rem;
+    }
+
+    .form_control_price{
+        color: $dark;
     }
 
     input[type=range]::-webkit-slider-thumb {
         -webkit-appearance: none;
         pointer-events: all;
-        width: 24px;
-        height: 24px;
-        background-color: $primary;
+        width: 16px;
+        height: 16px;
+        background-color: $dark;
         border-radius: 50%;
         cursor: pointer;
     }
@@ -31,15 +35,15 @@
     input[type=range]::-moz-range-thumb {
         -webkit-appearance: none;
         pointer-events: all;
-        width: 24px;
-        height: 24px;
-        background-color: $primary;
+        width: 18px;
+        height: 18px;
+        background-color: $dark;
         border-radius: 50%;
         cursor: pointer;
     }
 
     input[type=range]::-webkit-slider-thumb:hover {
-        background: $primary;
+        background: $dark;
     }
 
     input[type=range]::-webkit-slider-thumb:active {
@@ -71,13 +75,18 @@
         height: 2px;
         width: 100%;
         position: absolute;
-        background-color: #C6C6C6;
+        background-color: $dark;
         pointer-events: none;
     }
 
     #fromSlider {
         height: 0;
         z-index: 1;
+    }
+
+    .input-group label{
+        font-size: 12px;
+        color: $gray-500;
     }
 
 

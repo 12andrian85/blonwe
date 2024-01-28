@@ -18,22 +18,30 @@
 </head>
 
 <body>
+
     <!-- header -->
-    <header class="header ">
+    <header class="header  border-bottom">
         <!-- header-top -->
-        <div class="header-top d-none d-xl-flex">
+        <div class="header-top py-1 d-none d-xl-flex">
             <div class="container d-flex justify-content-between">
                 <div class="header-top__information">
                     <div class="header-top__track pe-2 d-flex align-items-center">
                         <span class="material-symbols-outlined fs-5">
                             orders
                         </span>
-                        <span>Track Order</span>
+                        <a href="#">Track Order</a>
                     </div>
-                    <div class="header-top__about px-2"> About Us</div>
-                    <div class="header-top__contact px-2">Contact</div>
-                    <div class="header-top__questions px-2">FAQ</div>
+                    <div class="header-top__about px-2">
+                        <a href="#"> About Us</a>
+                    </div>
+                    <div class="header-top__contact px-2">
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="header-top__questions px-2">
+                        <a href="#">FAQ</a>
+                    </div>
                 </div>
+                <!-- header-top__inner -->
                 <div class="header-top__inner d-flex">
                     <div class="header-top__delivery d-flex align-items-center px-3">
                         <div class="header-top__text d-flex align-items-center">
@@ -43,10 +51,13 @@
                             <span class="fw-light">We delivery to you every day from</span>
                         </div>
                         <div class="header-top__time rounded-pill">
-                            <span class="">7:00 to 23:00</span>
+                            <a href="#">
+                                <span class="">7:00 to 23:00</span>
+                            </a>
                         </div>
                     </div>
-                    <div class="header-top__options d-flex align-items-center px-3">
+                    <!-- options -->
+                    <div class="header-top__options d-flex align-items-center ps-2 border-start">
                         <div class="header-top__language  pe-2">
 
                             <div class="dropdown">
@@ -54,7 +65,7 @@
                                     aria-expanded="false">
                                     English
                                 </button>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu shadow-lg">
                                     <li><a class="dropdown-item" href="#">Francese</a></li>
                                     <li><a class="dropdown-item" href="#">Italian</a></li>
                                     <li><a class="dropdown-item" href="#">Spanish</a></li>
@@ -75,7 +86,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="header-top__theme ps-2 d-flex align-items-center">
+                        <button type="button" class="header-top__theme ps-2 d-flex align-items-center border-0">
                             <span class="material-symbols-outlined me-2 fs-6 p-1 rounded-2"
                                 style="background-color:#C9DEDAFF;">
                                 light_mode
@@ -83,7 +94,7 @@
                             <span>
                                 Dark theme
                             </span>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -160,7 +171,7 @@
                                     <a class="nav-link" href="#">bakery</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">blog</a>
+                                    <a class="nav-link" href="https://klbtheme.com/blonwe/grocery/#">tamplate</a>
                                 </li>
                             </ul>
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
@@ -235,67 +246,83 @@
                             <div class="mb-5">
                                 Copyright 2023 © Blonwe WordPress Theme. All right reserved. Powered by
                             </div>
-
                         </div>
                     </div>
                 </div>
             </nav>
             <!-- header-menu -->
-            <div class="header-menu d-flex align-items-center d-none d-xl-flex">
-                <a href="#" class="header__logo" style="width: 185px; height: 50px;">logo</a>
-                <div>
-                    <button type="button" class="btn d-flex align-items-center p-0" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal" style="width: 150px;">
+            <div class="header-menu d-flex align-items-center d-none d-xl-flex py-3">
+                <a href="#" class="header__logo">
+                    <img src="public/img/logo-grocery.png" alt="" style="width: 180px;">
+                </a>
+                <div class="location">
+                    <button type="button"
+                        class="btn d-flex align-items-center text-nowrap p-1 px-2 border rounded-3 ms-5"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <span class="material-symbols-outlined">
                             location_on
                         </span>
-                        <div class="d-flex flex-column text-start">
-                            <small>Deliver to</small>
-                            <span>Select Location</span>
+                        <div class="d-flex flex-column text-start text-nowrap">
+                            <small class="location-small">Deliver to</small>
+                            <span class="location-select">Select Location</span>
                         </div>
                     </button>
                 </div>
                 <!-- search -->
-                <form action="" class="w-100">
-                    <input type="search" class="w-100 py-2" placeholder="Search of Product">
+                <form action=""
+                    class="search overflow-hidden ms-4 w-100 d-flex align-items-center border border-2 border-primary rounded-3 ">
+                    <input type="search" class="w-100 p-2 border-0" placeholder="Search of Product">
+                    <button class="search-btn btn btn-primary">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </button>
                 </form>
                 <!-- account -->
-                <button type="button" class="btn d-flex align-items-center" data-bs-toggle="modal"
+                <button type="button" class="account btn d-flex align-items-center p-0 " data-bs-toggle="modal"
                     data-bs-target="#accountModal">
-                    <span class="material-symbols-outlined me-3">
+                    <span class="material-symbols-outlined me-2 fs-2">
                         person
                     </span>
                     <div class="d-flex flex-column text-start">
-                        <small>Sign in</small>
-                        <span class="text-nowrap text-primary">Account</span>
+                        <small class="account-small">Sign in</small>
+                        <span class="account-text text-nowrap text-primary">Account</span>
                     </div>
                 </button>
-                <div class="header-menu__action d-flex align-items-center">
-                    <a href="#" class="px-2">
-                        <span class="material-symbols-outlined">
+                <!-- action -->
+                <div class="action d-flex align-items-center ms-3">
+                    <a href="#" class="action-item position-relative  px-2">
+                        <span class="action-icon text-dark material-symbols-outlined">
                             favorite
                         </span>
+                        <span class="action-count bg-primary position-absolute top-0 end-0">0</span>
                     </a>
-                    <a href="#" class="px-2">
-                        <span class="material-symbols-outlined">
+                    <a href="#" class="action-item text-dark position-relative  px-2">
+                        <span class="action-icon material-symbols-outlined">
                             balance
                         </span>
+                        <span class="action-count bg-primary position-absolute top-0 end-0">0</span>
                     </a>
-                    <a href="#" class="px-2 pe-0"><span class="material-symbols-outlined">
+                    <a href="#" class="action-item text-dark position-relative  px-2">
+                        <span class="action-icon material-symbols-outlined">
                             shopping_cart
                         </span>
+                        <span class="action-count bg-primary position-absolute top-0 end-0">0</span>
                     </a>
                 </div>
+
             </div>
             <!-- nav-bar -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 d-none d-xl-flex">
-                <div class="container-fluid">
+                <div class="container-fluid bg-white">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand d-lg-none" href="#">logo</a>
+                    <a class="navbar-brand d-lg-none" href="home">
+                        <img src="public/img/logo-grocery.png" alt="">
+                    </a>
                     <a href="#"><span class="material-symbols-outlined d-lg-none">
                             shopping_cart
                         </span></a>
@@ -306,7 +333,7 @@
                                 <ul class="navbar-main me-auto mb-2 mb-lg-0 d-lg-flex align-items-center  ">
                                     <h6 class="navbar-subtitle my-4 d-lg-none">MAIN MENU</h6>
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                                     </li>
                                     <li class="nav-item nav-item--submenu relative">
                                         <a href="shop.html" class="nav-link d-flex align-items-center">
@@ -316,60 +343,107 @@
                                             </span>
                                         </a>
                                         <div
-                                            class="submenu justify-content-between end-0 start-0 p-4 mx-4 position-absolute flex-grow-1 bg-white z-1">
+                                            class="submenu justify-content-between end-0 start-0  mx-4 position-absolute flex-grow-1 bg-white z-1">
                                             <ul>
-                                                <h5>title title</h5>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
+                                                <h5 class="submenu-title">Shop Lists</h5>
+                                                <li class="submenu-item">
+                                                    <a href="#">shop default</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">shop right sidebar</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">shop width</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">filters area</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">list left sidebar</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">load more button</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">infinite scrolling</a>
+                                                </li>
                                             </ul>
                                             <ul>
-                                                <h5>title title</h5>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
+                                                <h5 class="submenu-title">product detail</h5>
+                                                <li class="submenu-item">
+                                                    <a href="#">product default</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">product variable</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">product grouped</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">product external</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">product downloadable</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">product width video</a>
+                                                </li>
                                             </ul>
                                             <ul>
-                                                <h5>title title</h5>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
+                                                <h5 class="submenu-title">shop pages</h5>
+                                                <li class="submenu-item">
+                                                    <a href="#">cart</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">checkout</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">my account</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">wishlist</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">order tracking</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">featured products</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">best selling products</a>
+                                                </li>
                                             </ul>
                                             <ul>
-                                                <h5>title title</h5>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
-                                                <li>item</li>
+                                                <h5 class="submenu-title">shop layout</h5>
+                                                <li class="submenu-item">
+                                                    <a href="#">two columns</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">there columns</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">there columns wide</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">four columns</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">four columns wide</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">five columns wide</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">six columns wide</a>
+                                                </li>
                                             </ul>
                                         </div>
-
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Frozen Foods</a>
+                            <a class="nav-link active" aria-current="page" href="type-products.html">Frozen Foods</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Beverages</a>
@@ -378,7 +452,8 @@
                             <a class="nav-link active" aria-current="page" href="#">Bakery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                            <a class="nav-link active text-danger" aria-current="page"
+                                href="https://klbtheme.com/blonwe/grocery/#">Tamplate</a>
                         </li>
                         <li class="nav-item nav-item--submenu relative">
                             <a href="#" class="nav-link d-flex align-items-center">
@@ -388,54 +463,201 @@
                                     expand_more
                                 </span>
                             </a>
+                            <!-- discounts -->
                             <div
-                                class="submenu justify-content-between end-0 start-0 p-4 position-absolute flex-grow-1 bg-white z-1">
-                                <ul>
-                                    <h5>title title</h5>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                </ul>
-                                <ul>
-                                    <h5>title title</h5>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                </ul>
-                                <ul>
-                                    <h5>title title</h5>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                </ul>
-                                <ul>
-                                    <h5>title title</h5>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                    <li>item</li>
-                                </ul>
-                            </div>
+                                class="submenu submenu-discount justify-content-between end-0 start-0 px-4 ps-0 position-absolute flex-grow-1 bg-white z-1">
+                                <div class="row">
+                                    <div class="col col-lg-2">
+                                        <!-- c-discounts -->
+                                        <div class="c-discounts">
+                                            <a href="#">
+                                                <div class="card border-0 border-end rounded-0">
+                                                    <div class=" position-relative">
+                                                        <img src="public/img/image-1-47.png" class="card-img-top"
+                                                            alt="...">
+                                                        <span class="badge card-badge position-absolute">14%</span>
+                                                    </div>
+                                                    <div class="card-body pt-0">
+                                                        <div class="">
+                                                            <span
+                                                                class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                            <span
+                                                                class="p-1 rounded-1 bg-success text-white fs-6 fw-bold">$3.30</span>
+                                                        </div>
+                                                        <p class="card-text fw-bold">Signature Wood-Fired Mushroom and
+                                                            Caramelized</p>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="card-star me-3 rounded-pill">
+                                                                <i class="fa-solid fa-star text-warning"></i>
+                                                                <span class="fw-semibold">4.33</span>
+                                                            </div>
+                                                            <span class="fs-sm">3 Reviews</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-2">
+                                        <!-- c-discounts -->
+                                        <div class="c-discounts">
+                                            <a href="#">
+                                                <div class="card border-0 border-end rounded-0">
+                                                    <div class=" position-relative">
+                                                        <img src="public/img/image-1-47.png" class="card-img-top"
+                                                            alt="...">
+                                                        <span class="badge card-badge position-absolute">14%</span>
+                                                    </div>
+                                                    <div class="card-body pt-0">
+                                                        <div class="">
+                                                            <span
+                                                                class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                            <span
+                                                                class="p-1 rounded-1 bg-success text-white fs-6 fw-bold">$3.30</span>
+                                                        </div>
+                                                        <p class="card-text fw-bold">Signature Wood-Fired Mushroom and
+                                                            Caramelized</p>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="card-star me-3 rounded-pill">
+                                                                <i class="fa-solid fa-star text-warning"></i>
+                                                                <span class="fw-semibold">4.33</span>
+                                                            </div>
+                                                            <span class="fs-sm">3 Reviews</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-2">
+                                        <!-- c-discounts -->
+                                        <div class="c-discounts">
+                                            <a href="#">
+                                                <div class="card border-0 border-end rounded-0">
+                                                    <div class=" position-relative">
+                                                        <img src="public/img/image-1-47.png" class="card-img-top"
+                                                            alt="...">
+                                                        <span class="badge card-badge position-absolute">14%</span>
+                                                    </div>
+                                                    <div class="card-body pt-0">
+                                                        <div class="">
+                                                            <span
+                                                                class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                            <span
+                                                                class="p-1 rounded-1 bg-success text-white fs-6 fw-bold">$3.30</span>
+                                                        </div>
+                                                        <p class="card-text fw-bold">Signature Wood-Fired Mushroom and
+                                                            Caramelized</p>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="card-star me-3 rounded-pill">
+                                                                <i class="fa-solid fa-star text-warning"></i>
+                                                                <span class="fw-semibold">4.33</span>
+                                                            </div>
+                                                            <span class="fs-sm">3 Reviews</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-2">
+                                        <!-- c-discounts -->
+                                        <div class="c-discounts">
+                                            <a href="#">
+                                                <div class="card border-0 border-end rounded-0">
+                                                    <div class=" position-relative">
+                                                        <img src="public/img/image-1-47.png" class="card-img-top"
+                                                            alt="...">
+                                                        <span class="badge card-badge position-absolute">14%</span>
+                                                    </div>
+                                                    <div class="card-body pt-0">
+                                                        <div class="">
+                                                            <span
+                                                                class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                            <span
+                                                                class="p-1 rounded-1 bg-success text-white fs-6 fw-bold">$3.30</span>
+                                                        </div>
+                                                        <p class="card-text fw-bold">Signature Wood-Fired Mushroom and
+                                                            Caramelized</p>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="card-star me-3 rounded-pill">
+                                                                <i class="fa-solid fa-star text-warning"></i>
+                                                                <span class="fw-semibold">4.33</span>
+                                                            </div>
+                                                            <span class="fs-sm">3 Reviews</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-2">
+                                        <!-- c-discounts -->
+                                        <div class="c-discounts">
+                                            <a href="#">
+                                                <div class="card border-0 border-end rounded-0">
+                                                    <div class=" position-relative">
+                                                        <img src="public/img/image-1-47.png" class="card-img-top"
+                                                            alt="...">
+                                                        <span class="badge card-badge position-absolute">14%</span>
+                                                    </div>
+                                                    <div class="card-body pt-0">
+                                                        <div class="">
+                                                            <span
+                                                                class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                            <span
+                                                                class="p-1 rounded-1 bg-success text-white fs-6 fw-bold">$3.30</span>
+                                                        </div>
+                                                        <p class="card-text fw-bold">Signature Wood-Fired Mushroom and
+                                                            Caramelized</p>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="card-star me-3 rounded-pill">
+                                                                <i class="fa-solid fa-star text-warning"></i>
+                                                                <span class="fw-semibold">4.33</span>
+                                                            </div>
+                                                            <span class="fs-sm">3 Reviews</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-2">
+                                        <!-- c-discounts -->
+                                        <div class="c-discounts">
+                                            <a href="#">
+                                                <div class="card border-0 rounded-0">
+                                                    <div class=" position-relative">
+                                                        <img src="public/img/image-1-47.png" class="card-img-top"
+                                                            alt="...">
+                                                        <span class="badge card-badge position-absolute">14%</span>
+                                                    </div>
+                                                    <div class="card-body pt-0">
+                                                        <div class="">
+                                                            <span
+                                                                class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
+                                                            <span
+                                                                class="p-1 rounded-1 bg-success text-white fs-6 fw-bold">$3.30</span>
+                                                        </div>
+                                                        <p class="card-text fw-bold">Signature Wood-Fired Mushroom and
+                                                            Caramelized</p>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="card-star me-3 rounded-pill">
+                                                                <i class="fa-solid fa-star text-warning"></i>
+                                                                <span class="fw-semibold">4.33</span>
+                                                            </div>
+                                                            <span class="fs-sm">3 Reviews</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
 
+
+                                </div>
+
+                            </div>
                         </li>
                         <li class="nav-item d-none d-lg-flex">
                             <a href="components.html" class="text-danger fw-bold">components</a>
@@ -445,7 +667,7 @@
                             <span class="material-symbols-outlined me-2 text-danger">
                                 timeline
                             </span>
-                            <span class="text-danger fs-5 fw-bold">Buy Theme</span>
+                            <span class="text-danger fs-6 fw-bold">Buy Theme</span>
 
                         </div>
                     </div>
@@ -514,318 +736,830 @@
         </div>
     </header>
     <main>
-        <div class="row">
-            <div class="col col-12 col-lg-6 type-products__img">
-                <div class="c-products">
-                    <div class="card mb-3">
-                        <div class="card-header bg-white border-0 p-0">
-                            <div class="card  border-0">
-                                <section id="main-carousel" class="splide" aria-label="My Awesome Gallery">
+        <div class="type-products">
+            <div class="container">
+                <div class="row">
+                    <!-- breadcrumb -->
+                    <nav aria-label="breadcrumb" class="c-breadcrumb">
+                        <ol class="breadcrumb-list  my-2">
+                            <li class="breadcrumb-item me-1"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item me-1"><a href="#">Shop</a></li>
+                            <li class="breadcrumb-item me-1 breadcrumb-item--active active" aria-current="page">Type
+                                products
+                            </li>
+                        </ol>
+                    </nav>
+                    <div class="row">
+                        <!-- splide -->
+                        <div class="col col-12 col-xl-6">
+                            <div class="type-products-splide mb-3">
+                                <section id="main-carousels" class="splide" aria-label="My Awesome Gallery">
+                                    <div class="w-100  position-absolute top-0 px-3 z-1">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="splide__badge badge bg-danger">22%</span>
+                                            <div class="card-item">
+                                                <a href="public/img/image-1-18-300x300.png"
+                                                    class="splide__open btn border-gray-600 rounded-circle r">
+                                                    <span class="material-symbols-outlined">
+                                                        open_with
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="splide__track">
                                         <ul class="splide__list">
                                             <li class="splide__slide">
-                                                <img src="/public/img/iamge-2-1-150x150 (1).png" alt="">
+                                                <img src="public/img/image-1-18-300x300.png" alt="">
                                             </li>
                                             <li class="splide__slide">
-                                                <img src="public/img/iamge-2-1-150x150.png" alt="">
-                                            </li>
-                                            <li class="splide__slide">
-                                                <img src="public/img/iamge-2-1-150x150.png" alt="">
-                                            </li>
-                                            <li class="splide__slide">
-                                                <img src="public/img/iamge-2-1-150x150.png" alt="">
+                                                <img src="public/img/image-1-18-300x300.png" alt="">
                                             </li>
                                         </ul>
                                     </div>
                                 </section>
 
-
                                 <ul id="thumbnails" class="thumbnails">
                                     <li class="thumbnail">
-                                        <img src="public/img/iamge-2-1-150x150 (1).png" alt="">
+                                        <img src="public/img/image-1-18-300x300.png" alt="">
                                     </li>
                                     <li class="thumbnail">
-                                        <img src="public/img/iamge-2-1-150x150 (1).png" alt="">
-                                    </li>
-                                    <li class="thumbnail">
-                                        <img src="public/img/iamge-2-1-150x150 (1).png" alt="">
-                                    </li>
-                                    <li class="thumbnail">
-                                        <img src="public/img/iamge-2-1-150x150 (1).png" alt="">
+                                        <img src="public/img/image-1-18-300x300.png" alt="">
                                     </li>
                                 </ul>
                             </div>
+                        </div>
+                        <!-- description -->
+                        <div class="col col-12 col-xl-6">
+                            <!-- type-products__body -->
+                            <div class="type-products__body text-primary">
+                                <a href="#" class="type-products-title text-dark ">
+                                    <h2 class="fw-semibold mb-2">The Famous Grouse Finest Blended Scotch
+                                        Whisky</h2>
+                                </a>
+                                <!-- c-stars -->
+                                <div class="c-star border-bottom mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <ul class="c-star__list me-2 mb-0 d-flex align-items-center">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </ul>
+                                        <span class="c-star__number fw-semibold">3 reviews</span>
+                                    </div>
+                                </div>
+                                <div class="my-2">
+                                    <span class="text-gray-600 fs-5 text-decoration-line-through me-2">$4.30</span>
+                                    <span class="text-danger fs-4 fw-bold">$3.30</span>
+                                </div>
+                                <span class="badge bg-light text-success p-2 mb-2">In Stock</span>
+                                <p class="type-products__text ">Fusce sapien urna, tristique non sapien nec, rutrum
+                                    fringilla eros. Etiam accumsan
+                                    odio eget tempus consectetur. Aliquam et sapien nulla. Suspendisse lobortis leo
+                                    ante, imperdiet tristique magna tristique eu. Nullam ultrices vulputate odio, eu
+                                    iaculis nulla congue quis.
+                                </p>
 
-                            <div class="card-img-overlay">
-                                <div class="d-flex justify-content-between">
-                                    <span class="card-badge badge bg-danger">22%</span>
-                                    <div class="card-item">
-                                        <a href="#"
-                                            class="my-1 btn border-gray-600 rounded-circle d-flex align-items-center">
-                                            <span class="material-symbols-outlined">
-                                                open_with
+                                <!-- fixed-bottom -->
+                                <div
+                                    class="d-flex d-xl-none fixed-bottom z-1 justify-content-between align-items-center bg-white px-2 pb-4 pt-2 shadow-lg">
+                                    <div class="c-input-number me-2">
+                                        <div class="box p-0 d-flex align-items-center">
+                                            <div class="quantity border rounded-3 py-1 ">
+                                                <span class="quantity-add quantity-button"></span>
+                                                <input class="border-0" type="number" step="1" min="1" value="1">
+                                                <span class="quantity-remove quantity-button"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn bg-success p-2 px-3 fw-semibold text-white">Add to Card</button>
+                                </div>
+                                <!-- favorite -->
+                                <div class="my-4 border-bottom text-dark pb-2">
+                                    <a href="">
+                                        <span class="fw-semibold d-flex align-items-center">
+                                            <span class="material-symbols-outlined me-2">
+                                                favorite
                                             </span>
-                                        </a>
+                                            Add to wishlist
+                                        </span>
+                                    </a>
+                                    <!-- <div class="text-gray-600">
+                                        <strong>18 people</strong>
+                                        <span>favorites this product</span>
+                                    </div> -->
+                                </div>
+                                <!-- checklist -->
+                                <div class="checklist">
+                                    <ul class="checklist__list">
+                                        <li class="checklist__items">
+                                            <div class="checklist__inner">
+                                                <span class="checklist__icon material-symbols-outlined">
+                                                    check
+                                                </span>
+                                                <span class="fw-bold me-1">Delivered</span>
+                                            </div>
+                                            <span>(order Mon-Fri before 12:00, delivery between 17:00 and 22:00)</span>
+                                            </span>
+                                        </li>
+                                        <li class="checklist__items">
+                                            <div class="checklist__inner">
+                                                <span class="checklist__icon material-symbols-outlined">
+                                                    check
+                                                </span>
+                                                <span class="fw-bold me-1">Including</span>
+                                            </div>
+                                            <span> shipping costs, sent by klbtheme.com</span>
+                                            </span>
+                                        </li>
+                                        <li class="checklist__items">
+                                            <div class="checklist__inner">
+                                                <span class="checklist__icon material-symbols-outlined">
+                                                    check
+                                                </span>
+                                            </div>
+                                            <span> Pick up at a klbtheme.com collection point is possible</span>
+                                            </span>
+                                        </li>
+                                        <li class="checklist__items">
+                                            <div class="checklist__inner">
+                                                <span class="checklist__icon material-symbols-outlined">
+                                                    check
+                                                </span>
+                                            </div>
+                                            <span> 30 days to change your mind and free returns</span>
+                                            </span>
+                                        </li>
+                                        <li class="checklist__items">
+                                            <div class="checklist__inner">
+                                                <span class="checklist__icon material-symbols-outlined">
+                                                    check
+                                                </span>
+                                            </div>
+                                            <span>Day and night customer service</span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- information -->
+                                <div class="information">
+                                    <ul class="information__list">
+                                        <li class="information__item">
+                                            <span class="information__categories">SKU:</span>
+                                            <span class="information__text">A2B6M8R3P5</span>
+                                        </li>
+                                        <li class="information__item">
+                                            <span class="information__categories">Categories:</span>
+                                            <span class="information__text">Beef,Meats & Seafood</span>
+                                        </li>
+                                        <li class="information__item">
+                                            <span class="information__categories">Tags:</span>
+                                            <span class="information__text">Beef Mince,Delicious</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- socials -->
+                                <div class="c-socials">
+                                    <ul class="d-flex align-items-center">
+                                        <li>
+                                            <a href="#" class="c-socials__link">
+                                                <span class="c-socials__item c-socials__item--fb rounded-circle">
+                                                    <i class="c-socials__icon fa-brands fa-facebook-f"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="c-socials__link">
+                                                <span class="c-socials__item c-socials__item--tw rounded-circle">
+                                                    <i class="fa-brands fa-twitter"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="c-socials__link">
+                                                <span class="c-socials__item c-socials__item--pint rounded-circle">
+                                                    <i class="fa-brands fa-pinterest"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="c-socials__link">
+                                                <span class="c-socials__item c-socials__item--lin rounded-circle">
+                                                    <i class="fa-brands fa-linkedin-in"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="c-socials__link">
+                                                <span class="c-socials__item c-socials__item--redd rounded-circle">
+                                                    <i class="fa-brands fa-reddit-alien"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tabulation -->
+                <div class="tabulation">
+                    <div class="overflow-auto">
+                        <ul class="nav table nav-tabs overflow-auto flex-nowrap mb-4" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="btn-tab btn btn-link  px-2 text-nowrap active" id="description-tab"
+                                    data-bs-toggle="tab" data-bs-target="#description-tab-pane" type="button" role="tab"
+                                    aria-controls="description-tab-pane" aria-selected="true">
+                                    Description
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="btn-tab btn btn-link px-2 text-nowrap" id="information-tab"
+                                    data-bs-toggle="tab" data-bs-target="#information-tab-pane" type="button" role="tab"
+                                    aria-controls="information-tab-pane" aria-selected="false">
+                                    Additional Information
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="btn-tab btn btn-link px-2 text-nowrap " id="reviews-tab"
+                                    data-bs-toggle="tab" data-bs-target="#reviews-tab-pane" type="button" role="tab"
+                                    aria-controls="reviews-tab-pane" aria-selected="false">
+                                    Reviews
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- tab-content -->
+                    <div class="tab-content" id="myTabContent">
+                        <!-- tab-1 -->
+                        <div class="tab-pane fade show active" id="description-tab-pane" role="tabpanel"
+                            aria-labelledby="description-tab" tabindex="0">
+                            <article>
+                                <p>
+                                    Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in
+                                    dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit
+                                    feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam
+                                    ultricies sodales nunc, in pellentesque lorem mattis quis. Cras imperdiet est in
+                                    nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt. Suspendisse
+                                    velit ex, aliquet vel ornare vel, dignissim a tortor.
+                                </p>
+                                <p>
+                                    Morbi ut sapien vitae odio accumsan gravida. Morbi vitae erat auctor, eleifend nunc
+                                    a, lobortis neque. Praesent aliquam dignissim viverra. Maecenas lacus odio, feugiat
+                                    eu nunc sit amet, maximus sagittis dolor. Vivamus nisi sapien, elementum sit amet
+                                    eros sit amet, ultricies cursus ipsum. Sed consequat luctus ligula. Curabitur
+                                    laoreet rhoncus blandit. Aenean vel diam ut arcu pharetra dignissim ut sed leo.
+                                    Vivamus faucibus, ipsum in vestibulum vulputate, lorem orci convallis quam, sit amet
+                                    consequat nulla felis pharetra lacus. Duis semper erat mauris, sed egestas purus
+                                    commodo vel.
+                                </p>
+                            </article>
+
+                        </div>
+                        <!-- tab-2 -->
+                        <div class="tab-pane fade" id="information-tab-pane" role="tabpanel"
+                            aria-labelledby="information-tab" tabindex="0">
+                            <div class="tab-add">
+                                <span class="tab-add__weight border-end">Weight</span>
+                                <span class="tab-add__kg">1 kg</span>
+                            </div>
+                        </div>
+                        <!-- tab-3 -->
+                        <!-- reviews -->
+                        <div class="tab-pane fade" id="reviews-tab-pane" role="tabpanel" aria-labelledby="reviews-tab"
+                            tabindex="0">
+                            <div class="tab-reviews">
+                                <h5 class="fw-semibold mb-3">3 reviews for Shazans Fresh Halal Beef Mince - Delicious
+                                </h5>
+                                <div class="tab-reviews__rating d-flex">
+                                    <span class="tab-reviews__cont me-2">4.67</span>
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <!-- c-star -->
+                                        <div class="c-star">
+                                            <div class="d-flex align-items-center">
+                                                <ul class="c-star__list fs-4 mb-0">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <span class="c-star__description">Average of <span class="fw-bold">3
+                                                    reviews</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pb-4 border-bottom">
+                                    <!--c-rating -->
+                                    <div class="c-rating">
+                                        <div class="c-rating__star">
+                                            <i class="fa-solid fa-star me-2"></i>
+                                            <span class="c-rating__numb text-dark fw-medium">5</span>
+                                        </div>
+                                        <div class="c-progress-but w-100 mx-3">
+                                            <a href="#" class="progres-link">
+                                                <div class="progress-bg progress bg-grey-600" role="progressbar"
+                                                    aria-label="Info example" aria-valuenow="50" aria-valuemin="0"
+                                                    aria-valuemax="100">
+                                                    <div class="progress-bar rounded-pill bg-warning position-relative"
+                                                        style="width: 70%;">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <span class="c-rating__sum">2</span>
+                                    </div><!--c-rating -->
+                                    <div class="c-rating">
+                                        <div class="c-rating__star">
+                                            <i class="fa-solid fa-star me-2"></i>
+                                            <span class="c-rating__numb text-dark fw-medium">4</span>
+                                        </div>
+                                        <div class="c-progress-but w-100 mx-3">
+                                            <a href="#" class="progres-link">
+                                                <div class="progress-bg progress bg-grey-600" role="progressbar"
+                                                    aria-label="Info example" aria-valuenow="50" aria-valuemin="0"
+                                                    aria-valuemax="100">
+                                                    <div class="progress-bar rounded-pill bg-warning position-relative"
+                                                        style="width: 45%;">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <span class="c-rating__sum">2</span>
+                                    </div><!--c-rating -->
+                                    <div class="c-rating">
+                                        <div class="c-rating__star">
+                                            <i class="fa-solid fa-star me-2"></i>
+                                            <span class="c-rating__numb text-dark fw-medium">3</span>
+                                        </div>
+                                        <div class="c-progress-but w-100 mx-3">
+                                            <a href="#" class="progres-link">
+                                                <div class="progress-bg progress bg-grey-600" role="progressbar"
+                                                    aria-label="Info example" aria-valuenow="50" aria-valuemin="0"
+                                                    aria-valuemax="100">
+                                                    <div class="progress-bar rounded-pill bg-warning position-relative"
+                                                        style="width: 0%;">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <span class="c-rating__sum">0</span>
+                                    </div><!--c-rating -->
+                                    <div class="c-rating">
+                                        <div class="c-rating__star">
+                                            <i class="fa-solid fa-star me-2"></i>
+                                            <span class="c-rating__numb text-dark fw-medium">2</span>
+                                        </div>
+                                        <div class="c-progress-but w-100 mx-3">
+                                            <a href="#" class="progres-link">
+                                                <div class="progress-bg progress bg-grey-600" role="progressbar"
+                                                    aria-label="Info example" aria-valuenow="50" aria-valuemin="0"
+                                                    aria-valuemax="100">
+                                                    <div class="progress-bar rounded-pill bg-warning position-relative"
+                                                        style="width: 0%;">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <span class="c-rating__sum">0</span>
+                                    </div><!--c-rating -->
+                                    <div class="c-rating">
+                                        <div class="c-rating__star">
+                                            <i class="fa-solid fa-star me-2"></i>
+                                            <span class="c-rating__numb text-dark fw-medium">1</span>
+                                        </div>
+                                        <div class="c-progress-but w-100 mx-3">
+                                            <a href="#" class="progres-link">
+                                                <div class="progress-bg progress bg-grey-600" role="progressbar"
+                                                    aria-label="Info example" aria-valuenow="50" aria-valuemin="0"
+                                                    aria-valuemax="100">
+                                                    <div class="progress-bar rounded-pill bg-warning position-relative"
+                                                        style="width: 0%;">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <span class="c-rating__sum">0</span>
+                                    </div>
+                                </div>
+                                <!-- comment -->
+                                <div class="comment">
+                                    <!-- c-comments -->
+                                    <div class="c-comments">
+                                        <div class="c-comments__avatar me-3 d-none d-md-flex">
+                                            <img class="rounded-circle" src="public/img/image-avatar.png" alt="avatar">
+                                        </div>
+                                        <!-- c-reviews-star -->
+                                        <div class="">
+                                            <div class="c-star mb-3">
+                                                <div class="d-flex align-items-center">
+                                                    <ul class="c-star__list mb-0">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </ul>
+                                                </div>
+                                                <div class="c-comments__author">
+                                                    <span class="fw-semibold">sinan <span class="fw-normal">- july
+                                                            29,2023</span></span>
+                                                </div>
+                                            </div>
+                                            <p class="c-comments__text">Sed perspiciatis unde omnis iste natus
+                                                error
+                                                sit voluptatem accusantium doloremque laudantium.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="c-comments">
+                                        <div class="c-comments__avatar me-3 d-none d-md-flex">
+                                            <img class="rounded-circle" src="public/img/image-avatar.png" alt="avatar">
+                                        </div>
+                                        <!-- c-star -->
+                                        <div class="">
+                                            <div class="c-star mb-3">
+                                                <div class="d-flex align-items-center">
+                                                    <ul class="c-star__list mb-0">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </ul>
+                                                </div>
+                                                <div class="c-comments__author">
+                                                    <span class="fw-semibold">sinan <span class="fw-normal">- july
+                                                            29,2023</span></span>
+                                                </div>
+                                            </div>
+                                            <p class="c-comments__text">Sed perspiciatis unde omnis iste natus
+                                                error
+                                                sit voluptatem accusantium doloremque laudantium.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="c-comments">
+                                        <div class="c-comments__avatar me-3 d-none d-md-flex">
+                                            <img class="rounded-circle" src="public/img/image-avatar.png" alt="avatar">
+                                        </div>
+                                        <!-- c-star -->
+                                        <div class="">
+                                            <div class="c-star mb-3">
+                                                <div class="d-flex align-items-center">
+                                                    <ul class="c-star__list mb-0" style="letter-spacing: -1;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </ul>
+                                                </div>
+                                                <div class="c-comments__author">
+                                                    <span class="fw-semibold">sinan <span class="fw-normal">- july
+                                                            29,2023</span></span>
+                                                </div>
+                                            </div>
+                                            <p class="c-comments__text">Sed perspiciatis unde omnis iste natus
+                                                error
+                                                sit voluptatem accusantium doloremque laudantium.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- add-comment -->
+                                <div class="add-comment">
+                                    <h4 class="fw-semibold">Add a review</h4>
+                                    <p class="mt-2">Your email address will not be published. Required fields are marked
+                                        *</p>
+                                    <div>
+                                        <span>your rating*</span>
+                                        <div>
+                                            <div class="c-reviews-star">
+                                                <div class="d-flex align-items-center flex-wrap">
+                                                    <ul class="c-reviews-star__list pe-2 mx-2 border-end">
+                                                        <a class="c-reviews-star__link" href="#">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </a>
+                                                    </ul>
+                                                    <ul class="c-reviews-star__list pe-2 mx-2 border-end">
+                                                        <a class="c-reviews-star__link" href="#">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </a>
+                                                        <a class="c-reviews-star__link" href="#">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </a>
+                                                    </ul>
+                                                    <ul class="c-reviews-star__list pe-2 mx-2 border-end">
+                                                        <a class="c-reviews-star__link" href="#">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </a>
+                                                        <a class="c-reviews-star__link" href="#">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </a>
+                                                        <a class="c-reviews-star__link" href="#">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </a>
+                                                    </ul>
+                                                    <ul class="c-reviews-star__list pe-2 mx-2 border-end">
+                                                        <a class="c-reviews-star__link" href="#">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </a>
+                                                        <a class="c-reviews-star__link" href="#">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </a>
+                                                        <a class="c-reviews-star__link" href="#">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </a>
+                                                    </ul>
+                                                    <ul class="c-reviews-star__list pe-2 mx-2 ">
+                                                        <a class="c-reviews-star__link" href="#">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </a>
+                                                        <a class="c-reviews-star__link" href="#">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </a>
+                                                        <a class="c-reviews-star__link" href="#">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </a>
+                                                        <a class="c-reviews-star__link" href="#">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </a>
+                                                        <a class="c-reviews-star__link" href="#">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </a>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+                <DIV class="fw-bold text-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+                    sit.</DIV>
+
+
             </div>
-            <div class="col col-12 col-lg-6">
-                <div class="type-products__body card-body text-primary">
-                    <a href="#" class="card-title text-dark">The Famous Grouse Finest Blended Scotch
-                        Whisky</a>
-                    <div class="my-2">
-                        <span class="text-gray-600 fw-bold text-decoration-line-through me-2">$4.30</span>
-                        <span class="text-danger fs-6 fw-bold">$3.30</span>
+        </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer pt-5">
+        <div class="container">
+            <div class="row border-bottom">
+                <div class="footer__block col col-12 col-md-6 col-lg-3 border-end">
+                    <h6 class="footer__title">do you need help ?</h6>
+                    <p class="footer__text">Autoseligen syr. Nek diarask fröbomba. Nör antipol kynoda nynat. Pressa
+                        fåmoska.</p>
+                    <div class="d-flex flex-column mb-3">
+                        <a href="tel:0 800 300-353" class="footer__tel">0 800 300-353</a>
+                        <span class="footer__small">Free from fixed and mobile phones in USA.</span>
                     </div>
-                    <a href="#" class="c-countdown__add mb-3 btn btn-primary d-flex justify-content-center">Add to
-                        card</a>
-                    <div class="d-flex">
-                        <div class="c-input-number me-2">
-                            <div class="box p-0">
-                                <div class="quantity">
-                                    <span class="quantity-add quantity-button"></span>
-                                    <input type="number" step="1" min="1" value="1">
-                                    <span class="quantity-remove quantity-button"></span>
-                                </div>
-                            </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="footer__lab">Email:</span>
+                        <a href="#" class="footer__mail">info@example.com</a>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <span class="footer__lab">Call Center hours</span>
+                        <span class="footer__call-center">Mon-Sun 09:00-19:00</span>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-6 col-lg-9">
+                    <div class="row">
+                        <div class="footer__block footer__block--first col col-12 col-md-6 col-lg-4 ">
+                            <h6 class="footer__title">let us help you</h6>
+                            <ul>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Accessibility Statement
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Your Orders
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Returns & Replacements
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Shipping Rates & Policies
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Refund and Returns Policy
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Terms and Conditions
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Cookie Settings
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Help Center
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        <button class="btn btn-primary">Add to Card</button>
-                    </div>
-                    <div class="my-4 border-bottom">
-                        <span>
-                            <span class="material-symbols-outlined">
-                                favorite
-                            </span>
-                            Add to wishlist
-                        </span>
-                        <div class="text-gray-600">
-                            <strong>18 people</strong>
-                            <span>favorites this product</span>
+                        <div class="footer__block col col-12 col-md-6 col-lg-4">
+                            <h6 class="footer__title">make money with us</h6>
+                            <ul>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Sell on Blonwe
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Sell Your Services on Blonwe
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Sell on Blonwe Business
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Sell Your Apps on Blonwe
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Become an Affilate
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Advertise Your Products
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Sell-Publish with Us
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Become an Blonwe Vendor
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__block col col-12 col-md-6 col-lg-4">
+                            <h6 class="footer__title">get to know us</h6>
+                            <ul>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Careers for Blonwe
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        About Blonwe
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Inverstor Relations
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Blonwe Devices
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Customer reviews
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Social Responsibility
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper">
+                                    <a href="#" class="footer__item">
+                                        Store Locations
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <!-- checklist -->
-                    <div class="checklist">
-                        <ul class="checklist__list">
-                            <li class="checklist__items">
-                                <span class="material-symbols-outlined">
-                                    check
-                                </span>
-                                <span>
-                                    <strong>Delivered</strong>
-                                    (order Mon-Fri before 12:00, delivery between 17:00 and 22:00)
-                                </span>
+                </div>
+            </div>
+            <div class="footer__inner d-md-flex justify-content-between align-items-center py-3">
+                <div class="footer__netwoks d-flex  align-items-center flex-column flex-md-row py-4">
+                    <h6 class="footer__subtitle mb-0">follow us:</h6>
+                    <!-- c-networks-->
+                    <div class="c-networks">
+                        <ul class="d-flex align-items-center m-0">
+                            <li class="me-1">
+                                <a href="#" class="c-networks__link">
+                                    <span class="c-networks__item rounded-circle">
+                                        <i class="c-networks__icon fa-brands fa-facebook-f"></i>
+                                    </span>
+                                </a>
                             </li>
-                            <li class="checklist__items">
-                                <span class="checklist__check material-symbols-outlined">
-                                    check
-                                </span>
-                                <span>
-                                    <strong>Delivered</strong>
-                                    (order Mon-Fri before 12:00, delivery between 17:00 and 22:00)
-                                </span>
+                            <li class="me-1">
+                                <a href="#" class="c-networks__link">
+                                    <span class="c-networks__item rounded-circle">
+                                        <i class="c-networks__icon fa-brands fa-twitter"></i>
+                                    </span>
+                                </a>
                             </li>
-                            <li class="checklist__items">
-                                <span class="checklist__check material-symbols-outlined">
-                                    check
-                                </span>
-                                <span>
-                                    <strong>Delivered</strong>
-                                    (order Mon-Fri before 12:00, delivery between 17:00 and 22:00)
-                                </span>
+                            <li class="me-1">
+                                <a href="#" class="c-networks__link">
+                                    <span class="c-networks__item rounded-circle">
+                                        <i class="c-networks__icon fa-brands fa-youtube"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="me-1">
+                                <a href="#" class="c-networks__link">
+                                    <span class="c-networks__item rounded-circle">
+                                        <i class="c-networks__icon fa-brands fa-instagram"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="me-1">
+                                <a href="#" class="c-networks__link">
+                                    <span class="c-networks__item rounded-circle">
+                                        <i class="c-networks__icon fa-brands fa-telegram"></i>
+                                    </span>
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- tabulation -->
-        <div class="tabulation">
-            <div class="overflow-auto">
-                <ul class="nav table nav-tabs overflow-auto flex-nowrap  border-0 mb-4" id="myTab"
-                    role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="btn-tab btn btn-link  px-4 text-nowrap active" id="description-tab"
-                            data-bs-toggle="tab" data-bs-target="#description-tab-pane" type="button" role="tab"
-                            aria-controls="description-tab-pane" aria-selected="true">
-                            Description
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="btn-tab btn btn-link px-4 text-nowrap" id="information-tab" data-bs-toggle="tab"
-                            data-bs-target="#information-tab-pane" type="button" role="tab"
-                            aria-controls="information-tab-pane" aria-selected="false">
-                            Information
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="btn-tab btn btn-link px-4 text-nowrap" id="reviews-tab" data-bs-toggle="tab"
-                            data-bs-target="#reviews-tab-pane" type="button" role="tab" aria-controls="reviews-tab-pane"
-                            aria-selected="false">
-                            Reviews
-                        </button>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="description-tab-pane" role="tabpanel"
-                    aria-labelledby="description-tab" tabindex="0">
-                    <div class="card border-0" style="width: 18rem-;">
-                        <div class="new-works">
-                            <a href="#" class="new-works__wrapper">
-                                <div
-                                    class="card new-works__card overflow-hidden border-0 bg-secondary  position-relative">
-                                    <img src="/public/img/billy-albert-vjWlU6CaF58-unsplash.jpg"
-                                        class="new-works__img card-img-top" style="height: 400px;" alt="foto">
-                                    <div class="new-works__block position-absolute bg-white m-3 p-2 top-0 end-0">
-                                        <img src="/SVG/aroow-rectangle.svg" alt="">
-                                    </div>
-                                    <svg class="new-works__icon icon position-absolute w-100">
-                                        <use xlink:href="#Ellipse 1">
-                                        </use>
-                                    </svg>
-                                    <div
-                                        class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
-                                        <span class="new-works__text new-works__text--text">Duplex
-                                            Foue</span> <br>
-                                        <h4 class="new-works__text new-works__text--title">Noe
-                                            Valley
-                                            Zones</h4>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="information-tab-pane" role="tabpanel" aria-labelledby="information-tab"
-                    tabindex="0">
-
-                    <div class="card" style="width: 18rem-;">
-                        <div class="card border-0" style="width: 18rem-;">
-                            <div class="new-works">
-                                <a href="#" class="new-works__wrapper">
-                                    <div
-                                        class="card new-works__card overflow-hidden border-0 bg-primary  position-relative">
-                                        <img src="/public/img/recently-works/industrial-1.jpg"
-                                            class="new-works__img card-img-top" style="height: 400px;" alt="foto">
-                                        <div class="new-works__block position-absolute bg-white m-3 p-2 top-0 end-0">
-                                            <img src="/SVG/aroow-rectangle.svg" alt="">
-                                        </div>
-                                        <svg class="new-works__icon icon position-absolute w-100">
-                                            <use xlink:href="#Ellipse 1">
-                                            </use>
-                                        </svg>
-                                        <div
-                                            class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
-                                            <span class="new-works__text new-works__text--text">Duplex
-                                                Foue</span> <br>
-                                            <h4 class="new-works__text new-works__text--title">
-                                                Pacific Heights Area
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="reviews-tab-pane" role="tabpanel" aria-labelledby="reviews-tab"
-                    tabindex="0">
-                    <div class="card" style="width: 18rem-;">
-                        <div class="card border-0" style="width: 18rem-;">
-                            <div class="new-works">
-                                <a href="#" class="new-works__wrapper">
-                                    <div
-                                        class="card new-works__card overflow-hidden border-0 bg-warning  position-relative">
-                                        <img src="/public/img/recently-works/industrial-1.jpg"
-                                            class="new-works__img card-img-top" style="height: 400px;" alt="foto">
-                                        <div class="new-works__block position-absolute bg-white m-3 p-2 top-0 end-0">
-                                            <img src="/SVG/aroow-rectangle.svg" alt="">
-                                        </div>
-                                        <svg class="new-works__icon icon position-absolute w-100">
-                                            <use xlink:href="#Ellipse 1">
-                                            </use>
-                                        </svg>
-                                        <div
-                                            class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
-                                            <span class="new-works__text new-works__text--text">Duplex
-                                                Foue</span> <br>
-                                            <h4 class="new-works__text new-works__text--title">
-                                                Pacific Heights Area
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <!-- footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row border-bottom">
-                <div class="footer__block col col-12 col-md-6 col-lg-4">do you need help</div>
-                <div class="col col-12 col-md-6 col-lg-8">
-                    <div class="row">
-                        <div class="footer__block col col-12 col-md-6 col-lg-4">let us help you</div>
-                        <div class="footer__block col col-12 col-md-6 col-lg-4">make money with us</div>
-                        <div class="footer__block col col-12 col-md-6 col-lg-4">get to know us</div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-md-flex justify-content-between align-items-center">
-                <div class="footer__socials d-flex  align-items-center flex-column flex-md-row py-4">
-                    <h6 class="mb-0">follow us:</h6>
-                    <div class="d-flex">
-                        <a class="px-1" href="#">
-                            f
-                        </a>
-                        <a class="px-1" href="#">
-                            tw
-                        </a>
-                        <a class="px-1" href="#">
-                            y
-                        </a>
-                        <a class="px-1" href="#">
-                            ins
-                        </a>
-                        <a class="px-1" href="#">
-                            tele
-                        </a>
-                    </div>
-                </div>
                 <div class="footer__download d-flex  align-items-center flex-column flex-md-row">
-                    <h6 class="mb-0">Download App:</h6>
-                    <div class="d-flex">
+                    <h6 class="footer__subtitle mb-0">Download App:</h6>
+                    <div class="d-flex ms-2">
                         <a class="pe-2" href="#">
-                            app store
+                            <img src="public/img/app-store.png" alt="">
                         </a>
                         <a class="" href="#">
-                            google play
+                            <img src="public/img/google-play.png" alt="">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="" style="background-color: white;">
+        <div class="bg-white pt-4 pb-5">
             <div class="container d-flex flex-column flex-md-row align-items-center justify-content-md-between">
                 <div class="footer__copyright order-md-1 order-2 my-4 d-flex align-items-center">
-                    <span>Copyright 2023 © Blonwe WordPress Theme. All right reserved. Powered by KLBTheme.</span>
+                    <span>Copyright 2023 © Blonwe WordPress Theme. All right reserved. Powered by <span
+                            class="footer__element">KLBTheme</span>.</span>
                 </div>
-                <div class="order-1 order-md-2 d-md-flex ">
-                    <span>We accept:</span>
-                    <ul class="d-flex">
-                        <li class="px-2">VISA</li>
-                        <li class="px-2">PayPal</li>
-                        <li class="px-2">Skrill</li>
-                        <li class="px-2 pe-0">Klarna.</li>
+                <div class="order-1 order-md-2 d-md-flex align-items-center">
+                    <span class="footer__subtitle text-center">We accept:</span>
+                    <ul class="footer__pay d-flex align-items-center mb-0">
+                        <li class="footer__card px-2">
+                            <img src="public/img/visa.png" alt="visa">
+                        </li>
+                        <li class="footer__payment px-2">
+                            <img src="public/img/mastercard.png" alt="mastercard">
+                        </li>
+                        <li class="footer__payment px-2">
+                            <img src="public/img/paypal.png" alt="paypal">
+                        </li>
+                        <li class="footer__payment px-2">
+                            <img src="public/img/skrill.png" alt="skrill">
+                        </li>
+                        <li class="footer__payment px-2">
+                            <img src="public/img/maestro.png" alt="maestro">
+                        </li>
+                        <li class="footer__payment px-2">
+                            <img src="public/img/klarna.png" alt="klarna">
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -833,7 +1567,7 @@
         <!-- footer-menu -->
         <nav class="navbar bg-body-tertiary fixed-bottom d-md-none">
             <div class="container-fluid d-flex ">
-                <div class="d-flex w-100">
+                <div class="d-flex w-100 d-none">
                     <ul class="mb-0 d-flex align-items-center  justify-content-between w-100">
                         <li class="mx-2 ">
                             <a href="#" class="d-flex flex-column align-items-center">
@@ -903,14 +1637,8 @@
             </div>
         </nav>
     </footer>
-    <div style="height: 10rem;"></div>
 
-    <!-- modal-location -->
-    <!-- btn-modal -->
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
-    </button> -->
-    <!-- Modal -->
+    <!-- location -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -926,7 +1654,8 @@
                 <div class="modal-body">
                     <div class="mb-2">
                         <h2 class="moda-title">Where can i deliver my purchases?</h2>
-                        <span class="moda-text">Available delivery time vary depending on where you order from</span>
+                        <span class="moda-text">Available delivery time vary depending on where you order
+                            from</span>
                     </div>
                     <form action="#" class="">
                         <!-- search -->
@@ -1014,47 +1743,76 @@
             </div>
         </div>
     </div>
-    </div>
 
-    <!-- modal-account -->
-    <!-- btn -->
-    <!-- Button trigger modal -->
-
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#accountModal">
-        accountModal
-    </button> -->
-
-    <!-- Modal -->
-    <div class="modal-account modal modal-xl" id="accountModal" tabindex="-1" aria-labelledby="accountModalLabel"
+    <!-- Sign In -->
+    <div class="modal-account modal modal-xl" id="accountModal" tabindex="-1" aria-labelledby="accountModalLabel" add
         aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="accountModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close border-0 bg-white" data-bs-dismiss="modal"
-                        aria-label="Close">
-                        <span class="material-symbols-outlined">
-                            close
-                        </span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col col-xl-6 d-none d-xl-flex">
-                                    <div class="overflow-hidden object-fit-cover">
-                                        <img class="object-fit-cover w-100" src="public/img/newsletter-form-image.jpg"
-                                            alt="">
-                                    </div>
+            <div class="modal-content rounded-4 overflow-hidden">
+                <div class="modal-body p-0">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col col-xl-6 d-none d-xl-flex px-0">
+                                <div class="overflow-hidden object-fit-cover">
+                                    <img class="object-fit-cover w-100" src="public/img/newsletter-form-image.jpg"
+                                        alt="">
                                 </div>
-                                <div class="col-xl-6">.col-md-4 .ms-auto</div>
+                            </div>
+                            <div class="col-xl-6 pt-4">
+                                <div class="w-100 d-flex justify-content-end">
+                                    <button type="button" class="btn-close border-0 bg-white ms-auto"
+                                        data-bs-dismiss="modal" aria-label="Close">
+                                        <span class="material-symbols-outlined">
+                                            close
+                                        </span>
+                                    </button>
+                                </div>
+                                <h3 class="modal-title fw-medium text-center mb-4" id="accountModalLabel">Log in
+                                </h3>
+                                <!-- form -->
+                                <form action="" class="classform p-5 pt-3 border-bottom">
+                                    <div class="mb-3">
+                                        <label for="formGroupExampleInput" class="form-label">Username or your email
+                                            address*</label>
+                                        <input type="text" class="form-control" id="formGroupExampleInput"
+                                            placeholder="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formGroupExampleInput2" class="form-label">Password*</label>
+                                        <input type="password" class="form-control" id="formGroupExampleInput2"
+                                            placeholder="">
+                                    </div>
+                                    <div class="">
+                                        <div class="form-check d-flex align-items-center mb-3">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <label class="form-check-label" for="gridCheck">
+                                                Check me out
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 mb-3">
+                                        <button type="submit" class="btn btn-primary w-100 p-2">Log in</button>
+                                    </div>
+                                    <div class="d-flex justify-content-center mb-5">
+                                        <a href="#" class="form-lost">Lost your passoword ?</a>
+                                    </div>
+                                    <p class="form-text">By continuing, you accept the Website Regulations ,
+                                        Regulations
+                                        for the sale of
+                                        alcoholic beverages and the <span class="form-privacy text-primary">Privacy
+                                            Policy</span></p>
+                                </form>
+                                <div class="modal-account-register d-flex justify-content-center py-3">
+                                    You dont have an account yet? <span class="modal-account-new">Register
+                                        Now</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 

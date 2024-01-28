@@ -2,8 +2,11 @@
     .breadcrumb {
         font-size: 13px;
         font-weight: 400;
-        
-        
+    }
+    .breadcrumb-list{
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
     }
     .breadcrumb-item--active{
         color: $gray-500;

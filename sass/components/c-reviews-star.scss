@@ -1,8 +1,11 @@
-.c-reviews-star{
-    &__list{
+.c-reviews-star {
+    &__link {
         color: $gray-600;
     }
-    &__list:hover{
-        color: $warning;
+
+    &__list:hover {
+        .c-reviews-star__link {
+            color: $warning;
+        }
     }
 }

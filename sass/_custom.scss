@@ -19,6 +19,9 @@
 @import "./blocks/services";
 @import "./blocks/news";
 @import "./blocks/subscribe";
+@import "./blocks/type-products.scss";
+@import "./blocks/contacts";
+@import "./blocks/about-us";
 @import "./blocks/modal";
 @import "./blocks/modal-account";
 
@@ -42,6 +45,7 @@
 @import "./components/c-networks.scss";
 @import "./components/c-rating.scss";
 @import "./components/c-comments.scss";
+@import "./components/c-options.scss";
 
         // shop
 @import "./blocks/shop/breadcrumb-shop.scss";
@@ -49,4 +53,3 @@
 @import "./blocks/shop/products-shop.scss";
 
 
-@import "./blocks/type-products.scss";

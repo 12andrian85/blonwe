@@ -1,0 +1,136 @@
+.contacts {
+    &__banner {
+        margin-top: 4rem;
+        background-color: $gray-200;
+    }
+
+    &__title {
+        font-size: 27px;
+        font-weight: 600;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__number {
+        font-weight: 600;
+        padding: 4px 8px;
+        border: 2px solid $gray-200;
+        border-radius: 50%;
+    }
+
+    &__item {
+        width: max-content;
+        padding: 15px;
+    }
+
+    &__country {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    &__location {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 6px;
+
+    }
+
+    &__street {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    &__tel {
+        font-size: 15px;
+        font-weight: 500;
+        color: $dark;
+    }
+
+    &__inner {
+        width: max-content;
+    }
+
+    &__email {
+        position: relative;
+        font-size: 14px;
+        color: #298BE6FF;
+    }
+
+    &__email::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        bottom: -2px;
+        background-color: #298BE6FF;
+    }
+
+    &__email:hover::before {
+        opacity: 0;
+    }
+
+    &__feedback textarea {
+        border-color: $gray-400;
+    }
+
+    &__feedback label {
+        font-size: 13px;
+    }
+
+    .join-us {
+        padding: 1.25rem 0;
+
+        .join-us-text {
+            font-size: 15px;
+            color: $gray-600;
+        }
+
+        .join-us-mail {
+            border: 1px solid $gray-500;
+            border-top-left-radius: 7px;
+            border-bottom-left-radius: 7px;
+            padding: 10px;
+        }
+
+        .input-group {
+            width: max-content;
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+
+        .join-us-btn {
+            padding: 10px;
+
+        }
+
+        .join-us-conditions {
+            margin-top: 5px;
+            font-size: 12px
+        }
+        .join-us-terms:hover {
+            text-decoration: underline;
+        }
+
+        .join-us-terms {
+            font-weight: 500;
+            color: $primary;
+        }
+
+    }
+
+
+}
+@media (min-width: $width-tablet) {
+
+    .contacts{
+        .join-us {
+            .join-us-mail{
+                flex-grow: 1;
+            }
+        }
+    }
+}

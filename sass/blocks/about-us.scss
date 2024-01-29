@@ -1,0 +1,164 @@
+.about-us {
+    .banner {
+        background-image: url("/public/img/about-image-1.jpg");
+        background-color: $dark;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        text-align: center;
+        color: $white;
+
+        &__prev {
+            font-size: 14px;
+            font-weight: 600;
+
+        }
+
+        &__title {
+            font-size: 27px;
+            font-weight: 600;
+        }
+
+        &__text {
+            font-size: 15px;
+        }
+    }
+
+    .article {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .statistic {
+        font-size: 14px;
+    }
+
+    .designer {
+        &__item {
+            margin-bottom: 20px;
+        }
+
+        &__img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        &__num {
+            font-size: 36px;
+            font-weight: 300;
+        }
+
+        &__subtitle {
+            font-size: 15px;
+            font-weight: 600;
+            color: $gray-500;
+        }
+
+        &__text {
+            font-size: 16px;
+            color: $gray-600;
+        }
+    }
+
+    .join-us {
+        padding: 1.25rem 0;
+
+        .join-us-text {
+            font-size: 15px;
+            color: $gray-600;
+        }
+
+        .join-us-mail {
+            border: 1px solid $gray-500;
+            border-top-left-radius: 7px;
+            border-bottom-left-radius: 7px;
+            padding: 10px;
+        }
+
+        .input-group {
+            width: max-content;
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+
+        .join-us-btn {
+            padding: 10px;
+
+        }
+
+        .join-us-conditions {
+            margin-top: 5px;
+            font-size: 12px
+        }
+
+        .join-us-terms:hover {
+            text-decoration: underline;
+        }
+
+        .join-us-terms {
+            font-weight: 500;
+            color: $primary;
+        }
+
+    }
+
+
+}
+
+@media (min-width: $width-tablet) {
+
+    .about-us {
+        .join-us {
+            .join-us-mail {
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+@media (min-width: $width-tablet) {
+    .about-us {
+        .banner {
+            padding: 5rem 0;
+            margin-top: 0;
+            margin-bottom: 3.75rem;
+
+            &__title {
+                font-size: 56px;
+                font-weight: 600;
+
+            }
+        }
+        .article{
+            padding-bottom: 3.75rem;
+            &__title{
+                font-size: 42px;
+            }
+            &__text{
+                font-size: 18px;
+            }
+        }
+        .designer{
+            &__gallery{
+                margin-bottom: 3.75rem;
+            }
+            &__pharagraph{
+                margin-bottom: 3.75rem;
+            }
+
+            &__paragraphs{
+                padding: 0 6.25rem;
+            }
+        }
+        .statistic{
+            margin: 3.75rem 0;
+        }
+        title{
+            font-size: 32px;
+        }
+        .c-options{
+            padding: 4.37rem 0;
+        }
+    }
+}

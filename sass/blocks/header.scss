@@ -41,34 +41,6 @@
             font-weight: 600;
             background-color: transparent;
         }
-
-        // .accordion {
-        //     width: min-content;
-
-        //     .accordion-button::after {
-        //         background-position: center;
-        //         background-size: 10px;
-        //     }
-
-        //     .accordion-button:focus {
-        //         box-shadow: none;
-        //     }
-
-        //     .accordion-button {
-        //         background-color: #E5F3EFFF;
-        //         padding: 0;
-        //     }
-
-        //     .accordion-body {
-        //         width: min-content;
-        //         background-color: #E5F3EFFF;
-        //         padding: 0;
-        //     }
-
-        //     .accordion-collapse {
-        //         background-color: #E5F3EFFF;
-        //     }
-        // }
     }
 
     .header-menu {
@@ -174,14 +146,25 @@
             margin-bottom: 12px;
         }
 
-        .submenu-item a {
-            color: $gray-600;
+
+        .submenu-item a:hover::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            background-color: #000;
+            height: 1px;
+            bottom: -2px;
         }
 
         .submenu-item {
             padding: 5px 0;
             text-transform: capitalize;
             font-size: 14px;
+        }
+
+        .submenu-item a {
+            position: relative;
+            color: $gray-600;
         }
 
         .nav-item--submenu:hover {

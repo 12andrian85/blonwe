@@ -91,6 +91,11 @@
             margin-top: 5px;
             font-size: 12px
         }
+        
+        .join-us-terms {
+            margin-top: 5px;
+            font-size: 12px
+        }
 
         .join-us-terms:hover {
             text-decoration: underline;
@@ -130,34 +135,42 @@
 
             }
         }
-        .article{
+
+        .article {
             padding-bottom: 3.75rem;
-            &__title{
+
+            &__title {
                 font-size: 42px;
             }
-            &__text{
+
+            &__text {
                 font-size: 18px;
             }
         }
-        .designer{
-            &__gallery{
-                margin-bottom: 3.75rem;
-            }
-            &__pharagraph{
+
+        .designer {
+            &__gallery {
                 margin-bottom: 3.75rem;
             }
 
-            &__paragraphs{
+            &__pharagraph {
+                margin-bottom: 3.75rem;
+            }
+
+            &__paragraphs {
                 padding: 0 6.25rem;
             }
         }
-        .statistic{
+
+        .statistic {
             margin: 3.75rem 0;
         }
-        title{
+
+        title {
             font-size: 32px;
         }
-        .c-options{
+
+        .c-options {
             padding: 4.37rem 0;
         }
     }

@@ -1,0 +1,44 @@
+.c-join-us {
+    padding: 1.25rem 0;
+
+    &__text {
+        font-size: 15px;
+        color: $gray-600;
+    }
+
+    &__mail {
+        border: 1px solid $gray-500;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+        padding: 10px;
+    }
+
+    .input-group {
+        width: max-content;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    &__btn {
+        padding: 10px;
+
+    }
+
+    &__conditions {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    
+    &__terms:hover {
+        text-decoration: underline;
+    }
+    
+    &__terms {
+        font-size: 12px;
+        font-weight: 500;
+        color: $primary;
+        margin-bottom: 10px;
+    }
+
+}

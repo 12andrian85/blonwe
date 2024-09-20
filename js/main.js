@@ -39,7 +39,7 @@ if (splideSales) {
     // type: 'loop',
     perPage: 3,
     perMove: 1,
-    focus  : 0,
+    focus: 0,
     // omitEnd: true,
     arrows: true,
     breakpoints: {
@@ -50,7 +50,7 @@ if (splideSales) {
         perPage: 3,
       },
       1200: {
-        perPage: 6,
+        perPage: 5,
       },
       2560: {
         perPage: 6,
@@ -105,47 +105,47 @@ if (splideSales) {
 // }
 
 
-var splide = new Splide( '#main-carousels', {
+var splide = new Splide('#main-carousels', {
   pagination: false,
-} );
+});
 
 
-var thumbnails = document.getElementsByClassName( 'thumbnail' );
+var thumbnails = document.getElementsByClassName('thumbnail');
 var current;
 
 
-for ( var i = 0; i < thumbnails.length; i++ ) {
-  initThumbnail( thumbnails[ i ], i );
+for (var i = 0; i < thumbnails.length; i++) {
+  initThumbnail(thumbnails[i], i);
 }
 
 
-function initThumbnail( thumbnail, index ) {
-  thumbnail.addEventListener( 'click', function () {
-    splide.go( index );
-  } );
+function initThumbnail(thumbnail, index) {
+  thumbnail.addEventListener('click', function () {
+    splide.go(index);
+  });
 }
 
 
-splide.on( 'mounted move', function () {
-  var thumbnail = thumbnails[ splide.index ];
+splide.on('mounted move', function () {
+  var thumbnail = thumbnails[splide.index];
 
 
-  if ( thumbnail ) {
-    if ( current ) {
-      current.classList.remove( 'is-active' );
+  if (thumbnail) {
+    if (current) {
+      current.classList.remove('is-active');
     }
 
 
-    thumbnail.classList.add( 'is-active' );
+    thumbnail.classList.add('is-active');
     current = thumbnail;
   }
-} );
+});
 
 
 splide.mount();
 
 
-  // Example starter JavaScript for disabling form submissions if there are invalid fields
+// Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {
   'use strict'
 

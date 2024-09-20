@@ -8,12 +8,12 @@
 
    .accordion{
     .accordion-button::after{
-        background-image: url("/public/img/add_FILL0_wght400_GRAD0_opsz24.svg");
+        background-image: url("https://12andrian85.github.io//public/img/add_FILL0_wght400_GRAD0_opsz24.svg");
         background-size: 18px;
     }
     
     .accordion-button:active::before{
-        background-image: url("/public/img/remove_FILL0_wght400_GRAD0_opsz24.svg");
+        background-image: url("https://12andrian85.github.io//public/img/remove_FILL0_wght400_GRAD0_opsz24.svg");
     }
    }
 }

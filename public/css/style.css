@@ -12116,7 +12116,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   }
 }
 .about-us .banner {
-  background-image: url("/public/img/about-image-1.jpg");
+  background-image: url("https://12andrian85.github.io/blonwe/public/img/about-image-1.jpg");
   background-color: #212529;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12499,11 +12499,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: 400;
 }
 .c-product-cat .accordion .accordion-button::after {
-  background-image: url("/public/img/add_FILL0_wght400_GRAD0_opsz24.svg");
+  background-image: url("http:12andrian85.github.io/public/img/add_FILL0_wght400_GRAD0_opsz24.svg");
   background-size: 18px;
 }
 .c-product-cat .accordion .accordion-button:active::before {
-  background-image: url("/public/img/remove_FILL0_wght400_GRAD0_opsz24.svg");
+  background-image: url("http:12andrian85.github.io/public/img/remove_FILL0_wght400_GRAD0_opsz24.svg");
 }
 
 .c-input-range .range_container {
@@ -12910,7 +12910,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .banner-shop .card {
-  background-image: url("/public/img/grocery-banner.jpg");
+  background-image: url("https://12andrian85.github.io/public/img/grocery-banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;

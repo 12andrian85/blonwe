@@ -11551,13 +11551,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   padding: 0 0.6rem;
 }
 .banner .banner-block__essentials {
-  background-image: url("/public/img/banner-18.jpg");
+  background-image: url("https://12andrian85.github.io/blonwe/public/img/banner-18.jpg");
 }
 .banner .banner-block__shopping {
-  background-image: url("/public/img/banner-19.jpg");
+  background-image: url("https://12andrian85.github.io/blonwe/public/img/banner-19.jpg");
 }
 .banner .banner-block__variety {
-  background-image: url("/public/img/banner-20.jpg");
+  background-image: url("https://12andrian85.github.io/blonwe/public/img/banner-20.jpg");
 }
 
 @media (min-width: 992px) {

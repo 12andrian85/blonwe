@@ -11314,6 +11314,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .header .header-top__delivery {
   font-size: 0.75rem;
 }
+.header .header-top__text {
+  margin-right: 10px;
+}
 .header .header-top__time {
   padding: 2px 8px;
   background-color: #c9deda;
@@ -11548,10 +11551,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 .banner .banner-block__btn {
   font-size: 12px;
-  padding: 0 0.6rem;
+  padding: 0.2rem 0.6rem;
+  width: max-content;
 }
 .banner .banner-block__essentials {
   background-image: url("https://12andrian85.github.io/blonwe/public/img/banner-18.jpg");
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-self: stretch;
 }
 .banner .banner-block__shopping {
   background-image: url("https://12andrian85.github.io/blonwe/public/img/banner-19.jpg");
@@ -11560,12 +11568,22 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   background-image: url("https://12andrian85.github.io/blonwe/public/img/banner-20.jpg");
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .banner {
-    margin-top: 1.875rem;
+    margin-top: 4rem;
   }
-  .banner .banner-block__essentials {
-    height: 32rem;
+}
+@media (min-width: 992px) {
+  .banner .banner-block__essentials h6, .banner .banner-block__essentials .h6 {
+    font-size: 2rem;
+  }
+  .banner .banner-block__essentials h3, .banner .banner-block__essentials .h3 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1440px) {
+  .banner {
+    margin-top: 3rem;
   }
 }
 .categories {
@@ -11837,6 +11855,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .type-products {
+  overflow: hidden;
   margin-top: 4.68rem;
 }
 .type-products .splide {
@@ -12383,7 +12402,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 .c-sales .card:hover .card-item--show {
   opacity: 1;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-name: card-item;
   animation-iteration-count: 1;
 }
@@ -12461,6 +12480,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   color: #fff;
 }
 
+.c-products {
+  overflow: hidden;
+}
 .c-products .card .card-badge {
   height: max-content;
   margin-left: -10px;
@@ -12482,20 +12504,34 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .c-products .card .card-title:hover {
   text-decoration: underline;
 }
-.c-products .card:hover {
-  transition: opacity 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
-}
 .c-products .card:hover .card-item--show {
   opacity: 1;
-  transition: margin-right 2s;
+  animation-duration: 1s;
+  animation-name: card-item;
+  animation-iteration-count: 1;
+}
+@keyframes card-item {
+  from {
+    translate: 25px 0;
+  }
+  to {
+    translate: 0px;
+  }
 }
 .c-products .card:hover .c-countdown__item {
   background-color: #cc0a1e;
   color: #fff;
 }
-
+@keyframes card-item {
+  from {
+    translate: 25px 0;
+  }
+  to {
+    translate: 0px;
+  }
+}
 @media (min-width: 992px) {
-  .c-products .card .card-badge {
+  .c-products .c-products .card .card-badge {
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -12504,6 +12540,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     align-items: center;
   }
 }
+
 .c-product-cat .form-check-input,
 .c-product-cat .form-check-label {
   font-size: 14px;

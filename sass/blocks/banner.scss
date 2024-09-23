@@ -18,12 +18,17 @@
 
         &__btn {
             font-size: 12px;
-            padding:  0 0.6rem;
+            padding: 0.2rem 0.6rem;
+            width: max-content; 
         }
     }
 
     .banner-block__essentials {
         background-image: url("https://12andrian85.github.io/blonwe/public/img/banner-18.jpg");
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-self: stretch;
     }
 
     .banner-block__shopping {
@@ -35,17 +40,27 @@
     }
 }
 
+@media (min-width: $width-tablet) {
+    .banner {
+        margin-top: 4rem;
+    }
+}
+
 @media (min-width: $width-desktop) {
     .banner {
-        margin-top: 1.875rem;
-        .banner-block__essentials  {
-            height: 32rem;
+        .banner-block__essentials {
+            h6{
+                font-size: 2rem
+            }
+            h3{
+                font-size: 3rem
+            }
         }
     }
 }
 
-
-
-@media (min-width: $width-desktop) {
-    .banner {}
+@media (min-width: $width-x-desktop) {
+    .banner {
+        margin-top: 3rem;
+    }
 }

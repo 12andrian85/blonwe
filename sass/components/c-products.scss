@@ -1,4 +1,5 @@
 .c-products {
+    overflow: hidden;
     .card {
         .card-badge {
             height: max-content;
@@ -26,15 +27,24 @@
         .card-title:hover {
             text-decoration: underline;
         }
-
     }
 
     .card:hover {
-        transition: opacity 0.4s cubic-bezier(.25, .1, .25, 1);
-
         .card-item--show {
             opacity: 1;
-            transition: margin-right 2s;
+            animation-duration: 1s;
+            animation-name: card-item;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes card-item {
+            from {
+                translate: 25px 0;
+            }
+
+            to {
+                translate: 0px;
+            }
         }
 
         .c-countdown {
@@ -45,19 +55,29 @@
         }
 
     }
-}
 
-@media (min-width: $width-desktop) {
-    .c-products {
-      .card{
-        .card-badge {
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            justify-content: center;
-            display: flex;
-            align-items: center;
+    @keyframes card-item {
+        from {
+            translate: 25px 0;
         }
-      }
+
+        to {
+            translate: 0px;
+        }
+    }
+
+    @media (min-width: $width-desktop) {
+        .c-products {
+            .card {
+                .card-badge {
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    justify-content: center;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
     }
 }

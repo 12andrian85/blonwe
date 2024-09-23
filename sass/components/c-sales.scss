@@ -1,39 +1,59 @@
-.c-sales{
-    .card{
-        .card-badge{
+.c-sales {
+    .card {
+        .card-badge {
             height: max-content;
         }
-        .card-favorite:hover{
+
+        .card-favorite:hover {
             color: $danger;
         }
-        .card-item a{
+
+        .card-item a {
             padding: 2px;
         }
-        .card-item--show{
+
+        .card-item--show {
+            transition: opacity 0.3s;
             opacity: 0;
         }
-        .card-title{
+
+        .card-title {
             text-transform: capitalize;
             font-size: 14px;
             font-weight: 700;
         }
-        .card-title:hover{
+
+        .card-title:hover {
             text-decoration: underline;
         }
-        .card-weight{
+
+        .card-weight {
             width: max-content;
         }
 
     }
-    .card:hover{
-        transition: opacity 0.4s cubic-bezier(.25,.1,.25,1);
 
-        .card-item--show{
+    .card:hover {
+
+        .card-item--show {
             opacity: 1;
-            transition: margin-right 2s;
+            animation-duration: 1.5s;
+            animation-name: card-item;
+            animation-iteration-count: 1;
         }
-        .c-countdown{
-            &__item{
+
+        @keyframes card-item {
+            from {
+                translate: 25px 0;
+            }
+
+            to {
+                translate: 0px ;
+            }
+        }
+
+        .c-countdown {
+            &__item {
                 background-color: $danger;
                 color: $white;
             }

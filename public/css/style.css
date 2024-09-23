@@ -12010,6 +12010,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     display: flex;
     align-items: center;
   }
+  .type-products .splide__slide img {
+    height: 450px;
+  }
 }
 .contacts__banner {
   margin-top: 4rem;
@@ -12364,6 +12367,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   padding: 2px;
 }
 .c-sales .card .card-item--show {
+  transition: opacity 0.3s;
   opacity: 0;
 }
 .c-sales .card .card-title {
@@ -12377,12 +12381,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .c-sales .card .card-weight {
   width: max-content;
 }
-.c-sales .card:hover {
-  transition: opacity 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
-}
 .c-sales .card:hover .card-item--show {
   opacity: 1;
-  transition: margin-right 2s;
+  animation-duration: 1.5s;
+  animation-name: card-item;
+  animation-iteration-count: 1;
+}
+@keyframes card-item {
+  from {
+    translate: 25px 0;
+  }
+  to {
+    translate: 0px;
+  }
 }
 .c-sales .card:hover .c-countdown__item {
   background-color: #cc0a1e;

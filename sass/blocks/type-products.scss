@@ -242,6 +242,9 @@
                 display: flex;
                 align-items: center;
             }
+            &__slide img {
+                height: 450px;
+            }
         }
     }
 }
